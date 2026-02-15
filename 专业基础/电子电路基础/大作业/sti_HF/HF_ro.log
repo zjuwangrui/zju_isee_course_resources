@@ -1,0 +1,18 @@
+LTspice 24.1.10 for Windows
+Circuit: C:\Users\lenovo\WPSDrive\1639471701\WPS企业云盘\浙江大学\我的企业文档\使用中的学习资料\电子电路基础\大作业\sti_HF\HF_ro.net
+Start Time: Thu Jan  1 09:00:42 2026
+solver = Normal
+Maximum thread count: 16
+tnom = 27
+temp = 27
+method = trap
+Direct Newton iteration for .op point succeeded.
+Total elapsed time: 0.039 seconds.
+
+Files loaded:
+C:\Users\lenovo\WPSDrive\1639471701\WPS企业云盘\浙江大学\我的企业文档\使用中的学习资料\电子电路基础\大作业\sti_HF\HF_ro.net
+C:\Users\lenovo\AppData\Local\LTspice\lib\sub\LTC.lib
+
+C:\Users\lenovo\WPSDrive\1639471701\WPS企业云盘\浙江大学\我的企业文档\使用中的学习资料\电子电路基础\大作业\sti_HF\HF_ro.net(14): Voltage not found.
+.meas AC Gain MAX mag(V(vout)/V(vin))
+                              ^^^^^^

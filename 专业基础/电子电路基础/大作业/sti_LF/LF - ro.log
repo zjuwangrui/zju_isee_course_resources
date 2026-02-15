@@ -1,0 +1,15 @@
+LTspice 24.1.10 for Windows
+Circuit: C:\Users\lenovo\WPSDrive\1639471701\WPS企业云盘\浙江大学\我的企业文档\使用中的学习资料\电子电路基础\大作业\sti_LF\LF - ro.net
+Start Time: Thu Jan  1 08:43:19 2026
+solver = Normal
+Maximum thread count: 16
+tnom = 27
+temp = 27
+method = trap
+Direct Newton iteration for .op point succeeded.
+Total elapsed time: 0.040 seconds.
+
+Files loaded:
+C:\Users\lenovo\WPSDrive\1639471701\WPS企业云盘\浙江大学\我的企业文档\使用中的学习资料\电子电路基础\大作业\sti_LF\LF - ro.net
+C:\Users\lenovo\AppData\Local\LTspice\lib\sub\LTC.lib
+
