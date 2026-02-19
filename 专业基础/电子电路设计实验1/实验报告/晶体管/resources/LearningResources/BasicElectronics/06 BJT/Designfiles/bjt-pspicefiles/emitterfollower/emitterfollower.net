@@ -1,0 +1,7 @@
+* source BJT
+V_V4         N02718 0 10
+R_R4         0 N02770  1k TC=0,0 
+Q_Q1         N02718 N02760 N02770 Q2N2222
+R_R3         N02784 N02760  1k TC=0,0 
+V_V6         N02784 0  AC 0
++SIN 0 5 1khz 0 0 0

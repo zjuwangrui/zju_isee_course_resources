@@ -1,0 +1,5 @@
+* source ACCIRCUITS
+R_R1         N00089 N00085  100 TC=0,0 
+L_L1         N00085 0  10uH  
+V_V1         N00089 0  AC 5
++SIN 0 5 50 0 0 0

@@ -1,0 +1,2 @@
+.model DbreakZ  D(Is=10f N=1 Rs=.1 Ikf=0 Xti=3 Eg=1.11 Cjo=1p M=.3333 Vj=.75
++               Fc=.5 Isr=3.769u Nr=2 Bv=4.26 Ibv=32.41m Tt=5n)

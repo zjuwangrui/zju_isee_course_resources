@@ -1,0 +1,175 @@
+(ExpressProject "diode1"
+  (ProjectVersion "19981106")
+  (ProjectType "Analog or A/D Mixed Mode")
+  (Folder "Design Resources"
+    (Folder "Library")
+    (NoModify)
+    (File ".\diode2.DSN"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (PSPICE_Regenerate_Netlist_Flag "FALSE")
+    (RootChangedForceReNetlist "x"))
+  (Folder "Outputs"
+    (File ".\diode1-pspicefiles\clampers\clampers.net"
+      (Type "Report"))
+    (File ".\diode2-PSpiceFiles\zenerdiode\zenerdiode.net"
+      (Type "Report"))
+    (File ".\diode2-PSpiceFiles\zenerregulator\zenerregulator.net"
+      (Type "Report")))
+  (Folder "PSpice Resources"
+    (Folder "Simulation Profiles"
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\diode2-pspicefiles\clampers\tran.sim"
+        (DisplayName "clampers-tran")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\diode2-pspicefiles\zenerdiode\dc.sim"
+        (DisplayName "zenerdiode-DC")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\diode2-pspicefiles\zenerregulator\tran.sim"
+        (DisplayName "zenerregulator-Tran")
+        (Type "PSpice Profile"))
+      (ActiveProfile ".\diode2-pspicefiles\zenerregulator\tran.sim"))
+    (Folder "Stimulus Files"
+      (Sort User))
+    (Folder "Include Files"
+      (Sort User))
+    (Folder "Model Libraries"
+      (Sort User)))
+  (DefaultLibraryBrowseDirectory "library\PSpice")
+  (PartMRUSelector
+    (Cadence
+      (LibraryName "D:\TEMP\TEMP_ACT\TITLE_BLOCKS\LIB\LIBRARY6.OLB")
+      (DeviceIndex "0"))
+    (DbreakZ
+      (FullPartName "DbreakZ.Normal")
+      (LibraryName
+         "D:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\BREAKOUT.OLB")
+      (DeviceIndex "0"))
+    (0
+      (LibraryName "D:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (PARAM
+      (FullPartName "PARAM.Normal")
+      (LibraryName
+         "D:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\PSPICE\SPECIAL.OLB")
+      (DeviceIndex "0"))
+    (RD4_3EB
+      (FullPartName "RD4_3EB.Normal")
+      (LibraryName
+         "D:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\PSPICE\JDIODE.OLB")
+      (DeviceIndex "0"))
+    (IRFR24N15D
+      (FullPartName "IRFR24N15D.Normal")
+      (LibraryName "D:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\PSPICE\IRF.OLB")
+      (DeviceIndex "0"))
+    (R_var
+      (FullPartName "R_var.Normal")
+      (LibraryName
+         "D:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (VPULSE
+      (FullPartName "VPULSE.Normal")
+      (LibraryName
+         "D:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (R
+      (FullPartName "R.Normal")
+      (LibraryName
+         "D:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (mmsz5260.bt1
+      (FullPartName "mmsz5260.bt1.Normal")
+      (LibraryName
+         "D:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\PSPICE\ON_ZENER.OLB")
+      (DeviceIndex "0"))
+    (Bbreak_TOM3
+      (FullPartName "Bbreak_TOM3.Normal")
+      (LibraryName
+         "D:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\PSPICE\BREAKOUT.OLB")
+      (DeviceIndex "0"))
+    (Dbreak
+      (FullPartName "Dbreak.Normal")
+      (LibraryName
+         "D:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\PSPICE\BREAKOUT.OLB")
+      (DeviceIndex "0"))
+    (MA112
+      (FullPartName "MA112.Normal")
+      (LibraryName
+         "D:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\PSPICE\JDIODE.OLB")
+      (DeviceIndex "0"))
+    (VDC
+      (FullPartName "VDC.Normal")
+      (LibraryName
+         "D:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (C
+      (FullPartName "C.Normal")
+      (LibraryName
+         "D:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (mmsz5231.bt1
+      (FullPartName "mmsz5231.bt1.Normal")
+      (LibraryName
+         "D:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\PSPICE\ON_ZENER.OLB")
+      (DeviceIndex "0"))
+    (RD4_7FB
+      (FullPartName "RD4_7FB.Normal")
+      (LibraryName
+         "D:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\PSPICE\JDIODE.OLB")
+      (DeviceIndex "0"))
+    (MA167
+      (FullPartName "MA167.Normal")
+      (LibraryName
+         "D:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\PSPICE\JDIODE.OLB")
+      (DeviceIndex "0"))
+    (MA174
+      (FullPartName "MA174.Normal")
+      (LibraryName
+         "D:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\PSPICE\JDIODE.OLB")
+      (DeviceIndex "0"))
+    (MA180
+      (FullPartName "MA180.Normal")
+      (LibraryName
+         "D:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\PSPICE\JDIODE.OLB")
+      (DeviceIndex "0"))
+    (MA185
+      (FullPartName "MA185.Normal")
+      (LibraryName
+         "D:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\PSPICE\JDIODE.OLB")
+      (DeviceIndex "0"))
+    (10BQ015
+      (FullPartName "10BQ015.Normal")
+      (LibraryName "D:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\PSPICE\IRF.OLB")
+      (DeviceIndex "0")))
+  (LastUsedLibraryBrowseDirectory
+     "D:\Cadence\SPB_16.6\tools\capture\tclscripts\capLearnPSpice\hybrid\supportfiles\BasicElectronics\Diode\Designfiles\Diode2\diode2-PSpiceFiles")
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources"
+         "D:\Cadence\SPB_16.6\tools\capture\tclscripts\caplearningresources\hybrid\supportfiles\BasicElectronics\Diode\Designfiles\diode2.DSN")
+      (Path "Design Resources"
+         "D:\Cadence\SPB_16.6\tools\capture\tclscripts\caplearningresources\hybrid\supportfiles\BasicElectronics\Diode\Designfiles\diode2.DSN"
+         "zenerregulator")
+      (Path "Design Resources"
+         "D:\Cadence\SPB_16.6\tools\capture\tclscripts\caplearningresources\hybrid\supportfiles\BasicElectronics\Diode\Designfiles\diode2.DSN"
+         "clampers")
+      (Path "Design Resources"
+         "D:\Cadence\SPB_16.6\tools\capture\tclscripts\caplearningresources\hybrid\supportfiles\BasicElectronics\Diode\Designfiles\diode2.DSN"
+         "zenerdiode")
+      (Path "Design Resources"
+         "D:\Cadence\SPB_16.6\tools\capture\tclscripts\caplearningresources\hybrid\supportfiles\BasicElectronics\Diode\Designfiles\diode2.DSN"
+         "Design Cache")
+      (Path "Outputs")
+      (Path "PSpice Resources")
+      (Path "PSpice Resources" "Simulation Profiles"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 2 3 -1 -1 -8 -30 0 200 0 410"))
+      (Tab 0)))
+  (MPSSessionName "nitint"))

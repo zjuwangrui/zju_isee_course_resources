@@ -1,0 +1,19 @@
+** Profile: "Amplifier-Tran"  [ D:\Downloads\OrCAD\LearningResources\BasicElectronics\06 BJT\Designfiles\bjt-pspicefiles\amplifier\tran.sim ] 
+
+** Creating circuit file "tran.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../bjt-pspicefiles/bjt.lib" 
+* From [PSPICE NETLIST] section of C:\Cadence\SPB_16.5\tools\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 10ms 0 1u 
+.PROBE V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\Amplifier.net" 
+
+
+.END

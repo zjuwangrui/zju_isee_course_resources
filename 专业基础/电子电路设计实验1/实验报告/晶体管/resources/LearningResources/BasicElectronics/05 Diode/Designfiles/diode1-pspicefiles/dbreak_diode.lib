@@ -1,0 +1,3 @@
+.model Dbreak_diode    D(Is=2.961n N=1.682 Rs=427.9u Ikf=18.12m Xti=3 Eg=1.11
++               Cjo=1.12p M=48.17m Vj=.8017 Fc=.5 Isr=12.03n Nr=5 Bv=40
++               Ibv=100u Tt=14.43n)

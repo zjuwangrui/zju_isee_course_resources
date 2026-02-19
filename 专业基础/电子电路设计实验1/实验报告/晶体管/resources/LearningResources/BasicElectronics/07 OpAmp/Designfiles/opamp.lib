@@ -1,0 +1,100 @@
+
+.subckt LM741    1 2 3 4 5
+*
+x_lm741 1 2 3 4 5 uA741
+.ends
+*$
+
+*-----------------------------------------------------------------------------
+* connections:   non-inverting input
+*                | inverting input
+*                | | positive power supply
+*                | | | negative power supply
+*                | | | | open collector output
+*                | | | | |
+.subckt LM339    1 2 3 4 5
+*
+x_lm339 1 2 3 4 5 LM139
+*
+* the LM339 is identical to the LM139, but has a more limited temp. range
+*
+.ends
+*$
+*-----------------------------------------------------------------------------
+* connections:   non-inverting input
+*                | inverting input
+*                | | positive power supply
+*                | | | negative power supply
+*                | | | | open collector output
+*                | | | | |
+.subckt LM139    1 2 3 4 5
+*
+f1    9  3 v1 1
+iee   3  7 dc 100.0E-6
+vi1  21  1 dc .75
+vi2  22  2 dc .75
+q1    9 21  7 qin
+q2    8 22  7 qin
+q3    9  8  4 qmo
+q4    8  8  4 qmi
+.model qin PNP(Is=800.0E-18 Bf=2.000E3)
+.model qmi NPN(Is=800.0E-18 Bf=1002)
+.model qmo NPN(Is=800.0E-18 Bf=1000 Cjc=1E-15 Tr=475.4E-9)
+e1   10  4  9  4  1
+v1   10 11 dc 0
+q5    5 11  4 qoc
+.model qoc NPN(Is=800.0E-18 Bf=20.69E3 Cjc=1E-15 Tf=3.540E-9 Tr=472.8E-9)
+dp    4  3 dx
+rp    3  4 37.50E3
+.model dx  D(Is=800.0E-18 Rs=1)
+*
+.ends
+* PSpice Model Editor - Version 16.6.0
+*$
+.MODEL 10bq040 d
++IS=2.13126e-05 RS=0.123203 N=1.53952 EG=0.600841
++XTI=3.78803 BV=40 IBV=0.0001 CJO=1.53747e-10
++VJ=1.5 M=0.476132 FC=0.5 TT=0
++KF=0 AF=1
+* Model generated on May 28, 96
+* Model format: SPICE3
+*$
+*
+*
+* MANUFACTURERS PART NO. = 914NGTS
+* MANUFACTURER = SPRAGUE
+* TYPE: DIODE
+* SUBTYPE: RECTIFIER
+* THE FOLLOWING CONTAINS 3 PARAMETER SETS FOR NON-IRRADIATED DEVICES
+* AT VARYING TEMPERATURES.
+* PARAMETER SETS EXTRACTED FROM MEASURED DATA.
+**** CAUTION: USE ONLY AT TEMPERATURE SPECIFIED.  ANY DEVIATION FROM THIS
+*            TEMPERATURE WILL PRODUCE INCORRECT RESULTS.
+*
+*** CAUTION: THE MEASURED TRR AND THE PSPICE CIRCUIT SIMULATED TRR ARE
+*            DIFFERENT THIS COULD POTENTIALLY LEAD TO ERRORS IN CIRCUIT
+*            SIMULATIONS IF USED AS A RECTIFIER OR SWITCHING DIODE.
+*
+*
+* MEASURED TRR = 344.0NS, SIMULATED TRR = 96.16NS.
+* RAD: PRERAD
+* TEMP: 27
+.MODEL D1N914/27C D       (
++         IS = 1.6436E-15
++         RS = 1.581604
++          N = 1.057899
++         TT = 1.36E-7
++        CJO = 3.0177E-12
++         VJ = 0.4
++          M = 0.2147523
++         EG = 1.11
++        XTI = 3
++         KF = 0
++         AF = 1
++         FC = 0.764906
++         BV = 94
++        IBV = 5E-6
++ )
+*$
+
+

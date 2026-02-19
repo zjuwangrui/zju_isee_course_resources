@@ -1,0 +1,7 @@
+* source OPAMPADV1
+V_V2         N12638 0 15Vdc
+V_V3         0 N13864 15Vdc
+V_V4         N09770 0  AC 0
++SIN 0 5 50khz 0 0 0
+X_U3A         N09770 0 N12638 N13864 N12650 LM339
+R_R2         N12638 N12650  5.1k TC=0,0 

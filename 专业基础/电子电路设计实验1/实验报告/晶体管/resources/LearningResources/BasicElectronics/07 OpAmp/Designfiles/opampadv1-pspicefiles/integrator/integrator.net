@@ -1,0 +1,8 @@
+* source OPAMPADV1
+V_V3         0 N00313 15Vdc
+C_C1         N00095 N00151  20u IC=0 TC=0,0 
+V_V2         N00357 0 15Vdc
+R_R1         N00109 N00095  10k TC=0,0 
+X_U1         0 N00095 N00357 N00313 N00151 uA741
+V_V4         N00109 0  
++PULSE -5V 5V 0 1n 1n 50ms 100ms

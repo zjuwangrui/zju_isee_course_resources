@@ -1,0 +1,6 @@
+* source THEOREMS1
+R_R2         A 0  2ohm TC=0,0 
+R_R3         A 0  4ohm TC=0,0 
+R_R4         A 0  8ohm TC=0,0 
+V_V2         N02352 0 5Vdc
+R_R1         N02352 A  2ohm TC=0,0 

@@ -1,0 +1,18 @@
+** Profile: "voltgflwr-vltgflwr"  [ D:\Cadence\SPB_16.5\tools\capture\FA\OPAmp\opamp-pspicefiles\voltgflwr\vltgflwr.sim ] 
+
+** Creating circuit file "vltgflwr.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of D:\Cadence\SPB_16.5\tools\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 100ms 0 
+.PROBE V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\voltgflwr.net" 
+
+
+.END

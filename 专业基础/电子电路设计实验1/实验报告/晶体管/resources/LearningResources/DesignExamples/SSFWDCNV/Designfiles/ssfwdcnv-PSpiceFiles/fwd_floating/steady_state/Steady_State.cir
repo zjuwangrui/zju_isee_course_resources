@@ -1,0 +1,22 @@
+** Profile: "fwd_floating-steady_state"  [ C:\ESD\Alok.Tri\cdssetup\OrCAD_Capture\16.6.0\tclscripts\caplearningresources\work\supportfiles\DesignExamples\SSFWDCNV\Designfiles\ssfwdcnv-pspicefiles\fwd_floating\steady_state.sim ] 
+
+** Creating circuit file "steady_state.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../ssfwdcnv-PSpiceFiles/ac_dc_vrm.lib" 
+* From [PSPICE NETLIST] section of C:\ESD\Alok.Tri\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 15ms 14m 
+.OPTIONS ADVCONV
+.OPTIONS ABSTOL= 1.0n
+.OPTIONS ITL4= 40
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(*) 
+.INC "..\fwd_floating.net" 
+
+
+.END

@@ -1,0 +1,121 @@
+(ExpressProject "3Phase"
+  (ProjectVersion "19981106")
+  (ProjectType "Analog or A/D Mixed Mode")
+  (Folder "Design Resources"
+    (Folder "Library")
+    (NoModify)
+    (File ".\threephasecircuits.DSN"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (PSPICE_Regenerate_Netlist_Flag "FALSE")
+    (RootChangedForceReNetlist "x"))
+  (Folder "Outputs"
+    (File
+       ".\threephasecircuits-PSpiceFiles\DeltaConnection(pwr)\DeltaConnection(pwr).net"
+      (Type "Report"))
+    (File ".\threephasecircuits-PSpiceFiles\StarConnetion\StarConnetion.net"
+      (Type "Report"))
+    (File ".\threephasecircuits-PSpiceFiles\Starconnection\Starconnection.net"
+      (Type "Report"))
+    (File
+       ".\threephasecircuits-pspicefiles\deltaconnection\deltaconnection.net"
+      (Type "Report")))
+  (Folder "PSpice Resources"
+    (Folder "Simulation Profiles"
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\threephasecircuits-pspicefiles\starconnection\tran.sim"
+        (DisplayName "Starconnection-Tran")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\threephasecircuits-pspicefiles\deltaconnection\tran.sim"
+        (DisplayName "deltaconnection-Tran")
+        (Type "PSpice Profile"))
+      (ActiveProfile
+         ".\threephasecircuits-pspicefiles\deltaconnection\tran.sim"))
+    (Folder "Model Libraries"
+      (Sort User))
+    (Folder "Stimulus Files"
+      (Sort User))
+    (Folder "Include Files"
+      (Sort User)))
+  (DefaultLibraryBrowseDirectory "library\PSpice")
+  (PartMRUSelector
+    (Cadence
+      (LibraryName "D:\TEMP\TEMP_ACT\TITLE_BLOCKS\LIB\LIBRARY6.OLB")
+      (DeviceIndex "0"))
+    (R
+      (FullPartName "R.Normal")
+      (LibraryName
+         "D:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (0
+      (LibraryName "D:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (R_45DEG
+      (FullPartName "R_45DEG.Normal")
+      (LibraryName
+         "D:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (VDC
+      (FullPartName "VDC.Normal")
+      (LibraryName
+         "D:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (VSIN
+      (FullPartName "VSIN.Normal")
+      (LibraryName
+         "D:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (3phase
+      (FullPartName "3phase.Normal")
+      (LibraryName
+         "D:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\PSPICE\ANL_MISC.OLB")
+      (DeviceIndex "0"))
+    (3phaseY
+      (FullPartName "3phaseY.Normal")
+      (LibraryName
+         "D:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\PSPICE\ANL_MISC.OLB")
+      (DeviceIndex "0"))
+    (L
+      (FullPartName "L.Normal")
+      (LibraryName
+         "D:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (VAC
+      (FullPartName "VAC.Normal")
+      (LibraryName
+         "D:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (3phaseD
+      (FullPartName "3phaseD.Normal")
+      (LibraryName
+         "D:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\PSPICE\ANL_MISC.OLB")
+      (DeviceIndex "0")))
+  (LastUsedLibraryBrowseDirectory "C:\Users\mittala\Desktop")
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources"
+         "C:\SPB_Data\cdssetup\OrCAD_Capture\16.6.0\tclscripts\caplearningresources\work\supportfiles\BasicElectronics\threephasecircuits\Designfiles\threephasecircuits.DSN")
+      (Path "Design Resources"
+         "C:\SPB_Data\cdssetup\OrCAD_Capture\16.6.0\tclscripts\caplearningresources\work\supportfiles\BasicElectronics\threephasecircuits\Designfiles\threephasecircuits.DSN"
+         "deltaconnection")
+      (Path "Design Resources"
+         "C:\SPB_Data\cdssetup\OrCAD_Capture\16.6.0\tclscripts\caplearningresources\work\supportfiles\BasicElectronics\threephasecircuits\Designfiles\threephasecircuits.DSN"
+         "Starconnection")
+      (Path "Design Resources"
+         "C:\SPB_Data\cdssetup\OrCAD_Capture\16.6.0\tclscripts\caplearningresources\work\supportfiles\BasicElectronics\threephasecircuits\Designfiles\threephasecircuits.DSN"
+         "Design Cache")
+      (Path "Outputs")
+      (Path "PSpice Resources")
+      (Path "PSpice Resources" "Simulation Profiles")
+      (Select "PSpice Resources" "Simulation Profiles"
+         "C:\SPB_Data\cdssetup\OrCAD_Capture\16.6.0\tclscripts\caplearningresources\work\supportfiles\BasicElectronics\threephasecircuits\Designfiles\threephasecircuits-pspicefiles\starconnection\tran.sim"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 2 3 -1 -1 -8 -30 0 200 0 410"))
+      (Tab 0)))
+  (MPSSessionName "Administrator"))

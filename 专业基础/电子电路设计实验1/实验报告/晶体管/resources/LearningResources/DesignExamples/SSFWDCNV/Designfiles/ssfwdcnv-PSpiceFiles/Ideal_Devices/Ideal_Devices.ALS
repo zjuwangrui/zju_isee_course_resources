@@ -1,0 +1,28 @@
+.ALIASES
+R_R28           R28(1=OUT 2=0 ) CN @AC_DC_VRM.Ideal_Devices(sch_1):INS10944558@ANALOG.R.Normal(chips)
+X_U3            U3(VP1=VDC VP2=N10883112 VS1=N10909862 VS2=0 ) CN
++@AC_DC_VRM.Ideal_Devices(sch_1):INS10944458@TFRMR_SUBCKT.TRAN1.Normal(chips)
+L_L1            L1(1=N10823565 2=OUT ) CN @AC_DC_VRM.Ideal_Devices(sch_1):INS10944260@ANALOG.L.Normal(chips)
+C_C13           C13(1=N109442461 2=N10824463 ) CN @AC_DC_VRM.Ideal_Devices(sch_1):INS10944384@DATACONV.C.Normal(chips)
+R_R30           R30(1=N10823789 2=VFB ) CN @AC_DC_VRM.Ideal_Devices(sch_1):INS10944286@ANALOG.R.Normal(chips)
+R_R36           R36(1=N10824463 2=0 ) CN @AC_DC_VRM.Ideal_Devices(sch_1):INS10944192@ANALOG.R.Normal(chips)
+C_C11           C11(1=VDC 2=0 ) CN @AC_DC_VRM.Ideal_Devices(sch_1):INS10944216@ANALOG.C.Normal(chips)
+C_C5            C5(1=OUT 2=0 ) CN @AC_DC_VRM.Ideal_Devices(sch_1):INS10944926@ANALOG.C.Normal(chips)
+R_R53           R53(1=0 2=N10823789 ) CN @AC_DC_VRM.Ideal_Devices(sch_1):INS10944624@ANALOG.R.Normal(chips)
+V_V6            V6(+=N10871733 -=N10871817 ) CN @AC_DC_VRM.Ideal_Devices(sch_1):INS10944520@SOURCE.VSIN.Normal(chips)
+R_R29           R29(1=VFB 2=OUT ) CN @AC_DC_VRM.Ideal_Devices(sch_1):INS10944332@ANALOG.R.Normal(chips)
+R_R52           R52(1=N109442461 2=N10883112 ) CN @AC_DC_VRM.Ideal_Devices(sch_1):INS10944236@DATACONV.R.Normal(chips)
+R_R32           R32(1=N10890530 2=N10878265 ) CN @AC_DC_VRM.Ideal_Devices(sch_1):INS10944946@ANALOG.R.Normal(chips)
+D_D17           D17(1=0 2=N10871733 ) CN @AC_DC_VRM.Ideal_Devices(sch_1):INS10945271@BREAKOUT.Dbreak.Normal(chips)
+D_D18           D18(1=0 2=N10871817 ) CN @AC_DC_VRM.Ideal_Devices(sch_1):INS10945449@BREAKOUT.Dbreak.Normal(chips)
+D_D19           D19(1=N10871817 2=VDC ) CN @AC_DC_VRM.Ideal_Devices(sch_1):INS10945478@BREAKOUT.Dbreak.Normal(chips)
+D_D20           D20(1=N10871733 2=VDC ) CN @AC_DC_VRM.Ideal_Devices(sch_1):INS10945507@BREAKOUT.Dbreak.Normal(chips)
+D_D21           D21(1=N10909862 2=N10823565 ) CN @AC_DC_VRM.Ideal_Devices(sch_1):INS10945657@BREAKOUT.Dbreak.Normal(chips)
+D_D22           D22(1=0 2=N10823565 ) CN @AC_DC_VRM.Ideal_Devices(sch_1):INS10945682@BREAKOUT.Dbreak.Normal(chips)
+M_M1            M1(d=N10883112 g=N10890530 s=N10824463 s=N10824463 ) CN
++@AC_DC_VRM.Ideal_Devices(sch_1):INS10945823@BREAKOUT.power_Mbreakn.Normal(chips)
+V_V7            V7(+=N10878265 -=N10824463 ) CN @AC_DC_VRM.Ideal_Devices(sch_1):INS10946107@SOURCE.VPULSE.Normal(chips)
+_    _(OUT=OUT)
+_    _(VDC=VDC)
+_    _(VFB=VFB)
+.ENDALIASES

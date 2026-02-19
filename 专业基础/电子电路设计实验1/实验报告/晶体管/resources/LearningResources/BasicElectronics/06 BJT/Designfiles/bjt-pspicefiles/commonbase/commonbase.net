@@ -1,0 +1,6 @@
+* source BJT
+R_R2         N00852 N00846  10ohm TC=0,0 
+V_V2         0 N00862 2Vdc
+Q_Q1         N00846 0 N00858 Q2N2222
+R_R1         N00862 N00858  50ohm TC=0,0 
+V_V1         N00852 0 20Vdc

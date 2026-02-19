@@ -1,0 +1,86 @@
+
+**** 11/18/16 09:54:39 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
+
+ ** Profile: "KCL-Tran"  [ D:\Downloads\OrCAD\LearningResources\BasicElectronics\01 Theorems\Designfiles\theorems1-pspicefiles\kcl\tr
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "tran.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Cadence\SPB_16.5\tools\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 1m 0 
+.PROBE V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\KCL.net" 
+
+
+
+**** INCLUDING KCL.net ****
+* source THEOREMS1
+R_R2         A 0  2ohm TC=0,0 
+R_R3         A 0  4ohm TC=0,0 
+R_R4         A 0  8ohm TC=0,0 
+V_V2         N02352 0 5Vdc
+R_R1         N02352 A  2ohm TC=0,0 
+
+**** RESUMING tran.cir ****
+.END
+
+**** 11/18/16 09:54:39 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
+
+ ** Profile: "KCL-Tran"  [ D:\Downloads\OrCAD\LearningResources\BasicElectronics\01 Theorems\Designfiles\theorems1-pspicefiles\kcl\tr
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(    A)    1.8182  (N02352)    5.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V2        -1.591E+00
+
+    TOTAL POWER DISSIPATION   7.95E+00  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 11/18/16 09:54:39 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
+
+ ** Profile: "KCL-Tran"  [ D:\Downloads\OrCAD\LearningResources\BasicElectronics\01 Theorems\Designfiles\theorems1-pspicefiles\kcl\tr
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =        0.00
+

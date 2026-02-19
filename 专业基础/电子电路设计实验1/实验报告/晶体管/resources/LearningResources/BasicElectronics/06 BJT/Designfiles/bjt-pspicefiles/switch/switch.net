@@ -1,0 +1,7 @@
+* source BJT
+V_V1         N00460 0 5Vdc
+Q_Q1         N00656 N01234 0 Q2N2222
+R_R1         N01238 N01234  10ohm TC=0,0 
+V_V2         N01238 0  
++PULSE 0 5 0 1n 1n 100ms 500ms
+R_R2         N00656 N00460  50ohm TC=0,0 

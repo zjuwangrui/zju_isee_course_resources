@@ -1,0 +1,10 @@
+* source OPAMPBASIC
+V_V1         N01503 0 5Vdc
+R_R1         N01503 N03667  100k TC=0,0 
+R_R3         N01431 N01427  100k TC=0,0 
+R_R4         N01443 N01427  50k TC=0,0 
+V_V4         N01617 0 12Vdc
+V_V3         0 N04728 12Vdc
+X_U1         N03667 N01427 N01617 N04728 N01443 uA741
+V_V2         N01431 0 2Vdc
+R_R2         0 N03667  50k TC=0,0 

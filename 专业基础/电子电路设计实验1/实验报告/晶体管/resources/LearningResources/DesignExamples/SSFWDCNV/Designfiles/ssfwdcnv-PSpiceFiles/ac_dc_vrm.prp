@@ -1,0 +1,79 @@
+("irf342"
+    ("Creator"	"Device property file created by Property Controller")
+    ("device_info"
+        ("SYMBOL_NAME"	"nmos")
+        ("MODEL_TYPE"	"514")
+    )
+    ("model_params"
+        ("level_0")
+    )
+    ("device_pre_smoke"
+        ("TERM_ID"	"D")
+        ("TERM_IG"	"G")
+        ("NODE_VD"	"D")
+        ("NODE_VG"	"G")
+        ("NODE_VS"	"S")
+        ("DERATE_TYPE"	"NMOS")
+    )
+    ("device_max_ops"
+        ("IG"	"200u")
+        ("ID"	"8")
+        ("VDG"	"400")
+        ("VDS"	"400")
+        ("VGSF"	"20")
+        ("VGSR"	"20")
+        ("PDM"	"125")
+        ("TJ"	"150")
+        ("RJC"	"1")
+        ("RCA"	"29")
+    )
+)
+("mur430"
+    ("Creator"	"Device property file created by Property Controller")
+    ("device_info"
+        ("SYMBOL_NAME"	"Diode")
+        ("MODEL_TYPE"	"22")
+    )
+    ("model_params"
+        ("level_0")
+    )
+    ("device_pre_smoke"
+        ("TERM_AN"	"1")
+        ("NODE_AN"	"1")
+        ("NODE_CAT"	"2")
+        ("DERATE_TYPE"	"DIODE")
+    )
+    ("device_max_ops"
+        ("IF"	"4")
+        ("VR"	"300")
+        ("PDM"	"4")
+        ("TJ"	"175")
+        ("RJC"	"1")
+        ("RCA"	"1")
+    )
+)
+("ut4060"
+    ("Creator"	"Device property file created by Property Controller")
+    ("device_info"
+        ("model_type"	"22")
+        ("symbol_name"	"Diode")
+    )
+    ("device_pre_smoke"
+        ("TERM_AN"	"A")
+        ("NODE_AN"	"A")
+        ("NODE_CAT"	"C")
+        ("DERATE_TYPE"	"DIODE")
+    )
+    ("device_max_ops"
+        ("IF"	"4")
+        ("VR"	"600")
+        ("PDM"	"7")
+        ("TJ"	"175")
+        ("RJC"	"0.05")
+        ("RCA"	"0")
+    )
+    ("model_params"
+        ("level_0"
+        )
+    )
+)

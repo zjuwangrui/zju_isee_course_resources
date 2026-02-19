@@ -1,0 +1,19 @@
+** Profile: "forwardbias-xg"  [ D:\Cadence\SPB_16.6\tools\capture\tclscripts\capLearnPSpice\hybrid\supportfiles\BasicElectronics\Diode\dsnfiles\diode-pspicefiles\forwardbias\xg.sim ] 
+
+** Creating circuit file "xg.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of D:\Cadence\SPB_Data\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 100ms 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\forwardbias.net" 
+
+
+.END

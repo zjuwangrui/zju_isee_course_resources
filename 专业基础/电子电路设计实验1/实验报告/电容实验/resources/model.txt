@@ -1,0 +1,29 @@
+table
+
+
+\begin{table}[H]
+\footnotesize
+\caption{\normalsize RC电路参数计算值} 
+\centering  
+\renewcommand{\arraystretch}{1.1}
+\begin{tabular}{*{6}{l}} 
+\hline\hline   
+$R(\Omega)$ &$C(pF)$ &$\tau$ 测量值(ms) &$u_c(t_0)$ \\ 
+\hline
+9.1K & $1 \times 10^{-4}$& 0.910& 4.550\\
+750 & $1 \times 10^{-4}$& 0.075& 0.375\\
+4.3K & $1 \times 10^4$& 0.043& 0.215\\
+4.3K & $22 \times 10^5$& 0.946& 4.730\\
+\hline  
+    \end{tabular}
+    \label{table:4.2}
+\end{table}
+
+image
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.4\textwidth, height=0.2\textheight]{figure/RC_circuit.png}
+    \caption{一阶电路}
+    \label{fig:3.1}
+\end{figure}
+

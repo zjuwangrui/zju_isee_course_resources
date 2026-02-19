@@ -1,0 +1,11 @@
+* source THEOREMS2
+V_V4         N02070 0 {165Vdc/31}
+R_R9         0 N03115  8ohm TC=0,0 
+R_R8         N00850 N03115  3ohm TC=0,0 
+V_V1         N02906 0 5Vdc
+R_R1         N02906 N03115  2ohm TC=0,0 
+V_V3         N00850 0 15Vdc
+R_R5         0 N02024  8ohm TC=0,0 
+V_V2         0 N02461 10Vdc
+R_R7         N02461 N03115  5ohm TC=0,0 
+R_R6         N02070 N02024  {30ohm/31} TC=0,0 

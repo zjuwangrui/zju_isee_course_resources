@@ -1,0 +1,109 @@
+
+**** 12/10/15 08:57:26 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
+
+ ** Profile: "fwd_floating-line_thd"  [ H:\OrCAD相关文档\LearningResources\DesignExamples\SSFWDCNV\Designfiles\ssfwdcnv-pspicefiles\f
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "line_thd.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../ssfwdcnv-PSpiceFiles/ac_dc_vrm.lib" 
+* From [PSPICE NETLIST] section of d:\Cadence\SPB_16.5\tools\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 36.667m 16.667m 
+.FOUR 50 10 I(V_V6) 
+.OPTIONS NOBIAS
+.OPTIONS NOECHO
+R_R48         N10823997 OUT  1m TC=0,0 
+R_R45         N10832905 VFB  1k TC=0,0 
+R_R44         N10865580 N10832905  9K TC=0,0 
+C_C9         N10846839 N10832905  245p  TC=0,0 
+C_C10         N10846839 N10865580  15n  TC=0,0 
+V_V6         N10871733 N10871817  AC 0
++SIN 0 154V 50Hz 0 0 60
+C_C11         N10871839 0  470u  TC=0,0 
+R_R49         N10872580 VDC  40K TC=0,0 
+R_R50         0 N10872580  3K TC=0,0 
+C_C12         N10872580 0  22u  TC=0,0 
+R_R52         N108830621 N10883112  20  
+C_C13         N108830621 N10824463  2n  
+R_R51         N10871839 VDC  0.025 TC=0,0 
+D_D15         N10871733 VDC UT4060 
+D_D14         N10871817 VDC UT4060 
+D_D13         0 N10871817 UT4060 
+D_D16         0 N10871733 UT4060 
+M_M1         N10883112 N10890530 N10824463 N10824463 IRF342
+D_D1         N10909862 N10823565 MUR430 
+D_D2         0 N10823565 MUR430 
+X_U3         VDC N10883112 N10909862 0 TRAN1 
+C_C14         N10824463 0  2n  
+R_R53         0 N10823789  5K TC=0,0 
+.PARAM  rload=8 feedback=23n
+.END
+
+WARNING(ORPSIM-15223): Library file H:\OrCAD相关文档\LearningResources\DesignExamples\SSFWDCNV\Designfiles\ssfwdcnv-PSpiceFiles\ac_dc_vrm.lib has changed since index file ac_dc_vrm.ind was created.
+
+WARNING(ORPSIM-15227): The timestamp changed from Tue Feb 14 17:57:15 2012 to Tue Aug 27 09:36:04 2013.
+
+INFO(ORPSIM-15422): Making new index file ac_dc_vrm.ind for library file ac_dc_vrm.lib.
+
+Index has 7 entries from 1 file(s).
+
+
+**** Generated AtoD and DtoA Interfaces ****
+
+
+
+
+
+ ****     FOURIER ANALYSIS                 TEMPERATURE =   27.000 DEG C
+
+
+
+FOURIER COMPONENTS OF TRANSIENT RESPONSE I(V_V6)
+
+
+
+ DC COMPONENT =   1.812735E-02
+
+ HARMONIC   FREQUENCY    FOURIER    NORMALIZED    PHASE        NORMALIZED
+    NO         (HZ)     COMPONENT    COMPONENT    (DEG)       PHASE (DEG)
+
+     1     5.000E+01    5.004E+00    1.000E+00   -1.542E+02    0.000E+00
+     2     1.000E+02    3.779E-02    7.553E-03    8.846E+00    3.173E+02
+     3     1.500E+02    4.236E+00    8.465E-01    7.850E+01    5.412E+02
+     4     2.000E+02    4.309E-02    8.611E-03   -7.487E+01    5.420E+02
+     5     2.500E+02    2.996E+00    5.988E-01   -4.429E+01    7.268E+02
+     6     3.000E+02    5.033E-02    1.006E-02   -1.642E+02    7.611E+02
+     7     3.500E+02    1.785E+00    3.568E-01   -1.552E+02    9.243E+02
+     8     4.000E+02    5.601E-02    1.119E-02    1.036E+02    1.337E+03
+     9     4.500E+02    1.152E+00    2.303E-01    1.153E+02    1.503E+03
+    10     5.000E+02    6.105E-02    1.220E-02    1.264E+01    1.555E+03
+
+
+     TOTAL HARMONIC DISTORTION =   1.120691E+02 PERCENT
+
+
+          JOB CONCLUDED
+
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+
+  Total job time (using Solver 1)   =     1420.36
+

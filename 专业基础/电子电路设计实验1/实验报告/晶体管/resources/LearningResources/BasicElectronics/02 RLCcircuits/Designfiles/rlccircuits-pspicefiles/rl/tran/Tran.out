@@ -1,0 +1,85 @@
+
+**** 12/09/15 22:10:31 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "RL-Tran"  [ C:\SPB_Data\cdssetup\OrCAD_Capture\16.6.0\tclscripts\caplearningresources\work\supportfiles\BasicElectronic
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "tran.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\SPB_Data\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 0.6u 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\RL.net" 
+
+
+
+**** INCLUDING RL.net ****
+* source RLCCIRCUITS
+L_L1         N04062 0  10uH IC=0 
+R_R1         N04076 N04062  100 TC=0,0 
+V_V1         N04076 0 5Vdc
+
+**** RESUMING tran.cir ****
+.END
+
+**** 12/09/15 22:10:31 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "RL-Tran"  [ C:\SPB_Data\cdssetup\OrCAD_Capture\16.6.0\tclscripts\caplearningresources\work\supportfiles\BasicElectronic
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N04062)    5.0000 (N04076)    5.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -5.000E-09
+
+    TOTAL POWER DISSIPATION   2.50E-08  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 12/09/15 22:10:31 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "RL-Tran"  [ C:\SPB_Data\cdssetup\OrCAD_Capture\16.6.0\tclscripts\caplearningresources\work\supportfiles\BasicElectronic
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =        0.00
+

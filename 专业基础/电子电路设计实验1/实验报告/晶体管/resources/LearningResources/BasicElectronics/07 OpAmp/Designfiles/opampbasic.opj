@@ -1,0 +1,202 @@
+(ExpressProject "opAmp"
+  (ProjectVersion "19981106")
+  (ProjectType "Analog or A/D Mixed Mode")
+  (Folder "Design Resources"
+    (Folder "Library")
+    (NoModify)
+    (File ".\opampbasic.DSN"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (PSPICE_Regenerate_Netlist_Flag "FALSE")
+    (RootChangedForceReNetlist "x"))
+  (Folder "Outputs"
+    (File ".\opampbasic-PSpiceFiles\inverting\inverting.net"
+      (Type "Report"))
+    (File ".\opampbasic-PSpiceFiles\adder\adder.net"
+      (Type "Report"))
+    (File ".\opampbasic-PSpiceFiles\differential\differential.net"
+      (Type "Report"))
+    (File ".\opampbasic-PSpiceFiles\subtractor\subtractor.net"
+      (Type "Report"))
+    (File ".\opampbasic-PSpiceFiles\noninverting\noninverting.net"
+      (Type "Report"))
+    (File ".\opampbasic-PSpiceFiles\voltagefollower\voltagefollower.net"
+      (Type "Report")))
+  (Folder "PSpice Resources"
+    (Folder "Simulation Profiles"
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\opampbasic-pspicefiles\inverting\tran.sim"
+        (DisplayName "inverting-Tran")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\opampbasic-pspicefiles\subtractor\tran.sim"
+        (DisplayName "subtractor-Tran")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\opampbasic-pspicefiles\voltagefollower\tran.sim"
+        (DisplayName "voltagefollower-Tran")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\opampbasic-pspicefiles\differential\tran.sim"
+        (DisplayName "differential-Tran")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\opampbasic-pspicefiles\adder\tran.sim"
+        (DisplayName "adder-Tran")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\opampbasic-pspicefiles\noninverting\tran.sim"
+        (DisplayName "noninverting-Tran")
+        (Type "PSpice Profile"))
+      (ActiveProfile ".\opampbasic-pspicefiles\subtractor\tran.sim"))
+    (Folder "Model Libraries"
+      (Sort User)
+      (File ".\opamp.lib"
+        (Type "PSpiceLibrary")
+        (DisplayName ".\opamp.lib")))
+    (Folder "Stimulus Files"
+      (Sort User))
+    (Folder "Include Files"
+      (Sort User)))
+  (DefaultLibraryBrowseDirectory "library\PSpice")
+  (PartMRUSelector
+    (Cadence
+      (LibraryName "D:\TEMP\TEMP_ACT\TITLE_BLOCKS\LIB\LIBRARY6.OLB")
+      (DeviceIndex "0"))
+    (R
+      (FullPartName "R.Normal")
+      (LibraryName
+         "D:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (VDC
+      (FullPartName "VDC.Normal")
+      (LibraryName
+         "D:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (D1N914
+      (FullPartName "D1N914.Normal")
+      (LibraryName "D:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\PSPICE\DIODE.OLB")
+      (DeviceIndex "0"))
+    (0
+      (LibraryName "D:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (LM339
+      (FullPartName "LM339.Normal")
+      (LibraryName "D:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\PSPICE\OPAMP.OLB")
+      (DeviceIndex "0"))
+    (LM124/NS
+      (FullPartName "LM124/NS.Normal")
+      (LibraryName
+         "D:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\PSPICE\NAT_SEMI.OLB")
+      (DeviceIndex "0"))
+    (Dbreak
+      (FullPartName "Dbreak.Normal")
+      (LibraryName
+         "D:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\PSPICE\BREAKOUT.OLB")
+      (DeviceIndex "0"))
+    (uA741
+      (FullPartName "uA741.Normal")
+      (LibraryName "D:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\PSPICE\OPAMP.OLB")
+      (DeviceIndex "0"))
+    (VSIN
+      (FullPartName "VSIN.Normal")
+      (LibraryName
+         "D:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (OPAMP
+      (FullPartName "OPAMP.Normal")
+      (LibraryName
+         "D:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (LM741
+      (FullPartName "LM741.Normal")
+      (LibraryName "D:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\PSPICE\OPAMP.OLB")
+      (DeviceIndex "0"))
+    (100101
+      (FullPartName "100101.Normal")
+      (LibraryName
+         "D:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\PSPICE\DIG_ECL.OLB")
+      (DeviceIndex "0"))
+    (VPULSE
+      (FullPartName "VPULSE.Normal")
+      (LibraryName
+         "D:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (D1N914/27C
+      (FullPartName "D1N914/27C.Normal")
+      (LibraryName "D:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\PSPICE\DIODE.OLB")
+      (DeviceIndex "0"))
+    (C
+      (FullPartName "C.Normal")
+      (LibraryName
+         "D:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (EB01/AM
+      (FullPartName "EB01/AM.Normal")
+      (LibraryName
+         "D:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\PSPICE\APEX_PWM.OLB")
+      (DeviceIndex "0"))
+    (54L71
+      (FullPartName "54L71.Normal")
+      (LibraryName "D:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\PSPICE\74L.OLB")
+      (DeviceIndex "0"))
+    (54L98
+      (FullPartName "54L98.Normal")
+      (LibraryName "D:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\PSPICE\74L.OLB")
+      (DeviceIndex "0"))
+    (VPWL
+      (FullPartName "VPWL.Normal")
+      (LibraryName
+         "D:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (10BQ040
+      (FullPartName "10BQ040.Normal")
+      (LibraryName "D:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\PSPICE\IRF.OLB")
+      (DeviceIndex "0"))
+    (VPRINT1
+      (FullPartName "VPRINT1.Normal")
+      (LibraryName
+         "D:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\PSPICE\SPECIAL.OLB")
+      (DeviceIndex "0")))
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources"
+         "C:\SPB_Data\cdssetup\OrCAD_Capture\16.6.0\tclscripts\caplearningresources\work\supportfiles\BasicElectronics\OpAmp\Designfiles\opampbasic.DSN")
+      (Path "Design Resources"
+         "C:\SPB_Data\cdssetup\OrCAD_Capture\16.6.0\tclscripts\caplearningresources\work\supportfiles\BasicElectronics\OpAmp\Designfiles\opampbasic.DSN"
+         "subtractor")
+      (Path "Design Resources"
+         "C:\SPB_Data\cdssetup\OrCAD_Capture\16.6.0\tclscripts\caplearningresources\work\supportfiles\BasicElectronics\OpAmp\Designfiles\opampbasic.DSN"
+         "adder")
+      (Path "Design Resources"
+         "C:\SPB_Data\cdssetup\OrCAD_Capture\16.6.0\tclscripts\caplearningresources\work\supportfiles\BasicElectronics\OpAmp\Designfiles\opampbasic.DSN"
+         "differential")
+      (Path "Design Resources"
+         "C:\SPB_Data\cdssetup\OrCAD_Capture\16.6.0\tclscripts\caplearningresources\work\supportfiles\BasicElectronics\OpAmp\Designfiles\opampbasic.DSN"
+         "inverting")
+      (Path "Design Resources"
+         "C:\SPB_Data\cdssetup\OrCAD_Capture\16.6.0\tclscripts\caplearningresources\work\supportfiles\BasicElectronics\OpAmp\Designfiles\opampbasic.DSN"
+         "noninverting")
+      (Path "Design Resources"
+         "C:\SPB_Data\cdssetup\OrCAD_Capture\16.6.0\tclscripts\caplearningresources\work\supportfiles\BasicElectronics\OpAmp\Designfiles\opampbasic.DSN"
+         "voltagefollower")
+      (Path "Design Resources"
+         "C:\SPB_Data\cdssetup\OrCAD_Capture\16.6.0\tclscripts\caplearningresources\work\supportfiles\BasicElectronics\OpAmp\Designfiles\opampbasic.DSN"
+         "Design Cache")
+      (Path "Outputs")
+      (Path "PSpice Resources")
+      (Path "PSpice Resources" "Model Libraries")
+      (Path "PSpice Resources" "Simulation Profiles")
+      (Select "PSpice Resources" "Simulation Profiles"
+         "C:\SPB_Data\cdssetup\OrCAD_Capture\16.6.0\tclscripts\caplearningresources\work\supportfiles\BasicElectronics\OpAmp\Designfiles\opampbasic-pspicefiles\inverting\tran.sim"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 2 3 -1 -1 -8 -30 0 200 0 410"))
+      (Tab 0)))
+  (LastUsedLibraryBrowseDirectory
+     "D:\Cadence\SPB_16.5\tools\capture\library\pspice")
+  (MPSSessionName "Administrator"))

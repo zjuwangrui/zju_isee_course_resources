@@ -1,0 +1,5 @@
+* source ACCIRCUITS
+R_R2         N04788 N04784  100 TC=0,0 
+C_C1         N04784 0  5u  TC=0,0 
+V_V1         N04788 0  AC 5
++SIN 0 5 50 0 0 0

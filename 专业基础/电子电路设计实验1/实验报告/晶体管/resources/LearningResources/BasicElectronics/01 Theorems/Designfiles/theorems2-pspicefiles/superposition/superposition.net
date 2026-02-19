@@ -1,0 +1,16 @@
+* source THEOREMS2
+R_R4         0 N02086  3ohm TC=0,0 
+R_R9         0 N03209  1ohm TC=0,0 
+R_R6         0 N02870  1ohm TC=0,0 
+R_R8         N02878 N02870  2ohm TC=0,0 
+V_V1         N02086 0 1Vdc
+R_R5         N02075 N02082  1ohm TC=0,0 
+R_R7         N02878 0  3ohm TC=0,0 
+R_R10         0 N03209  2ohm TC=0,0 
+R_R2         0 N02082  1ohm TC=0,0 
+R_R1         N05479 N03209  1ohm TC=0,0 
+R_R3         N02082 N02086  2ohm TC=0,0 
+R_R11         0 0  3ohm TC=0,0 
+V_V2         N02878 0 1Vdc
+I_I1         0 N02075 DC 1Adc  
+I_I2         0 N05479 DC 1Adc  

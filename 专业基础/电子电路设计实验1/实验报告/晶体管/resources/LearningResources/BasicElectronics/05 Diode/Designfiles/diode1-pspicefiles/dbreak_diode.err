@@ -1,0 +1,8 @@
+STATUS: PSpice Schematics to Capture translator (16.6.0.d001)
+STATUS:  
+STATUS: Translator started at Thursday, July 19, 2012 14:28:42
+INFO(ORSCH-1029): Using existing library 'D:\Cadence\SPB_16.6\tools\Capture\Library\PSpice\modeled.etc'.
+INFO(ORSCH-1031): Created new library 'D:\Cadence\SPB_16.6\tools\capture\tclscripts\capLearnPSpice\hybrid\supportfiles\BasicElectronics\Diode\Designfiles\Diode1\diode1-pspicefiles\Dbreak_diode.olb'.
+INFO(ORSCH-1029): Using existing library 'D:\Cadence\SPB_16.6\tools\capture\library\pspice\jdiode.olb'.
+STATUS: Translator stopped at Thursday, July 19, 2012 14:31:18
+STATUS: 0 Error messages, 0 Warning messages

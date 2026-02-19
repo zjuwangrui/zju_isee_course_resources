@@ -1,0 +1,6 @@
+* source DIODE1
+V_V1         N01573 0 {Vsource}
+V_V2         N02581 0 {Vsource}
+D_D1         N01573 0 DBREAK_DIODE 
+D_D2         0 N02581 DBREAK_DIODE 
+.PARAM  vsource=3

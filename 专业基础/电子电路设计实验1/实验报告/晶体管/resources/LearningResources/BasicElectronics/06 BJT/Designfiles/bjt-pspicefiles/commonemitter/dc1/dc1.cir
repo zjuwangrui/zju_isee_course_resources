@@ -1,0 +1,20 @@
+** Profile: "commonemitter-dc1"  [ D:\Cadence\SPB_16.6\tools\capture\tclscripts\caplearningresources\hybrid\supportfiles\BasicElectronics\BJT\Designfiles\bjt-pspicefiles\commonemitter\dc1.sim ] 
+
+** Creating circuit file "dc1.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\SPB_Data\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.DC LIN V_V1 -1V 20V 1V 
++ LIN V_V2 0.5v 1v 0.05v 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\commonemitter.net" 
+
+
+.END

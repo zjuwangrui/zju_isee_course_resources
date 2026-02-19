@@ -1,0 +1,122 @@
+(ExpressProject ""
+  (ProjectVersion "19981106")
+  (ProjectType "Analog or A/D Mixed Mode")
+  (Folder "Design Resources"
+    (Folder "Library")
+    (File ".\theorems2.DSN"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (NoModify)
+    (PSPICE_Regenerate_Netlist_Flag "FALSE")
+    (RootChangedForceReNetlist "x"))
+  (Folder "Outputs"
+    (File ".\theorems2-PSpiceFiles\Ohms_Law\Ohms_Law.net"
+      (Type "Report"))
+    (File ".\theorems2-PSpiceFiles\KVL\KVL.net"
+      (Type "Report"))
+    (File ".\theorems2-PSpiceFiles\KCL\KCL.net"
+      (Type "Report"))
+    (File ".\theorems2-PSpiceFiles\Thevenin\Thevenin.net"
+      (Type "Report"))
+    (File ".\theorems2-PSpiceFiles\Norton\Norton.net"
+      (Type "Report"))
+    (File ".\theorems2-PSpiceFiles\Superposition\Superposition.net"
+      (Type "Report"))
+    (File ".\theorems2-PSpiceFiles\Millman\Millman.net"
+      (Type "Report")))
+  (Folder "Referenced Projects")
+  (Folder "PSpice Resources"
+    (Folder "Model Libraries"
+      (Sort User))
+    (Folder "Stimulus Files"
+      (Sort User))
+    (Folder "Include Files"
+      (Sort User))
+    (Folder "Simulation Profiles"
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\theorems2-pspicefiles\millman\tran.sim"
+        (DisplayName "Millman-tran")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\theorems2-pspicefiles\norton\tran.sim"
+        (DisplayName "Norton-Tran")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\theorems2-pspicefiles\superposition\tran.sim"
+        (DisplayName "Superposition-Tran")
+        (Type "PSpice Profile"))
+      (ActiveProfile ".\theorems2-pspicefiles\millman\tran.sim")))
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources"
+         "C:\SPB_Data\cdssetup\OrCAD_Capture\16.6.0\tclscripts\caplearningresources\work\supportfiles\BasicElectronics\Theorems\Designfiles\theorems2.DSN")
+      (Path "Design Resources"
+         "C:\SPB_Data\cdssetup\OrCAD_Capture\16.6.0\tclscripts\caplearningresources\work\supportfiles\BasicElectronics\Theorems\Designfiles\theorems2.DSN"
+         "Millman")
+      (Path "Design Resources"
+         "C:\SPB_Data\cdssetup\OrCAD_Capture\16.6.0\tclscripts\caplearningresources\work\supportfiles\BasicElectronics\Theorems\Designfiles\theorems2.DSN"
+         "Norton")
+      (Path "Design Resources"
+         "C:\SPB_Data\cdssetup\OrCAD_Capture\16.6.0\tclscripts\caplearningresources\work\supportfiles\BasicElectronics\Theorems\Designfiles\theorems2.DSN"
+         "Superposition")
+      (Path "Design Resources"
+         "C:\SPB_Data\cdssetup\OrCAD_Capture\16.6.0\tclscripts\caplearningresources\work\supportfiles\BasicElectronics\Theorems\Designfiles\theorems2.DSN"
+         "Design Cache")
+      (Path "Outputs")
+      (Path "PSpice Resources")
+      (Path "PSpice Resources" "Simulation Profiles")
+      (Select "PSpice Resources" "Simulation Profiles"
+         "C:\SPB_Data\cdssetup\OrCAD_Capture\16.6.0\tclscripts\caplearningresources\work\supportfiles\BasicElectronics\Theorems\Designfiles\theorems2-pspicefiles\norton\tran.sim"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 2 3 -1 -1 -8 -30 0 200 0 487"))
+      (Tab 0)))
+  (PartMRUSelector
+    (Cadence
+      (LibraryName "D:\TEMP\TEMP_ACT\TITLE_BLOCKS\LIB\LIBRARY6.OLB")
+      (DeviceIndex "0"))
+    (IND_R
+      (FullPartName "IND_R.Normal")
+      (LibraryName
+         "D:\CADENCE\SPB_16.6\TOOLS\CAPTURE\TCLSCRIPTS\CAPPSPICEMODELAPP\INDUCTOR\SUPPORTFILES\INDUCTOR.OLB")
+      (DeviceIndex "0"))
+    (IND
+      (FullPartName "IND.Normal")
+      (LibraryName
+         "D:\CADENCE\SPB_16.6\TOOLS\CAPTURE\TCLSCRIPTS\CAPPSPICEMODELAPP\INDUCTOR\SUPPORTFILES\INDUCTOR.OLB")
+      (DeviceIndex "0"))
+    (LH_3344-TYP
+      (FullPartName "LH_3344-TYP.Normal")
+      (LibraryName
+         "D:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\OSRAM_3MMRADIAL.OLB")
+      (DeviceIndex "0"))
+    (SG3524
+      (FullPartName "SG3524.Normal")
+      (LibraryName
+         "D:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\PSPICE\ADVANLS\CONTROLLER.OLB")
+      (DeviceIndex "0"))
+    (R
+      (FullPartName "R.Normal")
+      (LibraryName
+         "D:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (VDC
+      (FullPartName "VDC.Normal")
+      (LibraryName
+         "D:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (0
+      (LibraryName "D:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (MX1500
+      (FullPartName "MX1500.Normal")
+      (LibraryName
+         "D:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\BATTERY.OLB")
+      (DeviceIndex "0")))
+  (LastUsedLibraryBrowseDirectory
+     "D:\Cadence\SPB_16.6\tools\capture\library\pspice")
+  (MPSSessionName "Administrator"))

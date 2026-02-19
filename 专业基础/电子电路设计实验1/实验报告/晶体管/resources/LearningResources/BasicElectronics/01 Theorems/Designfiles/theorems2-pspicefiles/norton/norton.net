@@ -1,0 +1,22 @@
+* source THEOREMS2
+I_I2         0 N00140 DC 2Adc  
+R_Rn         0 N03242  4ohm TC=0,0 
+R_R4         0 N00153  4ohm TC=0,0 
+I_I4         0 N02855 DC 2Adc  
+I_I3         0 N02859 DC 3Adc  
+I_I1         0 N00153 DC 3Adc  
+V_V3         N02869 N02855 10Vdc
+R_R10         0 N02859  8ohm TC=0,0 
+R_R5         N01797 N01801  5ohm TC=0,0 
+R_R2         0 N00140  3ohm TC=0,0 
+R_R6         0 N01797  3ohm TC=0,0 
+R_R11         0 N03242  4ohm TC=0,0 
+R_R8         N02869 N02859  5ohm TC=0,0 
+R_R9         0 N02855  3ohm TC=0,0 
+R_R3         0 N00153  8ohm TC=0,0 
+R_R7         0 N01801  8ohm TC=0,0 
+V_V2         N01801 0 8Vdc
+V_V1         N00149 N00140 10Vdc
+R_R1         N00149 N00153  5ohm TC=0,0 
+I_In         0 N03242 DC 5Adc  
+R_R12         0 N02859  0.001u TC=0,0 

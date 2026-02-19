@@ -1,0 +1,10 @@
+* source THREEPHASECIRCUITS
+V_V6         B 0  AC 0
++SIN 0 5V 50 0 0 -120
+R_RB         C B  10 TC=0,0 
+V_V4         A 0  AC 0
++SIN 0 5V 50 0 0 0
+V_V5         C 0  AC 0
++SIN 0 5V 50 0 0 -240
+R_RA         B A  10 TC=0,0 
+R_RC         A C  10 TC=0,0 

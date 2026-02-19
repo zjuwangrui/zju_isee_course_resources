@@ -1,0 +1,138 @@
+@OrCAD Simulation Server Version: 1.0
+
+@Settings: 0 1
+@General:
+ProfileName= "step_current" 
+ProfileFile= "step_current.sim" 
+Connectivity= "Step_Load.net" 
+NetlistFile= "step_current.cir" 
+DataFile= "step_current.dat" 
+OutFile= "step_current.out" 
+Notes=
+@#$BEGINNOTES
+@#$ENDNOTES
+@End General
+@Analysis: 0 1
++0 0 0 0 
++0 "20ms" 
++1 "" 
++2 "10m" 
++3 "" 
++4 "" 
++5 "" 
++6 "" 
+@End Analysis
+@Analysis: 1 0
++2 0 0
++0 "" 
++1 "" 
++2 "" 
++3 "" 
++4 "" 
++5 "" 
+@End Analysis
+@Analysis: 2 0
++0 0
++0 "" 
++1 "" 
++2 "" 
++3 "" 
++4 "" 
++5 "" 
++6 "" 
++7 "" 
+@End Analysis
+@Analysis: 3 0
++0 0 0
++0 "" 
++1 "" 
++2 "" 
+@End Analysis
+@Analysis: 4 0
++0 0 1 0 0 0 0 0 0 0 1
++0 "" 
++1 "" 
++2 "" 
++3 "" 
++4 "" 
++5 "" 
++6 "" 
++7 "" 
+LoadFile 0 "" 
+SaveFile 0 "" 
+@End Analysis
+@Analysis: 5 0
++3 2
++0 "" 
++1 "FEEDBACK" 
++2 "" 
++3 "" 
++4 "" 
++5 "" 
++6 "" 
++7 "22n,33n,44n" 
+@End Analysis
+@Analysis: 6 0
++1 
++0 "" 
+@End Analysis
+@Analysis: 7 0
++0 0
++0 "" 
++1 "" 
++2 "" 
++3 "" 
++4 "" 
++5 "" 
+@End Analysis
+@Analysis: 8 0
++0 
++0 "" 
++1 "" 
++2 "" 
++3 "" 
++4 "" 
++5 "" 
+@End Analysis
+@Analysis: 9 0
++0 "" 
+@End Analysis
+@Analysis: 10 0
++0 0
++0 "" 
++1 "" 
++2 "" 
++3 "" 
++4 "" 
++5 "" 
++6 "" 
++7 "" 
+@End Analysis
+@Analysis: 11 1
++ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 
++ ABSTOL "1.0n"
++ ITL4 "40"
++ 0 0 0 0 0 0 0 0 0
+@End Analysis
+@Analysis: 12 0
++8921632 0 1
+@End Analysis
+@Analysis: 13 1
++0 1 0 1
+@End Analysis
+@Analysis: 14 1
++1 1 1 "*" 
+@End Analysis
+@Analysis: 15 0
+@End Analysis
+@Analysis: 16 0
++0 "0" 
++1 "0" 
+@End Analysis
+@Analysis: 17 0
++0 "-1" 
++1 "" 
++2 "-1" 
++3 "-1" 
++4 "1" 
+@End Analysis

@@ -1,0 +1,18 @@
+** Profile: "RLC-tran"  [ h:\orcadœ‡πÿŒƒµµ\spb_data\cdssetup\orcad_capture\16.6.0\tclscripts\caplearningresources\work\supportfiles\basicelectronics\accircuits\designfiles\accircuits-pspicefiles\rlc\tran.sim ] 
+
+** Creating circuit file "tran.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of d:\Cadence\SPB_16.5\tools\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 70m 0 2u 
+.PROBE V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\RLC.net" 
+
+
+.END

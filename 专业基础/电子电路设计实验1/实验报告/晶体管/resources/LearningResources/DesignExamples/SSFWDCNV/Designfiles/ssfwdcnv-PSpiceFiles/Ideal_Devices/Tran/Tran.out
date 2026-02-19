@@ -1,0 +1,191 @@
+
+**** 02/14/12 14:02:05 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
+
+ ** Profile: "Ideal_Devices-Tran"  [ D:\Work\Modelling\SMPS_DEsign_Kit\Demo_feb_12\AC_DC_VRM-PSpiceFiles\Ideal_Devices\Tran.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "Tran.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../ac_dc_vrm-pspicefiles/ac_dc_vrm.lib" 
+.LIB "../../../AC_DC_VRM-pspiceFiles/fwd_floating/tfrmr_subckt.lib" 
+.LIB "../../../AC_DC_VRM-pspiceFiles/uc3843_test.lib" 
+.LIB "../../../opto.lib" 
+.LIB "../../../uc3843.lib" 
+* From [PSPICE NETLIST] section of d:\Cadence\SPB_16.5\tools\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 100m 0 
+.PROBE V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\Ideal_Devices.net" 
+
+
+
+**** INCLUDING Ideal_Devices.net ****
+* source AC_DC_VRM
+R_R28         OUT 0  {RLOAD} TC=0,0 
+X_U3         VDC N10883112 N10909862 0 TRAN1 
+L_L1         N10823565 OUT  60u  
+C_C13         N109442461 N10824463  2n  
+R_R30         N10823789 VFB  470 TC=0,0 
+R_R36         N10824463 0  0.01 TC=0,0 
+C_C11         VDC 0  470u  TC=0,0 
+C_C5         OUT 0  22u  TC=0,0 
+R_R53         0 N10823789  5K TC=0,0 
+V_V6         N10871733 N10871817  AC 0
++SIN 0 154V 50Hz 0 0 60
+R_R29         VFB OUT  100k TC=0,0 
+R_R52         N109442461 N10883112  20  
+R_R32         N10890530 N10878265  33 TC=0,0 
+D_D17         0 N10871733 Dbreak 
+D_D18         0 N10871817 Dbreak 
+D_D19         N10871817 VDC Dbreak 
+D_D20         N10871733 VDC Dbreak 
+D_D21         N10909862 N10823565 Dbreak 
+D_D22         0 N10823565 Dbreak 
+M_M1         N10883112 N10890530 N10824463 N10824463 power_Mbreakn           
+V_V7         N10878265 N10824463  
++PULSE 0 15 0 10n 10n 2.6u 6.67u
+.PARAM  rload=8 feedback=23n
+
+**** RESUMING Tran.cir ****
+.END
+
+**** 02/14/12 14:02:05 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
+
+ ** Profile: "Ideal_Devices-Tran"  [ D:\Work\Modelling\SMPS_DEsign_Kit\Demo_feb_12\AC_DC_VRM-PSpiceFiles\Ideal_Devices\Tran.sim ] 
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               Dbreak          
+          IS   10.000000E-15 
+          RS     .1          
+         CJO  100.000000E-15 
+
+
+**** 02/14/12 14:02:05 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
+
+ ** Profile: "Ideal_Devices-Tran"  [ D:\Work\Modelling\SMPS_DEsign_Kit\Demo_feb_12\AC_DC_VRM-PSpiceFiles\Ideal_Devices\Tran.sim ] 
+
+
+ ****     MOSFET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               power_Mbreakn   
+               NMOS            
+       LEVEL    3            
+           L    1.000000E-06 
+           W    1            
+         VTO    3            
+          KP   20.718860E-06 
+       GAMMA    0            
+         PHI     .6          
+      LAMBDA    0            
+          RD     .1          
+          RS     .01         
+          RG     .5          
+         RDS    1.000000E+06 
+          IS   10.000000E-15 
+          JS    0            
+          PB     .8          
+        PBSW     .8          
+         CBD    1.000000E-09 
+          CJ    0            
+        CJSW    0            
+          TT    1.000000E-09 
+        CGSO    1.000000E-09 
+        CGDO  100.000000E-12 
+        CGBO    0            
+         TOX  100.000000E-09 
+          XJ    0            
+       UCRIT   10.000000E+03 
+      DIOMOD    1            
+         VFB    0            
+        LETA    0            
+        WETA    0            
+          U0    0            
+        TEMP    0            
+         VDD    5            
+       XPART    0            
+
+
+**** 02/14/12 14:02:05 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
+
+ ** Profile: "Ideal_Devices-Tran"  [ D:\Work\Modelling\SMPS_DEsign_Kit\Demo_feb_12\AC_DC_VRM-PSpiceFiles\Ideal_Devices\Tran.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  OUT)-566.9E-30  (  VDC)  132.1600  (  VFB)-29.40E-30  (N10823565)-566.9E-30  
+
+(N10823789)-26.88E-30                 (N10824463) 1.322E-06                     
+
+(N10871733)  132.7700                 (N10871817)    -.6028                     
+
+(N10878265) 1.322E-06                 (N10883112)  132.1600                     
+
+(N10890530) 1.322E-06                 (N10909862)    0.0000                     
+
+(N109442461)  132.1600                
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V6        -1.322E-04
+    V_V7         0.000E+00
+
+    TOTAL POWER DISSIPATION   1.76E-02  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 02/14/12 14:02:05 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
+
+ ** Profile: "Ideal_Devices-Tran"  [ D:\Work\Modelling\SMPS_DEsign_Kit\Demo_feb_12\AC_DC_VRM-PSpiceFiles\Ideal_Devices\Tran.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =       79.97
+

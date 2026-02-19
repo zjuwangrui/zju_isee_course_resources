@@ -1,0 +1,80 @@
+table
+\begin{table}[H]
+\footnotesize
+\caption{上限截止频率测量值仿真值对比表格 } 
+\centering  
+\renewcommand{\arraystretch}{1.1}
+\begin{tabular}{*{3}{l}} 
+\hline\hline   
+$f_H测量值$&$F_H$仿真值  \\ 
+\hline
+无$C_u$& &\\
+\hline  
+有$C_u$&&\\
+\hline
+    \end{tabular}
+    \label{table:fH}
+\end{table}
+
+image
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.4\textwidth, height=0.2\textheight]{figure/sti/task3_cir.png}
+    \caption{增益带宽积仿真电路图}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[b]{0.32\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figure/sti/task2_cir.png}
+        \caption{加法器仿真电路图}
+        \label{fig:task2_sti_cir}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.32\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figure/sti/task2_img.png}
+        \caption{加法器仿真波形图}
+        \label{fig:task2_sti_waveform}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.32\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figure/sti/task2_mea.png}
+        \caption{加法器仿真测量结果}
+        \label{fig:task2_sti_mea}
+    \end{subfigure}
+    \caption{加法器仿真}
+    \label{fig:task2_sti}
+\end{figure}
+
+
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[b]{0.32\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figure/sti/task3_1_wave.png}
+        \caption{$R_f=10 k \Oemga$时仿真电压增益频率特性曲线}
+        
+    \end{subfigure}
+    \hfill
+
+    \begin{subfigure}[b]{0.32\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figure/task3_1_mea.png}
+        \caption{$R_f=10 k \Oemga$时仿真电压增益与上限频率测量结果}
+        
+    \end{subfigure}
+    \hfill
+
+    \caption{$R_f=10 k \Oemga$时仿真曲线与测量结果}
+    
+\end{figure}
+
+
+图片高度修正，对齐方式
+页眉字太多太挤
+V(C2:2) / V(Vi:+)
+V(Vi:+)/I(C1)
+VC(Q1) / V(Vi:+)

@@ -1,0 +1,152 @@
+
+**** 12/09/15 22:10:55 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "RLC-Tran"  [ C:\SPB_Data\cdssetup\OrCAD_Capture\16.6.0\tclscripts\caplearningresources\work\supportfiles\BasicElectroni
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "tran.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\SPB_Data\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 160u 0 
+.STEP LIN PARAM rvariable 0.5 3.5 1.5 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\RLC.net" 
+
+
+
+**** INCLUDING RLC.net ****
+* source RLCCIRCUITS
+L_L2         N02575 N02581  10uH IC=0 
+C_C2         N02633 N02575  10u IC=0 TC=0,0 
+R_R3         N02581 0   {rvariable} TC=0,0 
+V_V1         N02633 0 5Vdc
+.PARAM  rvariable=3.5ohm
+
+**** RESUMING tran.cir ****
+.END
+
+**** 12/09/15 22:10:55 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "RLC-Tran"  [ C:\SPB_Data\cdssetup\OrCAD_Capture\16.6.0\tclscripts\caplearningresources\work\supportfiles\BasicElectroni
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM RVARIABLE =     .5   
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N02575)    5.0000 (N02581) 2.500E-09 (N02633)    5.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -5.000E-09
+
+    TOTAL POWER DISSIPATION   2.50E-08  WATTS
+
+
+**** 12/09/15 22:10:55 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "RLC-Tran"  [ C:\SPB_Data\cdssetup\OrCAD_Capture\16.6.0\tclscripts\caplearningresources\work\supportfiles\BasicElectroni
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM RVARIABLE =    2     
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N02575)    5.0000 (N02581) 10.00E-09 (N02633)    5.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -5.000E-09
+
+    TOTAL POWER DISSIPATION   2.50E-08  WATTS
+
+
+**** 12/09/15 22:10:55 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "RLC-Tran"  [ C:\SPB_Data\cdssetup\OrCAD_Capture\16.6.0\tclscripts\caplearningresources\work\supportfiles\BasicElectroni
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM RVARIABLE =    3.5   
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N02575)    5.0000 (N02581) 17.50E-09 (N02633)    5.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -5.000E-09
+
+    TOTAL POWER DISSIPATION   2.50E-08  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 12/09/15 22:10:55 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "RLC-Tran"  [ C:\SPB_Data\cdssetup\OrCAD_Capture\16.6.0\tclscripts\caplearningresources\work\supportfiles\BasicElectroni
+
+
+ ****     JOB STATISTICS SUMMARY
+
+ ****     CURRENT STEP                     PARAM RVARIABLE =    3.5   
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .02
+

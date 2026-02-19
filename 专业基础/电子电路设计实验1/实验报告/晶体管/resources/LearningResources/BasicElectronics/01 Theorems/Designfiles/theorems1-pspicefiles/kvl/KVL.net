@@ -1,0 +1,6 @@
+* source THEOREMS1
+R_R6         N00784 N01816  3ohm TC=0,0 
+V_V3         N01816 0 5vdc
+V_V4         N00767 0 25vdc
+R_R4         N00767 N00774  4ohm TC=0,0 
+R_R5         N00774 N00784  3ohm TC=0,0 

@@ -1,0 +1,64 @@
+* source DIODE1
+R_R1         0 N00099  1k TC=0,0 
+V_V24         N00092 0  
++PULSE -8 8 0 10n 10n 25u 50u
+R_R2         0 N00285  1k TC=0,0 
+R_R3         0 N00484  1k TC=0,0 
+V_V4         N00460 N00464 3Vdc
+V_V6         N00832 N00812 3Vdc
+R_R4         0 N00852  1k TC=0,0 
+V_V8         N01083 N01103 3Vdc
+R_R5         0 N01123  1k TC=0,0 
+V_V10         N01349 N01413 3Vdc
+R_R6         0 N01369  1k TC=0,0 
+R_R9         N01575 N01607  1k TC=0,0 
+D_D16         N01607 0 Dbreak 
+R_R8         N01760 N01792  1k TC=0,0 
+R_R10         N02241 N02305  1k TC=0,0 
+V_V14         0 N02575 3Vdc
+V_V16         N02849 0 3Vdc
+R_R11         N02845 N02801  1k TC=0,0 
+V_V18         N03088 0 3Vdc
+R_R12         N03020 N03040  1k TC=0,0 
+V_V20         0 N03321 3Vdc
+R_R13         N03253 N03273  1k TC=0,0 
+V_V22         N03564 0 3Vdc
+V_V23         0 N03668 3Vdc
+R_R14         N03496 N03516  1k TC=0,0 
+D_D17         N00092 N00099 Dbreak 
+V_V25         N00261 0  
++PULSE -8 8 0 1n 1n 25u 50u
+D_D18         N00285 N00261 Dbreak 
+D_D19         N01103 N01123 Dbreak 
+V_V26         N01083 0  
++PULSE -8 8 0 10n 10n 25u 50u
+D_D20         N01349 N01369 Dbreak 
+V_V27         N01413 0  
++PULSE -8 8 0 1n 1n 25u 50u
+D_D21         N00484 N00464 Dbreak 
+V_V28         N00460 0  
++PULSE -8 8 0 1n 1n 25u 50u
+D_D22         N00852 N00832 Dbreak 
+V_V29         N00812 0  
++PULSE -8 8 0 1n 1n 25u 50u
+V_V30         N01575 0  
++PULSE -8 8 0 10n 10n 25u 50u
+V_V31         N01760 0  
++PULSE -8 8 0 1n 1n 25u 50u
+D_D23         0 N01792 Dbreak 
+D_D24         N02575 N02305 Dbreak 
+V_V32         N02241 0  
++PULSE -8 8 0 1n 1n 25u 50u
+D_D25         N02849 N02801 Dbreak 
+V_V33         N02845 0  
++PULSE -8 8 0 1n 1n 25u 50u
+V_V34         N03020 0  
++PULSE -8 8 0 1n 1n 25u 50u
+V_V35         N03253 0  
++PULSE -8 8 0 1n 1n 25u 50u
+V_V36         N03496 0  
++PULSE -8 8 0 10n 10n 25u 50u
+D_D26         N03668 N03516 Dbreak 
+D_D27         N03516 N03564 Dbreak 
+D_D28         N03273 N03321 Dbreak 
+D_D29         N03040 N03088 Dbreak 

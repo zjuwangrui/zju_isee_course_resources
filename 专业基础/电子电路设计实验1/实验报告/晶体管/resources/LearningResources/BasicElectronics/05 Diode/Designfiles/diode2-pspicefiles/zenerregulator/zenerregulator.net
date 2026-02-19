@@ -1,0 +1,8 @@
+* source DIODE2
+R_R1         N02779 N02625  1k TC=0,0 
+R_R2         0 N02625  {rvariable} TC=0,0 
+V_V1         N02775 0 10Vdc
+V_V3         N02779 N02775  
++PULSE 0 5 0 1n 1n 50u 100u
+D_D1         0 N02625 DbreakZ 
+.PARAM  rvariable=10k

@@ -1,0 +1,12 @@
+* source OPAMPBASIC
+R_R2         0 N00139  200k TC=0,0 
+V_V3         0 N08535 20vdc
+R_R3         N00180 N00619  100k TC=0,0 
+V_V4         N08313 0 20vdc
+R_R1         N00146 N00139  50k TC=0,0 
+X_U1         N00139 N00180 N08313 N08535 N00168 uA741
+R_R4         N00180 N00168  500k TC=0,0 
+V_V5         N00146 0  AC 0
++SIN 0 5V 100hz 0 0 0
+V_V6         N00619 0  AC 0
++SIN 0 1V 100hz 0 0 0

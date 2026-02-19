@@ -1,0 +1,931 @@
+
+**** 02/02/12 11:21:54 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
+
+ ** Profile: "fwd_floating-line_load_regulation"  [ D:\pv_work\Modelling\SMPS_DEsign_Kit\Demo_feb_12\ac_dc_vrm-pspicefiles\fwd_floati
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "line_load_regulation.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../AC_DC_VRM-pspiceFiles/fwd_floating/tfrmr_subckt.lib" 
+.LIB "../../../AC_DC_VRM-pspiceFiles/uc3843_test.lib" 
+.LIB "../../../opto.lib" 
+.LIB "../../../uc3843.lib" 
+* From [PSPICE NETLIST] section of D:\Cadence\SPB_16.5\tools\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 40ms 20m 
+.STEP PARAM RLOAD LIST 8,16,48 
+.OPTIONS ABSTOL= 1.0n
+.OPTIONS ITL4= 40
+.PROBE V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\fwd_floating.net" 
+
+
+
+**** INCLUDING fwd_floating.net ****
+* source AC_DC_VRM
+R_R36         N10824463 0  0.01 TC=0,0 
+L_L1         N10823565 OUT  60u  
+R_R30         N10823789 VFB  470 TC=0,0 
+R_R29         VFB OUT  100k TC=0,0 
+R_R28         OUT 0  {RLOAD} TC=0,0 
+C_C2         0 N10823433  2.2n IC=0.0 TC=0,0 
+R_R3         N10823433 N10833624  5.1K TC=0,0 
+X_U2         N10846839 0 N10824463 N10878265 N10823433 N10872580 N10832905
++  N10833624 UC3843
+C_C5         N10823997 0  22u  TC=0,0 
+R_R32         N10890530 N10878265  33 TC=0,0 
+R_R48         N10823997 OUT  1m TC=0,0 
+R_R45         N10832905 VFB  1k TC=0,0 
+R_R44         N10865580 N10832905  9K TC=0,0 
+C_C9         N10846839 N10832905  245p  TC=0,0 
+C_C10         N10846839 N10865580  15n  TC=0,0 
+V_V6         N108717870 N10871817  AC 0
++SIN 0 154V 50Hz 0 0 60
+C_C11         N10871839 0  470u  TC=0,0 
+R_R49         N10872580 VDC  40K TC=0,0 
+R_R50         0 N10872580  3K TC=0,0 
+C_C12         N10872580 0  22u  TC=0,0 
+R_R52         N108830621 N10883112  20  
+C_C13         N108830621 N10824463  2n  
+R_R51         N10871839 VDC  0.025 TC=0,0 
+D_D15         N10871733 VDC UT4060 
+D_D14         N10871817 VDC UT4060 
+D_D13         0 N10871817 UT4060 
+D_D16         0 N10871733 UT4060 
+M_M1         N10883112 N10890530 N10824463 N10824463 IRF342
+V_V7         N10871733 N108717870  
++PULSE 0 15 120m 2m 2m 100m 10
+D_D1         N10909862 N10823565 MUR430 
+D_D2         0 N10823565 MUR430 
+X_U3         VDC N10883112 N10909862 0 TRAN1 
+C_C14         N10824463 0  2n  
+R_R53         0 N10823789  5K TC=0,0 
+.PARAM  rload=8 feedback=23n
+
+**** RESUMING line_load_regulation.cir ****
+.END
+
+
+**** Generated AtoD and DtoA Interfaces ****
+
+*
+* Analog/Digital interface for node X_U2.N10780173
+*
+* Moving X_U2.X_U74D.U1:IN2 from analog node X_U2.N10780173 to new digital node X_U2.N10780173$AtoD
+X$X_U2.N10780173_AtoD1
++ X_U2.N10780173
++ X_U2.N10780173$AtoD
++ $G_DPWR
++ $G_DGND
++ AtoD_STD
++       PARAMS: CAPACITANCE=   0     
+*
+* Analog/Digital interface for node X_U2.X_SET
+*
+* Moving X_U2.X_U73.U1:OUT1 from analog node X_U2.X_SET to new digital node X_U2.X_SET$DtoA
+X$X_U2.X_SET_DtoA1
++ X_U2.X_SET$DtoA
++ X_U2.X_SET
++ $G_DPWR
++ $G_DGND
++ DtoA_STD
++       PARAMS: DRVH=  96.4   DRVL= 104    CAPACITANCE=   0     
+*
+* Analog/Digital interface for node X_U2.N10780191
+*
+* Moving X_U2.X_U74C.U1:IN1 from analog node X_U2.N10780191 to new digital node X_U2.N10780191$AtoD
+X$X_U2.N10780191_AtoD1
++ X_U2.N10780191
++ X_U2.N10780191$AtoD
++ $G_DPWR
++ $G_DGND
++ AtoD_STD
++       PARAMS: CAPACITANCE=   0     
+*
+* Analog/Digital interface for node X_U2.N10787785
+*
+* Moving X_U2.X_U74A.U1:IN1 from analog node X_U2.N10787785 to new digital node X_U2.N10787785$AtoD
+X$X_U2.N10787785_AtoD1
++ X_U2.N10787785
++ X_U2.N10787785$AtoD
++ $G_DPWR
++ $G_DGND
++ AtoD_STD
++       PARAMS: CAPACITANCE=   0     
+*
+* Analog/Digital interface for node X_U2.N10787761
+*
+* Moving X_U2.X_U74B.U1:IN2 from analog node X_U2.N10787761 to new digital node X_U2.N10787761$AtoD
+X$X_U2.N10787761_AtoD1
++ X_U2.N10787761
++ X_U2.N10787761$AtoD
++ $G_DPWR
++ $G_DGND
++ AtoD_STD
++       PARAMS: CAPACITANCE=   0     
+*
+* Analog/Digital interface for node X_U2.N10787719
+*
+* Moving X_U2.X_U74B.U1:IN1 from analog node X_U2.N10787719 to new digital node X_U2.N10787719$AtoD
+X$X_U2.N10787719_AtoD1
++ X_U2.N10787719
++ X_U2.N10787719$AtoD
++ $G_DPWR
++ $G_DGND
++ AtoD_STD
++       PARAMS: CAPACITANCE=   0     
+*
+* Analog/Digital interface for node X_U2.N10787739
+*
+* Moving X_U2.X_U74A.U1:OUT1 from analog node X_U2.N10787739 to new digital node X_U2.N10787739$DtoA
+X$X_U2.N10787739_DtoA1
++ X_U2.N10787739$DtoA
++ X_U2.N10787739
++ $G_DPWR
++ $G_DGND
++ DtoA_STD
++       PARAMS: DRVH=  96.4   DRVL= 104    CAPACITANCE=   0     
+*
+* Analog/Digital interface for node X_U2.N10780131
+*
+* Moving X_U2.X_U74D.U1:IN1 from analog node X_U2.N10780131 to new digital node X_U2.N10780131$AtoD
+X$X_U2.N10780131_AtoD1
++ X_U2.N10780131
++ X_U2.N10780131$AtoD
++ $G_DPWR
++ $G_DGND
++ AtoD_STD
++       PARAMS: CAPACITANCE=   0     
+* Moving X_U2.X_U74C.U1:OUT1 from analog node X_U2.N10780131 to new digital node X_U2.N10780131$DtoA
+X$X_U2.N10780131_DtoA1
++ X_U2.N10780131$DtoA
++ X_U2.N10780131
++ $G_DPWR
++ $G_DGND
++ DtoA_STD
++       PARAMS: DRVH=  96.4   DRVL= 104    CAPACITANCE=   0     
+*
+* Analog/Digital interface power supply subcircuits
+*
+X$DIGIFPWR 0 DIGIFPWR
+
+
+**** 02/02/12 11:21:54 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
+
+ ** Profile: "fwd_floating-line_load_regulation"  [ D:\pv_work\Modelling\SMPS_DEsign_Kit\Demo_feb_12\ac_dc_vrm-pspicefiles\fwd_floati
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               UT4060          MUR430          
+          IS   92.910000E-15  289.100000E-15 
+         ISR   10.960000E-09  965.700000E-12 
+         IKF     .01623         5.678000E-03 
+          RS     .05812          .03323      
+          TT  750.000000E-09  123.300000E-09 
+         CJO   66.410000E-12   70.720000E-12 
+          VJ     .75             .75         
+           M     .5022           .5733       
+         XTI    5               5            
+
+
+               X_U2.X_U8.x_lm741.dx 
+          IS  800.000000E-18 
+          RS    1            
+
+
+               X_U2.X_U8.x_lm741.dy            D74CLMP         D74             
+          IS  800.000000E-18                    1.000000E-15  100.000000E-18 
+          RS    1.000000E-03                    2              25            
+         CJO   10.000000E-12                    2.000000E-12    2.000000E-12 
+
+
+**** 02/02/12 11:21:54 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
+
+ ** Profile: "fwd_floating-line_load_regulation"  [ D:\pv_work\Modelling\SMPS_DEsign_Kit\Demo_feb_12\ac_dc_vrm-pspicefiles\fwd_floati
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U2.X_U8.x_lm741.qx            Q74             
+               NPN                             NPN             
+       LEVEL    1                               1            
+          IS  800.000000E-18                  100.000000E-18 
+          BF   93.75                           49            
+          NF    1                               1            
+         ISE  100.000000E-18 
+          BR    1                                .03         
+          NR    1                               1            
+         ISC  400.000000E-18 
+         ISS    0                               0            
+          RB   50            
+          RE    0                               0            
+          RC    0                              20            
+         CJE    0                               1.000000E-12 
+         VJE     .75                             .9          
+         MJE     .5          
+         CJC    0                             500.000000E-15 
+         VJC     .75                             .8          
+         MJC     .33                             .33         
+        XCJC    1                               1            
+         CJS    0                               3.000000E-12 
+         VJS     .75                             .7          
+         MJS     .33         
+          TF  200.000000E-12 
+          TR   10.000000E-09 
+          KF    0                               0            
+          AF    1                               1            
+          CN    2.42                            2.42         
+           D     .87                             .87         
+
+
+**** 02/02/12 11:21:54 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
+
+ ** Profile: "fwd_floating-line_load_regulation"  [ D:\pv_work\Modelling\SMPS_DEsign_Kit\Demo_feb_12\ac_dc_vrm-pspicefiles\fwd_floati
+
+
+ ****     MOSFET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               IRF342          
+               NMOS            
+       LEVEL    3            
+           L    2.000000E-06 
+           W     .68         
+         VTO    3.503        
+          KP   20.790000E-06 
+       GAMMA    0            
+         PHI     .6          
+      LAMBDA    0            
+          RD     .35         
+          RS    5.186000E-03 
+          RG     .7553       
+         RDS    1.778000E+06 
+          IS   53.700000E-12 
+          JS    0            
+          PB     .8          
+        PBSW     .8          
+         CBD  820.000000E-12 
+          CJ    0            
+        CJSW    0            
+          TT  570.000000E-09 
+        CGSO    1.608000E-09 
+        CGDO  168.200000E-12 
+        CGBO    0            
+         TOX  100.000000E-09 
+          XJ    0            
+       UCRIT   10.000000E+03 
+       DELTA    0            
+         ETA    0            
+      DIOMOD    1            
+         VFB    0            
+        LETA    0            
+        WETA    0            
+          U0    0            
+        TEMP    0            
+         VDD    5            
+       XPART    0            
+
+
+**** 02/02/12 11:21:54 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
+
+ ** Profile: "fwd_floating-line_load_regulation"  [ D:\pv_work\Modelling\SMPS_DEsign_Kit\Demo_feb_12\ac_dc_vrm-pspicefiles\fwd_floati
+
+
+ ****     Digital Input MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               DIN74           
+      S0NAME 0               
+       S0TSW    3.500000E-09 
+       S0RLO    7.13         
+       S0RHI  389            
+      S1NAME 1               
+       S1TSW    5.500000E-09 
+       S1RLO  467            
+       S1RHI  200            
+      S2NAME X               
+       S2TSW    3.500000E-09 
+       S2RLO   42.9          
+       S2RHI  116            
+      S3NAME R               
+       S3TSW    3.500000E-09 
+       S3RLO   42.9          
+       S3RHI  116            
+      S4NAME F               
+       S4TSW    3.500000E-09 
+       S4RLO   42.9          
+       S4RHI  116            
+      S5NAME Z               
+       S5TSW    3.500000E-09 
+       S5RLO  200.000000E+03 
+       S5RHI  200.000000E+03 
+
+
+**** 02/02/12 11:21:54 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
+
+ ** Profile: "fwd_floating-line_load_regulation"  [ D:\pv_work\Modelling\SMPS_DEsign_Kit\Demo_feb_12\ac_dc_vrm-pspicefiles\fwd_floati
+
+
+ ****     Digital Output MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               DO74            
+    TIMESTEP  100.000000E-12 
+      S0NAME X               
+       S0VHI    2            
+       S0VLO     .8          
+      S1NAME 0               
+       S1VHI     .8          
+       S1VLO   -1.5          
+      S2NAME R               
+       S2VHI    1.4          
+       S2VLO     .8          
+      S3NAME R               
+       S3VHI    2            
+       S3VLO    1.3          
+      S4NAME X               
+       S4VHI    2            
+       S4VLO     .8          
+      S5NAME 1               
+       S5VHI    7            
+       S5VLO    2            
+      S6NAME F               
+       S6VHI    2            
+       S6VLO    1.3          
+      S7NAME F               
+       S7VHI    1.4          
+       S7VLO     .8          
+
+
+**** 02/02/12 11:21:54 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
+
+ ** Profile: "fwd_floating-line_load_regulation"  [ D:\pv_work\Modelling\SMPS_DEsign_Kit\Demo_feb_12\ac_dc_vrm-pspicefiles\fwd_floati
+
+
+ ****     Digital Gate MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               D_02            
+      TPLHMN    4.800000E-09 
+      TPLHTY   12.000000E-09 
+      TPLHMX   22.000000E-09 
+      TPHLMN    3.200000E-09 
+      TPHLTY    8.000000E-09 
+      TPHLMX   15.000000E-09 
+
+
+**** 02/02/12 11:21:54 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
+
+ ** Profile: "fwd_floating-line_load_regulation"  [ D:\pv_work\Modelling\SMPS_DEsign_Kit\Demo_feb_12\ac_dc_vrm-pspicefiles\fwd_floati
+
+
+ ****     Digital Delay Line MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U2.X_U73.DLYMODEL 
+       DLYMN   18.000000E-09 
+       DLYTY   20.000000E-09 
+       DLYMX   22.000000E-09 
+
+
+**** 02/02/12 11:21:54 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
+
+ ** Profile: "fwd_floating-line_load_regulation"  [ D:\pv_work\Modelling\SMPS_DEsign_Kit\Demo_feb_12\ac_dc_vrm-pspicefiles\fwd_floati
+
+
+ ****     Digital IO  MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               IO_STD          
+        DRVL  104            
+        DRVH   96.4          
+       AtoD1 AtoD_STD        
+       AtoD2 AtoD_STD_NX     
+       AtoD3 AtoD_STD        
+       AtoD4 AtoD_STD_NX     
+       DtoA1 DtoA_STD        
+       DtoA2 DtoA_STD        
+       DtoA3 DtoA_STD        
+       DtoA4 DtoA_STD        
+      TSWHL1    1.511000E-09 
+      TSWHL2    1.487000E-09 
+      TSWHL3    1.511000E-09 
+      TSWHL4    1.487000E-09 
+      TSWLH1    3.517000E-09 
+      TSWLH2    3.564000E-09 
+      TSWLH3    3.517000E-09 
+      TSWLH4    3.564000E-09 
+       TPWRT  100.000000E+03 
+
+
+**** 02/02/12 11:21:54 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
+
+ ** Profile: "fwd_floating-line_load_regulation"  [ D:\pv_work\Modelling\SMPS_DEsign_Kit\Demo_feb_12\ac_dc_vrm-pspicefiles\fwd_floati
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM RLOAD =    8     
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  OUT) 2.083E-12  (  VDC)  132.1200  (  VFB) 26.04E-09  ($G_DGND)    0.0000    
+
+($G_DPWR)    5.0000                   (N10823433) 1.941E-06                     
+
+(N10823565) 2.083E-12                 (N10823789) 23.80E-09                     
+
+(N10823997) 2.083E-12                 (N10824463) 743.1E-09                     
+
+(N10832905) 31.06E-09                 (N10833624)    5.0000                     
+
+(N10846839)    4.8163                 (N10865580) 31.06E-09                     
+
+(N10871733)  132.7500                 (N10871817)    -.6218                     
+
+(N10871839)  132.1200                 (N10872580)    9.2179                     
+
+(N10878265)    0.0000                 (N10883112)  132.1200                     
+
+(N10890530)    0.0000                 (N10909862)    0.0000                     
+
+(N108717870)  132.7500                (N108830621)  132.1200                    
+
+(X_U2.X_DDD)    0.0000                (X_U2.X_SET)    4.9986                    
+
+(X_U2.X_VCC)    9.2179                (X_U2.N10753474)    0.0000                
+
+(X_U2.N10753902)    5.0000            (X_U2.N10754038)     .4000                
+
+(X_U2.N10773797) 743.1E-09            (X_U2.N10779939)     .4536                
+
+(X_U2.N10780049)    5.0000            (X_U2.N10780055)    2.2044                
+
+(X_U2.N10780061)    0.0000            (X_U2.N10780131) 27.79E-06                
+
+(X_U2.N10780173)    4.9796            (X_U2.N10780191)    4.9796                
+
+(X_U2.N10780377)    5.0000            (X_U2.N10781057)    2.2044                
+
+(X_U2.N10787719)     .1019            (X_U2.N10787739) 52.04E-06                
+
+(X_U2.N10787761)    4.9966            (X_U2.N10787785)     .1018                
+
+(X_U2.N10794806)    2.5000            (X_U2.N10805614)    5.0000                
+
+(X_U2.N10807561)    0.0000            (X_U2.N10823137)   -5.0000                
+
+(X_U2.X_COMPLOW)    5.0000            (X_U2.X_RTCT_RAMP) 880.6E-09              
+
+(X_U2.X_ABOVE_ISENSE)    5.0000       (X_U2.X_U8.x_lm741.6)   -1.5128           
+
+(X_U2.X_U8.x_lm741.7)    6.8466       (X_U2.X_U8.x_lm741.8)    6.8466           
+
+(X_U2.X_U8.x_lm741.9)    0.0000       (X_U2.X_UNDERVOLATGE)    4.9950           
+
+(X_U2.X_U8.x_lm741.10)    1.8599      (X_U2.X_U8.x_lm741.11)    5.0000          
+
+(X_U2.X_U8.x_lm741.12)    4.9197      (X_U2.X_U8.x_lm741.13)    1.8599          
+
+(X_U2.X_U8.x_lm741.14)    1.8880      (X_U2.X_U8.x_lm741.53)    4.0000          
+
+(X_U2.X_U8.x_lm741.54)   -4.0000      (X_U2.X_U8.x_lm741.90)   40.6060          
+
+(X_U2.X_U8.x_lm741.91)   40.0000      (X_U2.X_U8.x_lm741.92)  -40.0000          
+
+(X_U2.X_U8.x_lm741.99)    0.0000      (X$X_U2.N10780131_AtoD1.1)     .0915      
+
+(X$X_U2.N10780131_AtoD1.2)     .0457  (X$X_U2.N10780131_AtoD1.3)     .8277      
+
+(X$X_U2.N10780173_AtoD1.1)    1.5648  (X$X_U2.N10780173_AtoD1.2)     .7824      
+
+(X$X_U2.N10780173_AtoD1.3)    2.2862  (X$X_U2.N10780191_AtoD1.1)    1.5648      
+
+(X$X_U2.N10780191_AtoD1.2)     .7824  (X$X_U2.N10780191_AtoD1.3)    2.2862      
+
+(X$X_U2.N10787719_AtoD1.1)     .1933  (X$X_U2.N10787719_AtoD1.2)     .0967      
+
+(X$X_U2.N10787719_AtoD1.3)     .9277  (X$X_U2.N10787761_AtoD1.1)    1.5648      
+
+(X$X_U2.N10787761_AtoD1.2)     .7824  (X$X_U2.N10787761_AtoD1.3)    2.2862      
+
+(X$X_U2.N10787785_AtoD1.1)     .1933  (X$X_U2.N10787785_AtoD1.2)     .0966      
+
+(X$X_U2.N10787785_AtoD1.3)     .9276  
+
+
+
+ DGTL NODE : STATE  DGTL NODE : STATE  DGTL NODE : STATE  DGTL NODE : STATE
+
+
+(X_U2.N10780173$AtoD) : 1             (X_U2.N10787785$AtoD) : 0                 
+
+(X_U2.N10787761$AtoD) : 1             (X_U2.N10780139) : 0                      
+
+(X_U2.N10780131$AtoD) : 0             (X_U2.N10780191$AtoD) : 1                 
+
+(X_U2.N10787739$DtoA) : 1             (X_U2.N10780131$DtoA) : 0                 
+
+(X_U2.X_SET$DtoA) : 0                 (X_U2.N10787719$AtoD) : 0                 
+
+(X_U2.N10787731) : 0                  
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V6        -3.147E-03
+    V_V7        -3.147E-03
+    X_U2.V_V16  -1.615E-07
+    X_U2.V_V5    0.000E+00
+    X_U2.V_V4    0.000E+00
+    X_U2.V_V3    0.000E+00
+    X_U2.V_V19   5.658E-04
+    X_U2.V_V18   4.004E-02
+    X_U2.V_V2   -4.995E-03
+    X_U2.X_U8.x_lm741.vb  -1.513E-05
+    X_U2.X_U8.x_lm741.vc  -4.061E-02
+    X_U2.X_U8.x_lm741.ve   8.909E-12
+    X_U2.X_U8.x_lm741.vlim   4.061E-02
+    X_U2.X_U8.x_lm741.vlp   1.198E-05
+    X_U2.X_U8.x_lm741.vln  -8.061E-11
+    X$DIGIFPWR.VDPWR  -4.298E-02
+    X$DIGIFPWR.VDGND   6.602E-01
+
+    TOTAL POWER DISSIPATION   5.02E-01  WATTS
+
+
+**** 02/02/12 11:21:54 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
+
+ ** Profile: "fwd_floating-line_load_regulation"  [ D:\pv_work\Modelling\SMPS_DEsign_Kit\Demo_feb_12\ac_dc_vrm-pspicefiles\fwd_floati
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM RLOAD =   16    
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  OUT) 4.166E-12  (  VDC)  132.1200  (  VFB) 26.04E-09  ($G_DGND)    0.0000    
+
+($G_DPWR)    5.0000                   (N10823433) 1.941E-06                     
+
+(N10823565) 4.166E-12                 (N10823789) 23.80E-09                     
+
+(N10823997) 4.166E-12                 (N10824463) 743.1E-09                     
+
+(N10832905) 31.06E-09                 (N10833624)    5.0000                     
+
+(N10846839)    4.8163                 (N10865580) 31.06E-09                     
+
+(N10871733)  132.7500                 (N10871817)    -.6218                     
+
+(N10871839)  132.1200                 (N10872580)    9.2179                     
+
+(N10878265)    0.0000                 (N10883112)  132.1200                     
+
+(N10890530)    0.0000                 (N10909862)-807.8E-30                     
+
+(N108717870)  132.7500                (N108830621)  132.1200                    
+
+(X_U2.X_DDD)    0.0000                (X_U2.X_SET)    4.9986                    
+
+(X_U2.X_VCC)    9.2179                (X_U2.N10753474)    0.0000                
+
+(X_U2.N10753902)    5.0000            (X_U2.N10754038)     .4000                
+
+(X_U2.N10773797) 743.1E-09            (X_U2.N10779939)     .4536                
+
+(X_U2.N10780049)    5.0000            (X_U2.N10780055)    2.2044                
+
+(X_U2.N10780061)    0.0000            (X_U2.N10780131) 27.79E-06                
+
+(X_U2.N10780173)    4.9796            (X_U2.N10780191)    4.9796                
+
+(X_U2.N10780377)    5.0000            (X_U2.N10781057)    2.2044                
+
+(X_U2.N10787719)     .1019            (X_U2.N10787739) 52.04E-06                
+
+(X_U2.N10787761)    4.9966            (X_U2.N10787785)     .1018                
+
+(X_U2.N10794806)    2.5000            (X_U2.N10805614)    5.0000                
+
+(X_U2.N10807561)    0.0000            (X_U2.N10823137)   -5.0000                
+
+(X_U2.X_COMPLOW)    5.0000            (X_U2.X_RTCT_RAMP) 880.6E-09              
+
+(X_U2.X_ABOVE_ISENSE)    5.0000       (X_U2.X_U8.x_lm741.6)   -1.5128           
+
+(X_U2.X_U8.x_lm741.7)    6.8466       (X_U2.X_U8.x_lm741.8)    6.8466           
+
+(X_U2.X_U8.x_lm741.9)    0.0000       (X_U2.X_UNDERVOLATGE)    4.9950           
+
+(X_U2.X_U8.x_lm741.10)    1.8599      (X_U2.X_U8.x_lm741.11)    5.0000          
+
+(X_U2.X_U8.x_lm741.12)    4.9197      (X_U2.X_U8.x_lm741.13)    1.8599          
+
+(X_U2.X_U8.x_lm741.14)    1.8880      (X_U2.X_U8.x_lm741.53)    4.0000          
+
+(X_U2.X_U8.x_lm741.54)   -4.0000      (X_U2.X_U8.x_lm741.90)   40.6060          
+
+(X_U2.X_U8.x_lm741.91)   40.0000      (X_U2.X_U8.x_lm741.92)  -40.0000          
+
+(X_U2.X_U8.x_lm741.99)    0.0000      (X$X_U2.N10780131_AtoD1.1)     .0915      
+
+(X$X_U2.N10780131_AtoD1.2)     .0457  (X$X_U2.N10780131_AtoD1.3)     .8277      
+
+(X$X_U2.N10780173_AtoD1.1)    1.5648  (X$X_U2.N10780173_AtoD1.2)     .7824      
+
+(X$X_U2.N10780173_AtoD1.3)    2.2862  (X$X_U2.N10780191_AtoD1.1)    1.5648      
+
+(X$X_U2.N10780191_AtoD1.2)     .7824  (X$X_U2.N10780191_AtoD1.3)    2.2862      
+
+(X$X_U2.N10787719_AtoD1.1)     .1933  (X$X_U2.N10787719_AtoD1.2)     .0967      
+
+(X$X_U2.N10787719_AtoD1.3)     .9277  (X$X_U2.N10787761_AtoD1.1)    1.5648      
+
+(X$X_U2.N10787761_AtoD1.2)     .7824  (X$X_U2.N10787761_AtoD1.3)    2.2862      
+
+(X$X_U2.N10787785_AtoD1.1)     .1933  (X$X_U2.N10787785_AtoD1.2)     .0966      
+
+(X$X_U2.N10787785_AtoD1.3)     .9276  
+
+
+
+ DGTL NODE : STATE  DGTL NODE : STATE  DGTL NODE : STATE  DGTL NODE : STATE
+
+
+(X_U2.N10780173$AtoD) : 1             (X_U2.N10787785$AtoD) : 0                 
+
+(X_U2.N10787761$AtoD) : 1             (X_U2.N10780139) : 0                      
+
+(X_U2.N10780131$AtoD) : 0             (X_U2.N10780191$AtoD) : 1                 
+
+(X_U2.N10787739$DtoA) : 1             (X_U2.N10780131$DtoA) : 0                 
+
+(X_U2.X_SET$DtoA) : 0                 (X_U2.N10787719$AtoD) : 0                 
+
+(X_U2.N10787731) : 0                  
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V6        -3.147E-03
+    V_V7        -3.147E-03
+    X_U2.V_V16  -1.615E-07
+    X_U2.V_V5    0.000E+00
+    X_U2.V_V4    0.000E+00
+    X_U2.V_V3    0.000E+00
+    X_U2.V_V19   5.658E-04
+    X_U2.V_V18   4.004E-02
+    X_U2.V_V2   -4.995E-03
+    X_U2.X_U8.x_lm741.vb  -1.513E-05
+    X_U2.X_U8.x_lm741.vc  -4.061E-02
+    X_U2.X_U8.x_lm741.ve   8.909E-12
+    X_U2.X_U8.x_lm741.vlim   4.061E-02
+    X_U2.X_U8.x_lm741.vlp   1.198E-05
+    X_U2.X_U8.x_lm741.vln  -8.061E-11
+    X$DIGIFPWR.VDPWR  -4.298E-02
+    X$DIGIFPWR.VDGND   6.602E-01
+
+    TOTAL POWER DISSIPATION   5.02E-01  WATTS
+
+
+**** 02/02/12 11:21:54 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
+
+ ** Profile: "fwd_floating-line_load_regulation"  [ D:\pv_work\Modelling\SMPS_DEsign_Kit\Demo_feb_12\ac_dc_vrm-pspicefiles\fwd_floati
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM RLOAD =   48    
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  OUT) 12.49E-12  (  VDC)  132.1200  (  VFB) 26.04E-09  ($G_DGND)    0.0000    
+
+($G_DPWR)    5.0000                   (N10823433) 1.941E-06                     
+
+(N10823565) 12.49E-12                 (N10823789) 23.80E-09                     
+
+(N10823997) 12.49E-12                 (N10824463) 743.1E-09                     
+
+(N10832905) 31.06E-09                 (N10833624)    5.0000                     
+
+(N10846839)    4.8163                 (N10865580) 31.06E-09                     
+
+(N10871733)  132.7500                 (N10871817)    -.6218                     
+
+(N10871839)  132.1200                 (N10872580)    9.2179                     
+
+(N10878265)    0.0000                 (N10883112)  132.1200                     
+
+(N10890530)    0.0000                 (N10909862) 1.616E-27                     
+
+(N108717870)  132.7500                (N108830621)  132.1200                    
+
+(X_U2.X_DDD)    0.0000                (X_U2.X_SET)    4.9986                    
+
+(X_U2.X_VCC)    9.2179                (X_U2.N10753474)    0.0000                
+
+(X_U2.N10753902)    5.0000            (X_U2.N10754038)     .4000                
+
+(X_U2.N10773797) 743.1E-09            (X_U2.N10779939)     .4536                
+
+(X_U2.N10780049)    5.0000            (X_U2.N10780055)    2.2044                
+
+(X_U2.N10780061)    0.0000            (X_U2.N10780131) 27.79E-06                
+
+(X_U2.N10780173)    4.9796            (X_U2.N10780191)    4.9796                
+
+(X_U2.N10780377)    5.0000            (X_U2.N10781057)    2.2044                
+
+(X_U2.N10787719)     .1019            (X_U2.N10787739) 52.04E-06                
+
+(X_U2.N10787761)    4.9966            (X_U2.N10787785)     .1018                
+
+(X_U2.N10794806)    2.5000            (X_U2.N10805614)    5.0000                
+
+(X_U2.N10807561)    0.0000            (X_U2.N10823137)   -5.0000                
+
+(X_U2.X_COMPLOW)    5.0000            (X_U2.X_RTCT_RAMP) 880.6E-09              
+
+(X_U2.X_ABOVE_ISENSE)    5.0000       (X_U2.X_U8.x_lm741.6)   -1.5128           
+
+(X_U2.X_U8.x_lm741.7)    6.8466       (X_U2.X_U8.x_lm741.8)    6.8466           
+
+(X_U2.X_U8.x_lm741.9)    0.0000       (X_U2.X_UNDERVOLATGE)    4.9950           
+
+(X_U2.X_U8.x_lm741.10)    1.8599      (X_U2.X_U8.x_lm741.11)    5.0000          
+
+(X_U2.X_U8.x_lm741.12)    4.9197      (X_U2.X_U8.x_lm741.13)    1.8599          
+
+(X_U2.X_U8.x_lm741.14)    1.8880      (X_U2.X_U8.x_lm741.53)    4.0000          
+
+(X_U2.X_U8.x_lm741.54)   -4.0000      (X_U2.X_U8.x_lm741.90)   40.6060          
+
+(X_U2.X_U8.x_lm741.91)   40.0000      (X_U2.X_U8.x_lm741.92)  -40.0000          
+
+(X_U2.X_U8.x_lm741.99)    0.0000      (X$X_U2.N10780131_AtoD1.1)     .0915      
+
+(X$X_U2.N10780131_AtoD1.2)     .0457  (X$X_U2.N10780131_AtoD1.3)     .8277      
+
+(X$X_U2.N10780173_AtoD1.1)    1.5648  (X$X_U2.N10780173_AtoD1.2)     .7824      
+
+(X$X_U2.N10780173_AtoD1.3)    2.2862  (X$X_U2.N10780191_AtoD1.1)    1.5648      
+
+(X$X_U2.N10780191_AtoD1.2)     .7824  (X$X_U2.N10780191_AtoD1.3)    2.2862      
+
+(X$X_U2.N10787719_AtoD1.1)     .1933  (X$X_U2.N10787719_AtoD1.2)     .0967      
+
+(X$X_U2.N10787719_AtoD1.3)     .9277  (X$X_U2.N10787761_AtoD1.1)    1.5648      
+
+(X$X_U2.N10787761_AtoD1.2)     .7824  (X$X_U2.N10787761_AtoD1.3)    2.2862      
+
+(X$X_U2.N10787785_AtoD1.1)     .1933  (X$X_U2.N10787785_AtoD1.2)     .0966      
+
+(X$X_U2.N10787785_AtoD1.3)     .9276  
+
+
+
+ DGTL NODE : STATE  DGTL NODE : STATE  DGTL NODE : STATE  DGTL NODE : STATE
+
+
+(X_U2.N10780173$AtoD) : 1             (X_U2.N10787785$AtoD) : 0                 
+
+(X_U2.N10787761$AtoD) : 1             (X_U2.N10780139) : 0                      
+
+(X_U2.N10780131$AtoD) : 0             (X_U2.N10780191$AtoD) : 1                 
+
+(X_U2.N10787739$DtoA) : 1             (X_U2.N10780131$DtoA) : 0                 
+
+(X_U2.X_SET$DtoA) : 0                 (X_U2.N10787719$AtoD) : 0                 
+
+(X_U2.N10787731) : 0                  
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V6        -3.147E-03
+    V_V7        -3.147E-03
+    X_U2.V_V16  -1.615E-07
+    X_U2.V_V5    0.000E+00
+    X_U2.V_V4    0.000E+00
+    X_U2.V_V3    0.000E+00
+    X_U2.V_V19   5.658E-04
+    X_U2.V_V18   4.004E-02
+    X_U2.V_V2   -4.995E-03
+    X_U2.X_U8.x_lm741.vb  -1.513E-05
+    X_U2.X_U8.x_lm741.vc  -4.061E-02
+    X_U2.X_U8.x_lm741.ve   8.909E-12
+    X_U2.X_U8.x_lm741.vlim   4.061E-02
+    X_U2.X_U8.x_lm741.vlp   1.198E-05
+    X_U2.X_U8.x_lm741.vln  -8.061E-11
+    X$DIGIFPWR.VDPWR  -4.298E-02
+    X$DIGIFPWR.VDGND   6.602E-01
+
+    TOTAL POWER DISSIPATION   5.02E-01  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 02/02/12 11:21:54 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
+
+ ** Profile: "fwd_floating-line_load_regulation"  [ D:\pv_work\Modelling\SMPS_DEsign_Kit\Demo_feb_12\ac_dc_vrm-pspicefiles\fwd_floati
+
+
+ ****     JOB STATISTICS SUMMARY
+
+ ****     CURRENT STEP                     PARAM RLOAD =   48    
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =    18314.17
+

@@ -1,0 +1,25 @@
+** Profile: "fwd_floating-efficiency"  [ D:\Work\PV_Work\Modelling\SMPS_DEsign_Kit\Demo_feb_12\ac_dc_vrm-pspicefiles\fwd_floating\efficiency.sim ] 
+
+** Creating circuit file "efficiency.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../AC_DC_VRM-pspiceFiles/fwd_floating/tfrmr_subckt.lib" 
+.LIB "../../../AC_DC_VRM-pspiceFiles/uc3843_test.lib" 
+.LIB "../../../opto.lib" 
+.LIB "../../../uc3843.lib" 
+* From [PSPICE NETLIST] section of d:\Cadence\SPB_16.5\tools\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 80ms 20m 
+.OPTIONS ABSTOL= 1.0u
+.OPTIONS ITL4= 40
+.OPTIONS VNTOL= 10.0u
+.PROBE W(*) 
+.INC "..\fwd_floating.net" 
+
+
+.END

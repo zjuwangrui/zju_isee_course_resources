@@ -1,0 +1,3 @@
+* source DIODE2
+V_V1         N00578 0 1Vdc
+D_D1         0 N00578 DbreakZ 

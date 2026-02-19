@@ -1,0 +1,7 @@
+.ALIASES
+R_R6            R6(1=N00784 2=N01816 ) CN @THEOREMS1.KVL(sch_1):INS701@ANALOG.R.Normal(chips)
+V_V3            V3(+=N01816 -=0 ) CN @THEOREMS1.KVL(sch_1):INS735@SOURCE.VDC.Normal(chips)
+V_V4            V4(+=N00767 -=0 ) CN @THEOREMS1.KVL(sch_1):INS751@SOURCE.VDC.Normal(chips)
+R_R4            R4(1=N00767 2=N00774 ) CN @THEOREMS1.KVL(sch_1):INS669@ANALOG.R.Normal(chips)
+R_R5            R5(1=N00774 2=N00784 ) CN @THEOREMS1.KVL(sch_1):INS685@ANALOG.R.Normal(chips)
+.ENDALIASES

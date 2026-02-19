@@ -1,0 +1,4 @@
+* source RLCCIRCUITS
+L_L1         N04062 0  10uH IC=0 
+R_R1         N04076 N04062  100 TC=0,0 
+V_V1         N04076 0 5Vdc

@@ -1,0 +1,35 @@
+* source DIODE2
+V_V25         N05088 0  
++PULSE -8 8 0 1u 1u 25u 50u
+D_D1         N05058 0 Dbreak 
+R_R1         0 N05058  1k TC=0,0 
+C_C1         N05088 N05058  1u  TC=0,0 
+C_C2         N05467 N05421  1u  TC=0,0 
+V_V26         N05467 0  
++PULSE -8 8 0 1n 1n 25u 50u
+D_D2         0 N05421 Dbreak 
+R_R2         0 N05421  1k TC=0,0 
+C_C3         N05804 N05784  1u  TC=0,0 
+D_D3         N05784 N05794 Dbreak 
+R_R3         0 N05784  1k TC=0,0 
+V_V4         N05794 0 3Vdc
+V_V27         N05804 0  
++PULSE -8 8 0 1n 1n 25u 50u
+C_C4         N06182 N06134  1u  TC=0,0 
+R_R4         0 N06134  1k TC=0,0 
+D_D4         N06160 N06134 Dbreak 
+V_V6         N06160 0 3Vdc
+V_V28         N06182 0  
++PULSE -8 8 0 1n 1n 25u 50u
+V_V8         0 N06522 3Vdc
+C_C5         N06548 N06514  1u  TC=0,0 
+D_D5         N06514 N06522 Dbreak 
+V_V29         N06548 0  
++PULSE -8 8 0 1n 1n 25u 50u
+R_R5         0 N06514  1k TC=0,0 
+R_R6         0 N06864  1k TC=0,0 
+V_V10         0 N06888 3Vdc
+D_D6         N06888 N06864 Dbreak 
+C_C6         N06914 N06864  1u  TC=0,0 
+V_V30         N06914 0  
++PULSE -8 8 0 1n 1n 25u 50u

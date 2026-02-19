@@ -1,0 +1,88 @@
+
+**** 12/09/15 22:08:02 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "KVL-Tran"  [ C:\SPB_Data\cdssetup\OrCAD_Capture\16.6.0\tclscripts\caplearningresources\work\supportfiles\BasicElectroni
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "tran.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\SPB_Data\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 1m 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\KVL.net" 
+
+
+
+**** INCLUDING KVL.net ****
+* source THEOREMS1
+R_R6         N00784 N01816  3ohm TC=0,0 
+V_V3         N01816 0 5vdc
+V_V4         N00767 0 25vdc
+R_R4         N00767 N00774  4ohm TC=0,0 
+R_R5         N00774 N00784  3ohm TC=0,0 
+
+**** RESUMING tran.cir ****
+.END
+
+**** 12/09/15 22:08:02 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "KVL-Tran"  [ C:\SPB_Data\cdssetup\OrCAD_Capture\16.6.0\tclscripts\caplearningresources\work\supportfiles\BasicElectroni
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00767)   25.0000 (N00774)   17.0000 (N00784)   11.0000 (N01816)    5.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V3         2.000E+00
+    V_V4        -2.000E+00
+
+    TOTAL POWER DISSIPATION   4.00E+01  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 12/09/15 22:08:02 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "KVL-Tran"  [ C:\SPB_Data\cdssetup\OrCAD_Capture\16.6.0\tclscripts\caplearningresources\work\supportfiles\BasicElectroni
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .02
+

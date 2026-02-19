@@ -1,0 +1,25 @@
+** Profile: "fwd_floating-line_load_regulation"  [ D:\pv_work\Modelling\SMPS_DEsign_Kit\Demo_feb_12\ac_dc_vrm-pspicefiles\fwd_floating\line_load_regulation.sim ] 
+
+** Creating circuit file "line_load_regulation.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../AC_DC_VRM-pspiceFiles/fwd_floating/tfrmr_subckt.lib" 
+.LIB "../../../AC_DC_VRM-pspiceFiles/uc3843_test.lib" 
+.LIB "../../../opto.lib" 
+.LIB "../../../uc3843.lib" 
+* From [PSPICE NETLIST] section of D:\Cadence\SPB_16.5\tools\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 40ms 20m 
+.STEP PARAM RLOAD LIST 8,16,48 
+.OPTIONS ABSTOL= 1.0n
+.OPTIONS ITL4= 40
+.PROBE V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\fwd_floating.net" 
+
+
+.END

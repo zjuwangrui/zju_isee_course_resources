@@ -1,0 +1,81 @@
+table
+\begin{table}[H]
+\footnotesize
+\caption{上限截止频率测量值仿真值对比表格 } 
+\centering  
+\renewcommand{\arraystretch}{1.1}
+\begin{tabular}{*{3}{l}} 
+\hline\hline   
+$f_H测量值$&$F_H$仿真值  \\ 
+\hline
+无$C_u$& &\\
+\hline  
+有$C_u$&&\\
+\hline
+    \end{tabular}
+    \label{table:fH}
+\end{table}
+
+image
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.4\textwidth, height=0.2\textheight]{figure/check_process.jpg}
+    \caption{验算过程}
+    \label{fig:check}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[b]{0.32\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figure/Ro_circuit.png}
+        \caption{输出电阻电路图}
+        \label{fig:Ro1}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.32\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figure/Ro_waveform.png}
+        \caption{输出电阻频率特性曲线}
+        \label{fig:Ro2}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.32\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figure/Ro_measure_result.png}
+        \caption{输出电阻仿真值}
+        \label{fig:Ro3}
+    \end{subfigure}
+    \caption{}
+    \label{fig:Ro}
+\end{figure}
+
+
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[b]{0.32\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figure/i_2.1.5.png}
+        \caption{截止失真波形}
+        \label{fig:cutoff_distort}
+    \end{subfigure}
+    \hfill
+
+    \begin{subfigure}[b]{0.32\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figure/i_2.1.6.png}
+        \caption{饱和失真波形}
+        \label{fig:sati_distort}
+    \end{subfigure}
+    \hfill
+
+    \caption{失真波形图像}
+    \label{fig:distort}
+\end{figure}
+
+
+图片高度修正，对齐方式
+页眉字太多太挤
+V(C2:2) / V(Vi:+)
+V(Vi:+)/I(C1)
+VC(Q1) / V(Vi:+)

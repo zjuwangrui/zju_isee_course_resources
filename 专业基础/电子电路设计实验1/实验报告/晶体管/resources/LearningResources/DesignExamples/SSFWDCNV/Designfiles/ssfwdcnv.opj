@@ -1,0 +1,339 @@
+(ExpressProject "uc3843_test"
+  (ProjectVersion "19981106")
+  (ProjectType "Analog or A/D Mixed Mode")
+  (Folder "Design Resources"
+    (Folder "Library")
+    (NoModify)
+    (File ".\ssfwdcnv.DSN"
+      (Type "Schematic Design")
+      (DisplayName ".\ssfwdcnv.DSN"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (PSPICE_Regenerate_Netlist_Flag "FALSE")
+    (RootChangedForceReNetlist "x")
+    (Board_sim_option "VHDL_flow")
+    (Create Allegro Netlist "TRUE")
+    (Allegro Netlist Directory "allegro")
+    (View Allegro Netlist Files "FALSE")
+    (Update Allegro Board "TRUE")
+    (Allegro Netlist Output Board File
+       "D:\Work\Modelling\SMPS_DEsign_Kit\Demo_feb_12\allegro\AC_DC_VRM1_CONST.brd")
+    (Allegro Netlist Remove Etch "FALSE")
+    (Allegro Netlist Place Changed Component "ALWAYS_REPLACE")
+    (Allegro Netlist Open Board in Allegro "ORCAD")
+    (Allegro Setup Configuration File
+       "D:\Cadence\SPB_16.3\tools\capture\allegro.cfg")
+    (Allegro Setup Backup Versions "3")
+    (Allegro Setup Output Warnings "TRUE")
+    (Allegro Setup Ignore Constraints "FALSE")
+    (Allegro Setup Part Type Length "31")
+    (Allegro Netlist Combine Property String "PCB Footprint")
+    (Allegro Netlist Ignore Fixed Property "FALSE")
+    (Allegro Netlist User Defined Property "FALSE")
+    (Netlist_TAB "0")
+    (Allegro Netlist Input Board File
+       "D:\Work\Modelling\SMPS_DEsign_Kit\Demo_feb_12\allegro\AC_DC_VRM1_CONST.brd")
+    (DOCKED "FALSE")
+    (DOCKING_POSITION "59420")
+    (ANNOTATE_Scope "0")
+    (ANNOTATE_Mode "1")
+    (ANNOTATE_Action "0")
+    (Annotate_Page_Order "0")
+    (ANNOTATE_Reset_References_to_1 "FALSE")
+    (ANNOTATE_No_Page_Number_Change "FALSE")
+    (ANNOTATE_Property_Combine "{Value}{Source Package}{POWER_GROUP}")
+    (ANNOTATE_IncludeNonPrimitive "TRUE")
+    (ANNOTATE_Refdes_Control_Required "FALSE")
+    (Update_Instace_for_External_Design "FALSE")
+    (Annotate_type "Default")
+    (width_pages "100")
+    (width_start "80")
+    (width_End "80")
+    (DRC_Scope "0")
+    (DRC_Action "0")
+    (DRC_Create_Warnings "FALSE")
+    (DRC_View_Output "FALSE")
+    (DRC_Run_Electrical_Rules "TRUE")
+    (DRC_Run_Physical_Rules "FALSE")
+    (DRC_Report_File
+       "D:\WORK\MODELLING\SMPS_DESIGN_KIT\WORKING_MODULE\AC_DC_VRM\AC_DC_VRM.DRC")
+    (DRC_Check_Ports "FALSE")
+    (DRC_Check_Off-Page_Connectors "FALSE")
+    (DRC_Report_Ports_and_Off-page_Connectors "FALSE")
+    (DRC_SDT_Compatibility "FALSE")
+    (DRC_Report_Off-grid_Objects "FALSE")
+    (DRC_Check_Unconnected_Nets "TRUE")
+    (DRC_Check_for_Misleading_TAP "FALSE")
+    (DRC_Report_Netnames "FALSE")
+    (DRC_Check_Single_Node_Nets "TRUE")
+    (DRC_Check_No_Driving_Source "TRUE")
+    (DRC_Check_Duplicate_NetNames "TRUE")
+    (DRC_Check_Floating_Pins "TRUE")
+    (DRC_Check_Physical_Power_Pins_Visibility "TRUE")
+    (DRC_Check_PCB_Footprint_Property "TRUE")
+    (DRC_Check_Normal_Convert_View_Sync "TRUE")
+    (DRC_Check_Incorrect_PinGroup_Assignment "TRUE")
+    (DRC_Check_High_Speed_Props_Syntax "TRUE")
+    (DRC_Check_Missing_Pin_Numbers "TRUE")
+    (DRC_Check_Device_With_No_Pins "TRUE")
+    (DRC_Check_Power_Ground_Short "TRUE")
+    (DRC_Identical_References "TRUE")
+    (DRC_Type_Mismatch "TRUE")
+    (DRC_Visible_Power_pins "FALSE")
+    (DRC_Report_Unused_Part_Packages "TRUE")
+    (DRC_Check_Name_Prop_For_HierBlocks "TRUE")
+    ("Create Allegro Netlist" "TRUE")
+    ("Allegro Netlist Directory" "allegro")
+    ("View Allegro Netlist Files" "FALSE")
+    ("Update Allegro Board" "TRUE")
+    ("Allegro Netlist Input Board File" "\allegro\AC_DC_VRM1.brd")
+    ("Allegro Netlist Output Board File" "\allegro\AC_DC_VRM1.brd")
+    ("Allegro Netlist Remove Etch" "FALSE")
+    ("Allegro Netlist Place Changed Component" "ALWAYS_REPLACE")
+    ("Allegro Netlist Open Board in Allegro" "ORCAD")
+    ("Allegro Setup Configuration File"
+       "d:\Cadence\SPB_16.5\tools\Capture\allegro.cfg")
+    ("Allegro Setup Backup Versions" "3")
+    ("Allegro Setup Output Warnings" "TRUE")
+    ("Allegro Setup Ignore Constraints" "FALSE")
+    ("Allegro Setup Part Type Length" "31")
+    ("Allegro Netlist Combine Property String" "PCB Footprint")
+    ("Allegro Netlist Ignore Fixed Property" "FALSE")
+    ("Allegro Netlist User Defined Property" "FALSE")
+    (GATE_&_PIN_SWAP_Scope "0")
+    (GATE_&_PIN_SWAP_File_Name
+       "D:\WORK\MODELLING\SMPS_DESIGN_KIT\WORKING_MODULE\AC_DC_VRM\AC_DC_VRM.SWP")
+    (Backannotation_TAB "0"))
+  (Folder "Outputs"
+    (File ".\pstxnet.dat"
+      (Type "Report")
+      (DisplayName "pstxnet.dat"))
+    (File ".\pstxprt.dat"
+      (Type "Report")
+      (DisplayName "pstxprt.dat"))
+    (File ".\pstchip.dat"
+      (Type "Report")
+      (DisplayName "pstchip.dat"))
+    (File ".\ssfwdcnv-PSpiceFiles\fwd_floating\fwd_floating.net"
+      (Type "Report")
+      (DisplayName ".\ssfwdcnv-PSpiceFiles\fwd_floating\fwd_floating.net"))
+    (File ".\ssfwdcnv-PSpiceFiles\Regulation\Regulation.net"
+      (Type "Report")
+      (DisplayName ".\ssfwdcnv-PSpiceFiles\Regulation\Regulation.net"))
+    (File ".\ssfwdcnv-PSpiceFiles\Step_Load\Step_Load.net"
+      (Type "Report")
+      (DisplayName ".\ssfwdcnv-PSpiceFiles\Step_Load\Step_Load.net"))
+    (File ".\ssfwdcnv-PSpiceFiles\Ideal_Devices\Ideal_Devices.net"
+      (Type "Report")
+      (DisplayName ".\ssfwdcnv-PSpiceFiles\Ideal_Devices\Ideal_Devices.net"))
+    (File ".\ac_dc_vrm.drc"
+      (Type "Report")
+      (DisplayName ".\ac_dc_vrm.drc"))
+    (File ".\pinView.dat"
+      (Type "Report")
+      (DisplayName "pinView.dat"))
+    (File ".\netView.dat"
+      (Type "Report")
+      (DisplayName "netView.dat"))
+    (File ".\funcView.dat"
+      (Type "Report")
+      (DisplayName "funcView.dat"))
+    (File ".\compView.dat"
+      (Type "Report")
+      (DisplayName "compView.dat"))
+    (File ".\ac_dc_vrm.swp"
+      (Type "Report")
+      (DisplayName "ac_dc_vrm.swp")))
+  (Folder "PSpice Resources"
+    (Folder "Simulation Profiles"
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\ssfwdcnv-pspicefiles\fwd_floating\tran.sim"
+        (DisplayName "fwd_floating-tran")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\ssfwdcnv-pspicefiles\step_load\step_current.sim"
+        (DisplayName "Step_Load-step_current")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\ssfwdcnv-pspicefiles\regulation\load_regulation.sim"
+        (DisplayName "Regulation-load_regulation")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\ssfwdcnv-pspicefiles\fwd_floating\line_thd.sim"
+        (DisplayName "fwd_floating-line_thd")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\ssfwdcnv-pspicefiles\ideal_devices\tran.sim"
+        (DisplayName "Ideal_Devices-Tran")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\ssfwdcnv-pspicefiles\fwd_floating\efficiency.sim"
+        (DisplayName "fwd_floating-efficiency")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\ssfwdcnv-pspicefiles\fwd_floating\steady_state.sim"
+        (DisplayName "fwd_floating-steady_state")
+        (Type "PSpice Profile"))
+      (ActiveProfile ".\ssfwdcnv-pspicefiles\fwd_floating\line_thd.sim"))
+    (Folder "Stimulus Files")
+    (Folder "Include Files")
+    (Folder "Model Libraries"
+      (File ".\ssfwdcnv-PSpiceFiles\ac_dc_vrm.lib"
+        (DisplayName ".\ssfwdcnv-PSpiceFiles\ac_dc_vrm.lib")
+        (Type "PSpiceLibrary"))
+      (Sort User)))
+  (DefaultLibraryBrowseDirectory "library\PSpice")
+  (PartMRUSelector
+    (MUR130
+      (FullPartName "MUR130.Normal")
+      (LibraryName "D:\CADENCE\SPB_16.3\TOOLS\CAPTURE\LIBRARY\PSPICE\DIODE.OLB")
+      (DeviceIndex "0"))
+    (VPULSE
+      (FullPartName "VPULSE.Normal")
+      (LibraryName
+         "D:\CADENCE\SPB_16.3\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (power_Mbreakn
+      (FullPartName "power_Mbreakn.Normal")
+      (LibraryName
+         "D:\CADENCE\SPB_16.3\TOOLS\CAPTURE\LIBRARY\PSPICE\BREAKOUT.OLB")
+      (DeviceIndex "0"))
+    (Dbreak
+      (FullPartName "Dbreak.Normal")
+      (LibraryName
+         "D:\CADENCE\SPB_16.3\TOOLS\CAPTURE\LIBRARY\PSPICE\BREAKOUT.OLB")
+      (DeviceIndex "0"))
+    (awbcapacitor
+      (FullPartName "awbcapacitor.Normal")
+      (LibraryName
+         "D:\CADENCE\SPB_16.3\TOOLS\CAPTURE\LIBRARY\PSPICE\ADVANLS\PSPICE_ELEM.OLB")
+      (DeviceIndex "0"))
+    (R
+      (FullPartName "R.Normal")
+      (LibraryName
+         "D:\CADENCE\SPB_16.4_CD3\TOOLS\CAPTURE\LIBRARY\PSPICE\DATACONV.OLB")
+      (DeviceIndex "0"))
+    (S
+      (FullPartName "S.Normal")
+      (LibraryName
+         "D:\CADENCE\SPB_16.3\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (CON3
+      (FullPartName "CON3.Normal")
+      (LibraryName "D:\CADENCE\SPB_16.3\TOOLS\CAPTURE\LIBRARY\CONNECTOR.OLB")
+      (DeviceIndex "0"))
+    (CON2
+      (FullPartName "CON2.Normal")
+      (LibraryName "D:\CADENCE\SPB_16.3\TOOLS\CAPTURE\LIBRARY\CONNECTOR.OLB")
+      (DeviceIndex "0"))
+    (TRAN1
+      (FullPartName "TRAN1.Normal")
+      (LibraryName
+         "D:\PV_WORK\MODELLING\SMPS_DESIGN_KIT\OCT10\UC3843_TEST-PSPICEFILES\FWD_FLOATING\TFRMR_SUBCKT.OLB")
+      (DeviceIndex "0"))
+    (MUR430
+      (FullPartName "MUR430.Normal")
+      (LibraryName
+         "D:\CADENCE\SPB_16.4_CD3\TOOLS\CAPTURE\LIBRARY\PSPICE\DIODE.OLB")
+      (DeviceIndex "0"))
+    (PARAM
+      (FullPartName "PARAM.Normal")
+      (LibraryName
+         "D:\CADENCE\SPB_16.4\TOOLS\CAPTURE\LIBRARY\PSPICE\SPECIAL.OLB")
+      (DeviceIndex "0"))
+    (IRF342
+      (FullPartName "IRF342.Normal")
+      (LibraryName
+         "D:\CADENCE\SPB_16.4_CD3\TOOLS\CAPTURE\LIBRARY\PSPICE\PWRMOS.OLB")
+      (DeviceIndex "0"))
+    (IRF341
+      (FullPartName "IRF341.Normal")
+      (LibraryName
+         "D:\CADENCE\SPB_16.4_CD3\TOOLS\CAPTURE\LIBRARY\PSPICE\PWRMOS.OLB")
+      (DeviceIndex "0"))
+    (UT4060
+      (FullPartName "UT4060.Normal")
+      (LibraryName
+         "D:\PV_WORK\MODELLING\SMPS_DESIGN_KIT\OCT10\UC3843_TEST-PSPICEFILES\UC3843_TEST.OLB")
+      (DeviceIndex "0"))
+    (IRF840
+      (FullPartName "IRF840.Normal")
+      (LibraryName
+         "D:\CADENCE\SPB_16.4_CD3\TOOLS\CAPTURE\LIBRARY\PSPICE\IRF.OLB")
+      (DeviceIndex "0"))
+    (MUR470
+      (FullPartName "MUR470.Normal")
+      (LibraryName "D:\CADENCE\SPB_16.3\TOOLS\CAPTURE\LIBRARY\PSPICE\DIODE.OLB")
+      (DeviceIndex "0"))
+    (D1N4007
+      (FullPartName "D1N4007.Normal")
+      (LibraryName
+         "D:\CADENCE\SPB_16.4_CD3\TOOLS\CAPTURE\LIBRARY\PSPICE\DIODE.OLB")
+      (DeviceIndex "0"))
+    (C
+      (FullPartName "C.Normal")
+      (LibraryName "D:\CADENCE\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (0
+      (LibraryName "D:\CADENCE\SPB_16.3\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (VDC
+      (FullPartName "VDC.Normal")
+      (LibraryName
+         "D:\CADENCE\SPB_16.3\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (VSIN
+      (FullPartName "VSIN.Normal")
+      (LibraryName
+         "D:\CADENCE\SPB_16.4\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (UC3843
+      (FullPartName "UC3843.Normal")
+      (LibraryName
+         "C:\DOCUMENTS AND SETTINGS\SORABHD\DESKTOP\UC3843\UC3843.OLB")
+      (DeviceIndex "0"))
+    (E
+      (FullPartName "E.Normal")
+      (LibraryName
+         "D:\CADENCE\SPB_16.3\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (VPWL
+      (FullPartName "VPWL.Normal")
+      (LibraryName
+         "D:\CADENCE\SPB_16.3\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0")))
+  (LastUsedLibraryBrowseDirectory
+     "D:\Cadence\SPB_16.3\tools\capture\library\pspice")
+  (ISPCBBASICLICENSE "false")
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources"
+         "D:\Downloads\OrCAD\LearningResources\DesignExamples\SSFWDCNV\Designfiles\ssfwdcnv.DSN")
+      (Path "Design Resources"
+         "D:\Downloads\OrCAD\LearningResources\DesignExamples\SSFWDCNV\Designfiles\ssfwdcnv.DSN"
+         "fwd_floating")
+      (Path "Outputs")
+      (Path "PSpice Resources")
+      (Path "PSpice Resources" "Model Libraries")
+      (Path "PSpice Resources" "Simulation Profiles")
+      (Select "Design Resources"
+         "D:\Downloads\OrCAD\LearningResources\DesignExamples\SSFWDCNV\Designfiles\ssfwdcnv.DSN"
+         "fwd_floating" "PAGE1"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -30 0 349 0 826"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 2 3 -1 -1 -8 -30 25 1235 25 399")
+        (Scroll "0 0")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path
+         "D:\DOWNLOADS\ORCAD\LEARNINGRESOURCES\DESIGNEXAMPLES\SSFWDCNV\DESIGNFILES\SSFWDCNV.DSN")
+      (Schematic "fwd_floating")
+      (Page "PAGE1"))))

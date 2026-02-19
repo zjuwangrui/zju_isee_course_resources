@@ -1,0 +1,5 @@
+.ALIASES
+R_R1            R1(1=N00089 2=N00085 ) CN @ACCIRCUITS.RL(sch_1):INS35@ANALOG.R.Normal(chips)
+L_L1            L1(1=N00085 2=0 ) CN @ACCIRCUITS.RL(sch_1):INS69@ANALOG.L.Normal(chips)
+V_V1            V1(+=N00089 -=0 ) CN @ACCIRCUITS.RL(sch_1):INS4996@SOURCE.VSIN.Normal(chips)
+.ENDALIASES

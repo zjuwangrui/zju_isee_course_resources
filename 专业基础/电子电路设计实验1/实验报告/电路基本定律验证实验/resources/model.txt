@@ -1,0 +1,29 @@
+table
+\begin{table}[H]
+\footnotesize
+\caption{\normalsize 95\% Confidence interval of penalty for the approximations and heuristics with $\rho=0.5$ } 
+\centering  
+\renewcommand{\arraystretch}{1.1}
+\begin{tabular}{*{8}{l}} 
+\hline\hline   
+&$T=10$ &$T=30$ &$T=100$ &$T=300$ &$T=1000$ &$T=3000$ &$T=10000$  \\ 
+\hline
+$S_m$ & [0.13, 0.56]& [0.22, 0.79]& [0.18, 0.90]& [0.35, 0.92]& [0.11, 0.73]& [0.44, 0.87]& [0.06, 0.78]\\
+$S_n$ & [0.28, 0.74]& [0.09, 0.45]& [0.31, 0.59]& [0.42, 0.97]& [0.15, 0.67]& [0.12, 0.76]& [0.08, 0.54]\\
+$S_l$ & [0.07, 0.62]& [0.36, 0.88]& [0.05, 0.70]& [0.29, 0.61]& [0.14, 0.73]& [0.19, 0.82]& [0.27, 0.91]\\
+$S_{log}$ & [0.18, 0.69]& [0.22, 0.81]& [0.15, 0.65]& [0.10, 0.58]& [0.25, 0.71]& [0.07, 0.55]& [0.04, 0.62]\\
+$S_c$ & [0.09, 0.77]& [0.38, 0.79]& [0.24, 0.60]& [0.32, 0.89]& [0.28, 0.66]& [0.15, 0.84]& [0.22, 0.59]\\
+$S_g$ & [0.05, 0.42]& [0.26, 0.73]& [0.33, 0.86]& [0.17, 0.69]& [0.30, 0.90]& [0.09, 0.78]& [0.14, 0.83]\\
+\hline  
+    \end{tabular}
+    \label{table:summary05-CI}
+\end{table}
+
+image
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.4\textwidth, height=0.2\textheight]{figure/circut1.png}
+    \caption{基尔霍夫定律和叠加定理验证电路图}
+    \label{fig:1.1}
+\end{figure}
+

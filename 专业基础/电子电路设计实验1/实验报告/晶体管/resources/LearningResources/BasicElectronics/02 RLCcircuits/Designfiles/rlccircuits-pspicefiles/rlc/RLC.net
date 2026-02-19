@@ -1,0 +1,6 @@
+* source RLCCIRCUITS
+L_L2         N02575 N02581  10uH IC=0 
+C_C2         N02633 N02575  10u IC=0 TC=0,0 
+R_R3         N02581 0   {rvariable} TC=0,0 
+V_V1         N02633 0 5Vdc
+.PARAM  rvariable=3.5ohm

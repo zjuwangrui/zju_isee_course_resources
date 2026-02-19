@@ -1,0 +1,18 @@
+** Profile: "clampers-tran5"  [ D:\Cadence\SPB_16.5\tools\capture\FA\Diodes\diode1-PSpiceFiles\clampers\tran5.sim ] 
+
+** Creating circuit file "tran5.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of D:\Cadence\SPB_16.5\tools\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 500u 0 
+.PROBE V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\clampers.net" 
+
+
+.END

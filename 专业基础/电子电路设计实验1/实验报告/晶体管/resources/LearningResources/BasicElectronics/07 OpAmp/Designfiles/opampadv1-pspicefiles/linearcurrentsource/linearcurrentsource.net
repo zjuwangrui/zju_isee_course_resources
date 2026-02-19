@@ -1,0 +1,8 @@
+* source OPAMPADV1
+V_V3         N01566 0 15Vdc
+R_R3         0 N00155  1k TC=0,0 
+X_U1         0 N00137 N01566 N00271 N00155 uA741
+V_V1         N00311 0 5Vdc
+V_V2         0 N00271 15Vdc
+R_R1         N00311 N00137  2k TC=0,0 
+R_R2         N00137 N00155  1k TC=0,0 

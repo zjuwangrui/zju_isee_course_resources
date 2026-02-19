@@ -1,0 +1,86 @@
+
+**** 12/09/15 23:11:16 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "RC-tran"  [ C:\SPB_Data\cdssetup\OrCAD_Capture\16.6.0\tclscripts\caplearningresources\work\supportfiles\BasicElectronic
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "tran.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\SPB_Data\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 70m 0 2u 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\RC.net" 
+
+
+
+**** INCLUDING RC.net ****
+* source ACCIRCUITS
+R_R2         N04788 N04784  100 TC=0,0 
+C_C1         N04784 0  5u  TC=0,0 
+V_V1         N04788 0  AC 5
++SIN 0 5 50 0 0 0
+
+**** RESUMING tran.cir ****
+.END
+
+**** 12/09/15 23:11:16 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "RC-tran"  [ C:\SPB_Data\cdssetup\OrCAD_Capture\16.6.0\tclscripts\caplearningresources\work\supportfiles\BasicElectronic
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N04784)    0.0000 (N04788)    0.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         0.000E+00
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 12/09/15 23:11:16 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "RC-tran"  [ C:\SPB_Data\cdssetup\OrCAD_Capture\16.6.0\tclscripts\caplearningresources\work\supportfiles\BasicElectronic
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .53
+

@@ -1,0 +1,6 @@
+* source ACCIRCUITS
+R_R1         N00144 N00119  100 TC=0,0 
+L_L1         N00119 N00123  160m IC=0 
+C_C1         N00123 0  22u IC=0 TC=0,0 
+V_V1         N00144 0  AC 5
++SIN 0 5 60 0 0 0

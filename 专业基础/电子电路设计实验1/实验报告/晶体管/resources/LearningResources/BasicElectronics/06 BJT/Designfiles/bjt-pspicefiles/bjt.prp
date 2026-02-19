@@ -1,0 +1,29 @@
+("Q2N2222"
+    ("Creator"	"Device property file created by Property Controller")
+    ("device_info"
+        ("SYMBOL_NAME"	"npn")
+        ("MODEL_TYPE"	"4")
+    )
+    ("model_params"
+        ("level_0"
+        )
+    )
+    ("device_pre_smoke"
+        ("TERM_IC"	"C")
+        ("TERM_IB"	"B")
+        ("NODE_VC"	"C")
+        ("NODE_VB"	"B")
+        ("NODE_VE"	"E")
+        ("DERATE_TYPE"	"NPN")
+    )
+    ("device_max_ops"
+        ("IC"	"800m")
+        ("VCB"	"60")
+        ("VCE"	"30")
+        ("VEB"	"5")
+        ("PDM"	"1.2")
+        ("TJ"	"200")
+        ("RJC"	"146")
+        ("RCA"	"292")
+    )
+)

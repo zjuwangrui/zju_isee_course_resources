@@ -1,0 +1,190 @@
+(ExpressProject "ACcircuits"
+  (ProjectVersion "19981106")
+  (ProjectType "Analog or A/D Mixed Mode")
+  (Folder "Design Resources"
+    (Folder "Library")
+    (NoModify)
+    (File ".\accircuits.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (PSPICE_Regenerate_Netlist_Flag "FALSE")
+    (RootChangedForceReNetlist "x"))
+  (Folder "Outputs"
+    (File ".\accircuits-pspicefiles\rc\rc.net"
+      (Type "Report"))
+    (File ".\accircuits-pspicefiles\rl\rl.net"
+      (Type "Report"))
+    (File ".\accircuits-pspicefiles\rlc\rlc.net"
+      (Type "Report")))
+  (Folder "PSpice Resources"
+    (Folder "Simulation Profiles"
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\accircuits-pspicefiles\rlc\ac.sim"
+        (DisplayName "RLC-ac")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\accircuits-pspicefiles\rc\tran.sim"
+        (DisplayName "RC-tran")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\accircuits-pspicefiles\rl\tran.sim"
+        (DisplayName "RL-Tran")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\accircuits-pspicefiles\rlc\tran.sim"
+        (DisplayName "RLC-tran")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\accircuits-pspicefiles\rc\ac.sim"
+        (DisplayName "RC-ac")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\accircuits-pspicefiles\rl\ac.sim"
+        (DisplayName "RL-AC")
+        (Type "PSpice Profile"))
+      (ActiveProfile ".\accircuits-pspicefiles\rlc\tran.sim"))
+    (Folder "Model Libraries"
+      (Sort User))
+    (Folder "Stimulus Files"
+      (Sort User))
+    (Folder "Include Files"
+      (Sort User)))
+  (DefaultLibraryBrowseDirectory "library\PSpice")
+  (PartMRUSelector
+    (Cadence
+      (LibraryName "D:\TEMP\TEMP_ACT\TITLE_BLOCKS\LIB\LIBRARY6.OLB")
+      (DeviceIndex "0"))
+    (L
+      (FullPartName "L.Normal")
+      (LibraryName
+         "D:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (R
+      (FullPartName "R.Normal")
+      (LibraryName
+         "D:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (VSIN
+      (FullPartName "VSIN.Normal")
+      (LibraryName
+         "D:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (0
+      (LibraryName
+         "D:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (C
+      (FullPartName "C.Normal")
+      (LibraryName
+         "D:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (R_45DEG
+      (FullPartName "R_45DEG.Normal")
+      (LibraryName
+         "D:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (VDC
+      (FullPartName "VDC.Normal")
+      (LibraryName
+         "D:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (TSC18C42
+      (FullPartName "TSC18C42.Normal")
+      (LibraryName
+         "D:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\PSPICE\ADVANLS\CONTROLLER.OLB")
+      (DeviceIndex "0"))
+    (UC3854
+      (FullPartName "UC3854.Normal")
+      (LibraryName
+         "D:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\PSPICE\ADVANLS\CONTROLLER.OLB")
+      (DeviceIndex "0"))
+    (UCC1895
+      (FullPartName "UCC1895.Normal")
+      (LibraryName
+         "D:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\PSPICE\ADVANLS\CONTROLLER.OLB")
+      (DeviceIndex "0"))
+    (UC3825
+      (FullPartName "UC3825.Normal")
+      (LibraryName
+         "D:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\PSPICE\ADVANLS\CONTROLLER.OLB")
+      (DeviceIndex "0"))
+    (SG3524
+      (FullPartName "SG3524.Normal")
+      (LibraryName
+         "D:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\PSPICE\ADVANLS\CONTROLLER.OLB")
+      (DeviceIndex "0"))
+    (LF256/NS
+      (FullPartName "LF256/NS.Normal")
+      (LibraryName
+         "D:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\PSPICE\NAT_SEMI.OLB")
+      (DeviceIndex "0"))
+    (RESOLVER
+      (FullPartName "RESOLVER.Normal")
+      (LibraryName "D:\TEMP\RESOLVER\RESOLVER_3\OLB\RESOLVER.OLB")
+      (DeviceIndex "0"))
+    (LF351/NS
+      (FullPartName "LF351/NS.Normal")
+      (LibraryName
+         "D:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\PSPICE\NAT_SEMI.OLB")
+      (DeviceIndex "0"))
+    (LF255/NS
+      (FullPartName "LF255/NS.Normal")
+      (LibraryName
+         "D:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\PSPICE\NAT_SEMI.OLB")
+      (DeviceIndex "0"))
+    (LH_3344-TYP
+      (FullPartName "LH_3344-TYP.Normal")
+      (LibraryName
+         "D:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\OSRAM_3MMRADIAL.OLB")
+      (DeviceIndex "0"))
+    (BATTERY
+      (FullPartName "BATTERY.Normal")
+      (LibraryName
+         "D:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\PSPICE\ADVANLS\SPICE_ELEM.OLB")
+      (DeviceIndex "0"))
+    (CCS23
+      (FullPartName "CCS23.Normal")
+      (LibraryName
+         "D:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\PSPICE\ADVANLS\SPICE_ELEM.OLB")
+      (DeviceIndex "0"))
+    (UC3841
+      (FullPartName "UC3841.Normal")
+      (LibraryName
+         "D:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\PSPICE\SWIT_REG.OLB")
+      (DeviceIndex "0"))
+    (TL493
+      (FullPartName "TL493.Normal")
+      (LibraryName
+         "D:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\PSPICE\SWIT_REG.OLB")
+      (DeviceIndex "0"))
+    (SG1842
+      (FullPartName "SG1842.Normal")
+      (LibraryName
+         "D:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\PSPICE\SWIT_REG.OLB")
+      (DeviceIndex "0"))
+    (IR3840
+      (FullPartName "IR3840.Normal")
+      (LibraryName
+         "D:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\PSPICE\SWIT_REG.OLB")
+      (DeviceIndex "0"))
+    (UC3825B
+      (FullPartName "UC3825B.Normal")
+      (LibraryName
+         "D:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\PSPICE\SWIT_REG.OLB")
+      (DeviceIndex "0")))
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources"
+         "h:\orcadœ‡πÿŒƒµµ\learningresources\basicelectronics\accircuits\designfiles\accircuits.dsn")
+      (Path "Outputs")
+      (Path "PSpice Resources")
+      (Path "PSpice Resources" "Simulation Profiles"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 2 3 -1 -1 -8 -30 0 200 0 486"))
+      (Tab 0)))
+  (LastUsedLibraryBrowseDirectory "D:\temp\resolver\resolver_3\olb"))

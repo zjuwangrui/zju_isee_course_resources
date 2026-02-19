@@ -1,0 +1,18 @@
+** Profile: "forwardbias-diode"  [ d:\cadence\spb_16.6\tools\capture\tclscripts\caplearnpspice\hybrid\supportfiles\basicelectronics\diode\dsnfiles\diode-pspicefiles\forwardbias\diode.sim ] 
+
+** Creating circuit file "diode.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of D:\Cadence\SPB_16.5\tools\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.DC LIN PARAM Vsource 0 39.8 0.01 
+.PROBE V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\forwardbias.net" 
+
+
+.END

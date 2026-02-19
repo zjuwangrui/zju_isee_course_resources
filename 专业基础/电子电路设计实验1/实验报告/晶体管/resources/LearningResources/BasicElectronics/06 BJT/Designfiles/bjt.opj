@@ -1,0 +1,155 @@
+(ExpressProject "BJT"
+  (ProjectVersion "19981106")
+  (ProjectType "Analog or A/D Mixed Mode")
+  (Folder "Design Resources"
+    (Folder "Library")
+    (NoModify)
+    (File ".\bjt.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (PSPICE_Regenerate_Netlist_Flag "FALSE")
+    (RootChangedForceReNetlist "x"))
+  (Folder "Outputs"
+    (File ".\bjt-pspicefiles\switch\switch.net"
+      (Type "Report"))
+    (File ".\bjt-pspicefiles\amplifier\amplifier.net"
+      (Type "Report"))
+    (File ".\bjt-pspicefiles\emitterfollower\emitterfollower.net"
+      (Type "Report"))
+    (File ".\bjt-pspicefiles\commonbase\commonbase.net"
+      (Type "Report"))
+    (File ".\bjt-pspicefiles\commonemitter\commonemitter.net"
+      (Type "Report")))
+  (Folder "PSpice Resources"
+    (Folder "Simulation Profiles"
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\bjt-pspicefiles\commonbase\dc1.sim"
+        (DisplayName "commonbase-DC1")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\bjt-pspicefiles\switch\tran.sim"
+        (DisplayName "switch-Tran")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\bjt-pspicefiles\amplifier\tran.sim"
+        (DisplayName "Amplifier-Tran")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\bjt-pspicefiles\commonemitter\dc.sim"
+        (DisplayName "commonemitter-DC")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\bjt-pspicefiles\commonemitter\dc1.sim"
+        (DisplayName "commonemitter-dc1")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\bjt-pspicefiles\emitterfollower\tran.sim"
+        (DisplayName "Emitterfollower-Tran")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\bjt-pspicefiles\commonbase\dc.sim"
+        (DisplayName "commonbase-DC")
+        (Type "PSpice Profile"))
+      (ActiveProfile ".\bjt-pspicefiles\commonemitter\dc.sim"))
+    (Folder "Stimulus Files"
+      (Sort User))
+    (Folder "Include Files"
+      (Sort User))
+    (Folder "Model Libraries"
+      (File ".\bjt-pspicefiles\bjt.lib"
+        (DisplayName ".\bjt-pspicefiles\bjt.lib")
+        (Type "PSpiceLibrary"))
+      (Sort User)))
+  (DefaultLibraryBrowseDirectory "library\PSpice")
+  (PartMRUSelector
+    (Cadence
+      (LibraryName "D:\TEMP\TEMP_ACT\TITLE_BLOCKS\LIB\LIBRARY6.OLB")
+      (DeviceIndex "0"))
+    (R
+      (FullPartName "R.Normal")
+      (LibraryName
+         "D:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (C
+      (FullPartName "C.Normal")
+      (LibraryName
+         "D:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (0
+      (LibraryName "D:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (VSIN
+      (FullPartName "VSIN.Normal")
+      (LibraryName
+         "D:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (VDC
+      (FullPartName "VDC.Normal")
+      (LibraryName
+         "D:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (Q2N2222
+      (FullPartName "Q2N2222.Normal")
+      (LibraryName "D:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\PSPICE\EVAL.OLB")
+      (DeviceIndex "0"))
+    (74ACT05
+      (FullPartName "74ACT05.Normal")
+      (LibraryName "D:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\PSPICE\74ACT.OLB")
+      (DeviceIndex "1"))
+    (IRF540
+      (FullPartName "IRF540.Normal")
+      (LibraryName "D:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\PSPICE\IRF.OLB")
+      (DeviceIndex "0"))
+    (VPULSE
+      (FullPartName "VPULSE.Normal")
+      (LibraryName
+         "D:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (LW_3333-TYP
+      (FullPartName "LW_3333-TYP.Normal")
+      (LibraryName
+         "D:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\PSPICE\OSRAM_3MMRADIAL.OLB")
+      (DeviceIndex "0"))
+    (IDC
+      (FullPartName "IDC.Normal")
+      (LibraryName
+         "D:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (Q2N2193A
+      (FullPartName "Q2N2193A.Normal")
+      (LibraryName
+         "D:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\PSPICE\BIPOLAR.OLB")
+      (DeviceIndex "0")))
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources"
+         "D:\Downloads\OrCAD\LearningResources\BasicElectronics\06 BJT\Designfiles\bjt.dsn")
+      (Path "Design Resources"
+         "D:\Downloads\OrCAD\LearningResources\BasicElectronics\06 BJT\Designfiles\bjt.dsn"
+         "Amplifier")
+      (Path "Design Resources"
+         "D:\Downloads\OrCAD\LearningResources\BasicElectronics\06 BJT\Designfiles\bjt.dsn"
+         "commonbase")
+      (Path "Design Resources"
+         "D:\Downloads\OrCAD\LearningResources\BasicElectronics\06 BJT\Designfiles\bjt.dsn"
+         "commonemitter")
+      (Path "Design Resources"
+         "D:\Downloads\OrCAD\LearningResources\BasicElectronics\06 BJT\Designfiles\bjt.dsn"
+         "Emitterfollower")
+      (Path "Design Resources"
+         "D:\Downloads\OrCAD\LearningResources\BasicElectronics\06 BJT\Designfiles\bjt.dsn"
+         "switch")
+      (Path "Design Resources"
+         "D:\Downloads\OrCAD\LearningResources\BasicElectronics\06 BJT\Designfiles\bjt.dsn"
+         "Design Cache")
+      (Path "Outputs")
+      (Path "PSpice Resources")
+      (Path "PSpice Resources" "Simulation Profiles"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 2 3 -1 -1 -8 -30 0 200 0 410"))
+      (Tab 0))))

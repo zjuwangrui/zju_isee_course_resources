@@ -1,0 +1,27 @@
+** Profile: "fwd_floating-line_thd"  [ H:\OrCADÏà¹ØÎÄµµ\LearningResources\DesignExamples\SSFWDCNV\Designfiles\ssfwdcnv-pspicefiles\fwd_floating\line_thd.sim ] 
+
+** Creating circuit file "line_thd.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../ssfwdcnv-PSpiceFiles/ac_dc_vrm.lib" 
+* From [PSPICE NETLIST] section of d:\Cadence\SPB_16.5\tools\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 36.667m 16.667m 
+.FOUR 50 10 I(V_V6) 
+.OPTIONS NOBIAS
+.OPTIONS NOECHO
+.OPTIONS NOMOD
+.OPTIONS NOOUTMSG
+.OPTIONS NOPAGE
+.OPTIONS ABSTOL= 1.0n
+.OPTIONS ITL4= 40
+.PROBE V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\fwd_floating.net" 
+
+
+.END

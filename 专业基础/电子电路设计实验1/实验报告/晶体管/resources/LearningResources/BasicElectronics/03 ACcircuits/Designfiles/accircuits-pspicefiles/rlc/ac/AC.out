@@ -1,0 +1,86 @@
+
+**** 12/10/15 08:34:13 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
+
+ ** Profile: "RLC-ac"  [ h:\orcad相关文档\spb_data\cdssetup\orcad_capture\16.6.0\tclscripts\caplearningresources\work\supportfiles\ba
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "ac.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of d:\Cadence\SPB_16.5\tools\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.AC DEC 10001 1 50k
+.PROBE V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\RLC.net" 
+
+
+
+**** INCLUDING RLC.net ****
+* source ACCIRCUITS
+R_R1         N00144 N00119  100 TC=0,0 
+L_L1         N00119 N00123  160m IC=0 
+C_C1         N00123 0  22u IC=0 TC=0,0 
+V_V1         N00144 0  AC 5
++SIN 0 5 60 0 0 0
+
+**** RESUMING ac.cir ****
+.END
+
+**** 12/10/15 08:34:13 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
+
+ ** Profile: "RLC-ac"  [ h:\orcad相关文档\spb_data\cdssetup\orcad_capture\16.6.0\tclscripts\caplearningresources\work\supportfiles\ba
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00119)    0.0000 (N00123)    0.0000 (N00144)    0.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         0.000E+00
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 12/10/15 08:34:13 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
+
+ ** Profile: "RLC-ac"  [ h:\orcad相关文档\spb_data\cdssetup\orcad_capture\16.6.0\tclscripts\caplearningresources\work\supportfiles\ba
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =        2.09
+
