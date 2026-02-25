@@ -1,7 +1,10 @@
-通识必修/计算机类/c/C语言程序设计（第4版）[[:space:]](何钦铭,颜晖)[[:space:]](Z-Library).pdf filter=lfs diff=lfs merge=lfs -text
-专业基础/电子电路基础/讲义/模拟电子技术基础.pdf filter=lfs diff=lfs merge=lfs -text
-专业基础/电子电路基础/讲义/MicroelectronicCircuits.pdf filter=lfs diff=lfs merge=lfs -text
-专业基础/复变/讲义/zju复变函数与积分变换.pdf filter=lfs diff=lfs merge=lfs -text
-专业基础/电子工程训练/验收视频.mp4 filter=lfs diff=lfs merge=lfs -text
-通识选修/经济学基础/微观经济学/曼昆教材课后习题详解答案.pdf filter=lfs diff=lfs merge=lfs -text
-通识必修/外语类/中国文化与国际传播/配音作业/5组视频合集.mp4 filter=lfs diff=lfs merge=lfs -text
+"专业基础/复变/讲义/zju复变函数与积分变换.pdf" filter=lfs diff=lfs merge=lfs -text
+"专业基础/电子工程训练/验收视频.mp4" filter=lfs diff=lfs merge=lfs -text
+"专业基础/电子电路基础/讲义/MicroelectronicCircuits.pdf" filter=lfs diff=lfs merge=lfs -text
+"专业基础/电子电路基础/讲义/模拟电子技术基础.pdf" filter=lfs diff=lfs merge=lfs -text
+"通识必修/外语类/中国文化与国际传播/配音作业/5组视频合集.mp4" filter=lfs diff=lfs merge=lfs -text
+"通识必修/自然科学类/微积分甲下/教材和讲义/2021版 张宇考研数学高数18讲（微积分）.pdf" filter=lfs diff=lfs merge=lfs -text
+"通识必修/自然科学类/微积分甲下/教材和讲义/微积分习题解答（下）.pdf" filter=lfs diff=lfs merge=lfs -text
+"通识必修/自然科学类/微积分甲下/教材和讲义/积分的方法与技巧.pdf" filter=lfs diff=lfs merge=lfs -text
+"通识必修/计算机类/c/C语言程序设计（第4版） (何钦铭,颜晖) (Z-Library).pdf" filter=lfs diff=lfs merge=lfs -text
+"通识选修/经济学基础/微观经济学/曼昆教材课后习题详解答案.pdf" filter=lfs diff=lfs merge=lfs -text
