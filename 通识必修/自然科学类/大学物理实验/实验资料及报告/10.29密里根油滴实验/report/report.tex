@@ -1,0 +1,273 @@
+\documentclass[10pt,a4paper]{ctexart}
+\usepackage[margin=2cm]{geometry}
+\usepackage{graphicx}
+\usepackage{float}      % 支持 [H] 浮动体选项
+\usepackage{hyperref}
+\usepackage{amsmath}    % 提供方程环境
+\usepackage{physics}    % 简化向量、微分算子语法
+\newcommand{\myspace}[1]{\par\vspace{#1\baselineskip}} %自定义空一行
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}  % 清除所有页眉页脚
+\fancyfoot[C]{\thepage}  % 在页脚中央设置页码
+\renewcommand{\headrulewidth}{0pt}  % 去掉页眉横线
+\renewcommand{\footrulewidth}{0pt}  % 去掉页脚横线
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdftitle={Overleaf Example},
+    pdfpagemode=FullScreen,
+    }
+
+\usepackage{titlesec}
+
+% 重新定义section格式
+\titleformat{\section}
+  {\normalfont\Large\bfseries}
+  {\chinese{section}、}
+  {0pt}
+  {}
+
+% 给出常用字号的自定义指令
+\newcommand{\chuhao}{\fontsize{42pt}{48pt}\selectfont}
+\newcommand{\xiaochu}{\fontsize{36pt}{42pt}\selectfont}
+\newcommand{\xiaoer}{\fontsize{18pt}{21.6pt}\selectfont}
+\newcommand{\sanhao}{\fontsize{16pt}{20pt}\selectfont}
+\newcommand{\xiaosan}{\fontsize{15pt}{18pt}\selectfont}
+\newcommand{\sihao}{\fontsize{14pt}{18pt}\selectfont}
+\newcommand{\xiaosi}{\fontsize{12pt}{16pt}\selectfont}
+\newcommand{\wuhao}{\fontsize{10.5pt}{12.6pt}\selectfont}
+
+% 定义中文数字转换
+\titleformat{\section}
+  {\normalfont\Large\bfseries}
+  {\zhnum{section}、}  % 使用\zhnum而不是\chinese
+  {0pt}
+  {}
+
+% 标题设置
+\title{\xiaochu\textbf{物理实验报告}}
+\author{}
+\date{}
+
+\begin{document}
+
+\vspace*{36pt} % 顶部空白
+
+% 居中填写区域
+\begin{center}
+    \includegraphics[width = 9cm]{figure/head.png}
+    
+    \xiaochu\textbf{物理实验报告}
+    % 预留空白区域
+    \vspace{13pt}
+    \vspace{13pt}
+    \vspace{13pt}
+    \vspace{13pt}
+    
+    \sanhao\textbf{实验名称：\underline{\makebox[10cm]{ 密里根油滴实验}}} \\[10pt]
+    \sanhao\textbf{实验桌号：\underline{\makebox[10cm]{ 9}}} \\[10pt]
+    \sanhao\textbf{指导教师：\underline{\makebox[10cm]{ 朱韵嫱 }}} \\[30pt]
+    
+    % 预留空白区域
+    \myspace{6}
+    
+   \sihao\textbf{班级：\underline{\makebox[6cm]{}}} \\[10pt]
+    \sihao\textbf{姓名：\underline{\makebox[6cm]{}}} \\[10pt]
+    \sihao\textbf{学号：\underline{\makebox[6cm]{}}} \\[30pt]
+    
+   \sihao\textbf{实验日期: 
+   \underline{\makebox[0.8cm]{2025}}  年 
+   \underline{\makebox[0.4cm]{10}}月
+   \underline{\makebox[0.4cm]{29}}日  
+   星期\underline{\makebox[0.6cm]{三}}上午}
+    
+    \vspace{18pt}
+    \sihao 浙江大学物理实验教学中心
+    
+\end{center}
+
+\newpage
+
+\section{预习报告}
+
+    \subsection{实验综述}
+    
+    \xiaosi （自述实验现象、实验原理和实验方法，不超过300字，5分）
+
+本实验通过观察油滴在电场中的运动来测量基本电荷量。首先使用手机拍摄油滴的布朗运动现象，然后选择合适的油滴进行测量。
+实验采用匀速下降法测定油滴的质量m， 具体方程如下
+
+$m=\frac{4}{3}\pi r^3 \rho, 6\pi r \eta v = mg , v = \frac{l}{t}$。
+
+接着通过静态平衡法测量油滴的带电量q,
+
+$mg=q\frac{V}{d}$。
+
+最终通过数据处理确定基本电荷e的数值。
+实验过程中需要观察油滴的运动状态，并记录相关数据用于后续计算。
+    \myspace{2}
+    
+    
+    \subsection{实验重点}
+    
+    \xiaosi（简述本实验的学习重点，不超过100字，3分）
+    
+实验的关键在于选择合适的油滴进行测量，油滴大小要适中，运动速度要适宜。
+需要熟练掌握匀速下降法和静态平衡法的操作步骤，准确测量油滴的运动时间和平衡电压。
+数据处理时要正确运用公式计算油滴的质量和带电量，最终通过分析多组数据确定基本电荷的数值。
+    \myspace{2}
+    
+    \subsection{实验难点}
+    
+    \xiaosi（简述本实验的实现难点，不超过100字，2分）
+
+实验的主要难点在于油滴的选择和观测，需要耐心寻找大小合适的油滴。
+电场强度的精确调节和油滴运动时间的准确测量也是关键。
+在数据处理阶段，需要正确处理测量误差，通过多组数据的统计分析来减小误差，最终得到准确的基本电荷值。
+\myspace{2}
+\section{原始数据}
+
+    \xiaosi （将有老师签名的“自备数据记录草稿纸”的扫描或手机拍摄图粘贴在下方，20分）
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{figure/raw_data1.jpg}
+    \caption{软件数据记录}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{figure/raw_data2.jpg}
+    \caption{原始数据记录}
+\end{figure}
+
+\section{结果与分析}
+
+    \subsection{数据处理与结果}
+    \xiaosi （列出数据表格、选择数据处理方法、给定测量或计算结果，30分）
+
+    经过多次测量，记录平衡电压$V$，将开关拨到“0V”挡，选择一段运动计时，记录计时器读数$t$以及下降距离$l$，再应用公式：
+\[ q = \frac{18\pi}{\sqrt{2\rho g}} \left( \frac{\eta l}{t\left(1 + \frac{b}{pr}\right)} \right)^{\frac{3}{2}} \cdot \frac{d}{U} \]
+计算出油滴带电量，得到下表：
+\begin{table}[H]
+  \centering
+  \caption{测量所得$V,l,t$及计算所得电荷量$q$}
+  \begin{tabular}{@{}ccccccccccc@{}}
+    序号 & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 \\
+    \( V(V) \) & 160 & 195 & 93 & 172 & 147 & 200 & 137 & 112 & 165 & 143 \\
+    \( l(mm) \) & 1.5 & 1.5 & 1.5 & 1.5 & 1.5 & 1.5 & 1.5 & 1.5 & 1.5 & 1.5 \\
+    \( t(s) \) & 12.11 & 10.85 & 25.67 & 11.09 & 19.23 & 15.33 & 14.57 & 16.78 & 17.64 & 14.20 \\
+    \( q_i(\times10^{-19}C) \) & 14.7 & 14.3 & 7.82 & 15.7 & 7.79 & 8.16 & 12.9 & 12.6 & 7.94 & 12.8 \\
+  \end{tabular}
+\end{table}
+
+\subsubsection{逐次相减法法计算基本电荷量}
+将上述数据中的电荷量升序排列并逐次相减，从而确定各个油滴的基本电荷数$n$，再用$e_i=\frac{q_i}{n}$求得当前油滴的基本电荷量，如下表：
+\begin{table}[H]
+  \centering
+  \caption{逐次相减法计算基本电荷量}
+  \begin{tabular}{@{\hspace{1em}}cccccc@{\hspace{1em}}}
+    序号 & \( q_i/10^{-19}\,\text{C} \) & \( (q_{i+1}-q_i)/10^{-19}\,\text{C} \) & \( n_{\text{计算}} \) & \( n_{\text{取整}} \) & \( e_i/10^{-19}\,\text{C} \) \\
+    \hline
+    1 & 7.79 & 0.03 & 4.863 & 5 & 1.558 \\
+    2 & 7.82 & 0.12 & 4.881 & 5 & 1.564 \\
+    3 & 7.94 & 0.22 & 4.956 & 5 & 1.588 \\
+    4 & 8.16 & 4.44 & 5.094 & 5 & 1.632 \\
+    5 & 12.6 & 0.20 & 7.865 & 8 & 1.575 \\
+    6 & 12.8 & 0.10 & 7.990 & 8 & 1.600 \\
+    7 & 12.9 & 1.40 & 8.052 & 8 & 1.613 \\
+    8 & 14.3 & 0.40 & 8.926 & 9 & 1.589 \\
+    9 & 14.7 & 1.00 & 9.176 & 9 & 1.633 \\
+    10 & 15.7 & — & 9.800 & 10 & 1.570 \\
+  \end{tabular}
+\end{table}
+
+\subsubsection{求相对误差与A类不确定度}
+电子电荷的公认值为：$$e_{\text{标}} = 1.602 \times 10^{-19} \, \text{C}$$
+
+\vspace{2mm}
+\textbf{计算测量值的算术平均值$\bar{e}$:}
+$$ \bar{e} = \frac{1}{10} \sum_{i=1}^{10} e_i = 1.592 \times 10^{-19} \, \text{C} $$
+
+\textbf{计算相对误差：}
+$$ \text{相对误差} = \left| \frac{\bar{e} - e_{\text{标}}}{e_{\text{标}}} \right| \times 100\% = \left| \frac{1.592 - 1.602}{1.602} \right| \times 100\% = 0.6\% $$
+
+\vspace{2mm}
+\textbf{计算A类不确定度：}（贝塞尔公式，自由度 $\nu = n-1 = 9$）
+$$ u_A = \sqrt{\frac{1}{n(n-1)} \sum_{i=1}^{n} (e_i - \bar{e})^2} $$
+先计算方差和：
+$$ \sum_{i=1}^{10} (e_i - \bar{e})^2 = 0.006524 $$
+代入公式：
+$$ u_A = \sqrt{\frac{1}{10 \times 9} \times 0.006524} = \sqrt{0.000072489} = 0.00851 \times 10^{-19} \, \text{C} $$
+保留一位有效数字：$$u_A = 0.009 \times 10^{-19} \, \text{C}$$.
+
+\vspace{2mm}
+最终测量结果表示为：
+$$ e = (1.592 \pm 0.009) \times 10^{-19} \, \text{C}, \quad \text{相对误差} = 0.6\% $$
+    \myspace{2}
+\subsection{误差分析}
+    \xiaosi （运用测量误差、相对误差、不确定度等分析实验结果，20分）
+\begin{enumerate}
+    \item 油滴在实验过程中会逐渐挥发，质量和带电量发生变化，使油滴实际处于动态平衡，难以精准判断静态平衡状态，影响平衡电压的测量；
+    \item 油滴并非严格的匀速直线运动，空气阻力与速度的关系及油滴的变速运动过程，会导致下落时间测量存在误差；
+    \item 由于人眼观察的局限性，难以精准判断油滴是否完全静止，平衡电压的取值存在误差；
+    \item 实验中的空气密度、粘滞系数、重力加速度、大气压等环境参数会随实验条件变化，影响油滴质量、阻力等相关计算。
+\end{enumerate}
+    \subsection{实验探讨}
+    \xiaosi （对实验内容、现象和过程的小结，不超过100字，10分）
+
+本实验通过密里根油滴实验验证了电荷的量子化特性。
+实验中观察到油滴在电场中的平衡与运动现象，测量了不同油滴的平衡电压和下落时间。
+通过数据处理得到基本电荷量为$(1.592 \pm 0.009) \times 10^{-19} \, \text{C}$，相对误差0.6\%。
+实验结果验证了电荷的不连续性，但油滴挥发、人眼观测误差等因素影响了测量精度。
+\section{思考题}
+
+    \xiaosi （解答教材或讲义或老师布置的思考题，10分）
+
+\subsection{在测量油滴匀速下降一段距离$l$所得时间$t$时，应选择哪段$l$最合适？为什么？}
+应选择油滴匀速下落阶段的中间一段距离$l$最合适。
+原因有：
+\begin{enumerate}
+    \item 油滴从静止开始下落时，会经历初始加速过程，只有当空气粘滞阻力与重力平衡后，才会达到匀速运动状态；
+    \item 选择匀速阶段的中间段距离测量时间，能有效避免初始加速阶段和终点减速阶段的干扰；
+    \item 中间段的运动最稳定，油滴受外界干扰（如气流扰动）最小，测量结果最可靠。
+\end{enumerate}
+\subsection{何谓合适的待测油滴？如何选择？}
+合适的待测油滴应满足以下条件：
+\begin{enumerate}
+    \item \textbf{大小适中}：直径约1μm，过大会导致下落过快难以测量，过小则易受布朗运动影响；
+    \item \textbf{亮度合适}：在显微镜下清晰可见但不过亮（过亮可能含多个电荷）；
+    \item \textbf{运动稳定}：匀速下落时间在10-30秒范围内；
+    \item \textbf{电荷量适中}：平衡电压在100-300V之间。
+\end{enumerate}
+
+选择方法：在显微镜视野中，先关闭电场让油滴自由下落，观察其运动速度；再开启电场调节电压，选择那些能在适中电压下保持平衡的油滴。
+\subsection{对油滴进行跟踪测量时，有时油滴逐渐变得模糊，为什么？应如何避免在测量途中丢失油滴？}
+因为油滴在实验过程中会挥发，质量减小，同时可能受到环境气流等因素影响，导致其与显微镜的对焦状态改变。
+
+\vspace{2mm}
+为避免在测量途中丢失油滴，应:
+\begin{enumerate}
+    \item 尽量选择质量相对较大、挥发较慢的油滴；
+    \item 操作时动作轻柔，减少气流扰动；
+    \item 密切跟踪油滴的运动，及时微调显微镜焦距，保持油滴始终处于清晰的观察视野中。
+\end{enumerate}
+
+\myspace{2}
+\sihao\textbf{注意事项：}
+\xiaosi
+\begin{enumerate}
+    \item 用PDF格式上传“实验报告”，文件名：学生姓名+学号+实验名称+周次。
+    \item  “实验报告”必须递交在“学在浙大”的本课程的对应实验项目的“作业”模块内。
+    \item  “实验报告”成绩必须在“浙江大学物理实验教学中心网站”-“选课系统”内查询。
+    \item 教学评价必须在“浙江大学物理实验教学中心网站”-“选课系统”内进行，学生必须进行教学评价，才能看到实验报告成绩，教学评价必须在本次实验结束后 3 天内进行。
+\end{enumerate}
+
+\vspace{1cm}
+\xiaosi\centering \textbf{浙江大学物理实验教学中心制}
+
+\end{document}

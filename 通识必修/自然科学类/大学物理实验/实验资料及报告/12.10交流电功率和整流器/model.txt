@@ -1,0 +1,128 @@
+table
+\begin{table}[H]
+\footnotesize
+\caption{上限截止频率测量值仿真值对比表格 } 
+\centering  
+\renewcommand{\arraystretch}{1.1}
+\begin{tabular}{*{3}{l}} 
+\hline\hline   
+$f_H测量值$&$F_H$仿真值  \\ 
+\hline
+无$C_u$& &\\
+\hline  
+有$C_u$&&\\
+\hline
+    \end{tabular}
+    \label{table:fH}
+\end{table}
+
+image
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.4\textwidth, height=0.2\textheight]{figure/check_process.jpg}
+    \caption{验算过程}
+    \label{fig:check}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[b]{0.32\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figure/waveform_1_input.jpg}
+        \caption{单相半波整流电路输入信号波形草图}
+        \label{fig:i1}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.32\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figure/waveform_2_input.jpg}
+        \caption{单相全波整流电路输入信号波形草图}
+        \label{fig:i2}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.32\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figure/waveform_3_input.jpg}
+        \caption{桥式整流电路输入信号波形图}
+        \label{fig:i3}
+    \end{subfigure}
+    \caption{输入信号波形草图}
+    \label{fig:i}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[b]{0.32\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figure/waveform_1_output.jpg}
+        \caption{单相半波整流电路输出信号波形草图}
+        \label{fig:o1}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.32\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figure/waveform_2_output.jpg}
+        \caption{单相全波整流电路输出信号波形草图}
+        \label{fig:o2}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.32\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figure/waveform_3_output.jpg}
+        \caption{桥式整流电路输出信号波形图}
+        \label{fig:o3}
+    \end{subfigure}
+    \caption{输出信号波形草图}
+    \label{fig:o}
+\end{figure}
+
+
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[b]{0.32\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figure/waveform_1_f.jpg}
+        \caption{单相半波整流电路输出信号滤波波形草图}
+        \label{fig:f1}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.32\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figure/waveform_2_f.jpg}
+        \caption{单相全波整流电路输出信号滤波波形草图}
+        \label{fig:f2}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.32\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figure/waveform_3_f.jpg}
+        \caption{桥式整流电路输出信号滤波波形图}
+        \label{fig:f3}
+    \end{subfigure}
+    \caption{输出信号滤波波形草图}
+    \label{fig:f}
+\end{figure}
+
+
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[b]{0.32\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figure/i_2.1.5.jpg}
+        \caption{截止失真波形}
+        \label{fig:cutoff_distort}
+    \end{subfigure}
+    \hfill
+
+    \begin{subfigure}[b]{0.32\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figure/i_2.1.6.jpg}
+        \caption{饱和失真波形}
+        \label{fig:sati_distort}
+    \end{subfigure}
+    \hfill
+
+    \caption{失真波形图像}
+    \label{fig:distort}
+\end{figure}
+
