@@ -1,0 +1,243 @@
+2026-05-05 15:12:55,903 - INFO - Loaded audio file 'py_tools\data\songbie.mp3' with sample rate 44100 and 2513284 samples.
+2026-05-05 15:12:56,017 - INFO - Computed STFT with n_fft=512 and hop_length=256. Result shape: (512, 9816)
+2026-05-05 15:14:01,096 - INFO - Loaded audio file 'py_tools\data\songbie.mp3' with sample rate 44100 and 2513284 samples.
+2026-05-05 15:14:01,204 - INFO - Computed STFT with n_fft=512 and hop_length=256. Result shape: (512, 9816)
+2026-05-05 15:14:33,547 - INFO - Loaded audio file 'py_tools\data\songbie.mp3' with sample rate 44100 and 2513284 samples.
+2026-05-05 15:14:33,663 - INFO - Computed STFT with n_fft=512 and hop_length=256. Result shape: (512, 9816)
+2026-05-05 15:14:50,658 - INFO - STFT analysis and plotting completed successfully.
+2026-05-05 15:14:50,662 - INFO - Loaded existing config list with 0 entries.
+2026-05-05 15:14:50,664 - INFO - Updated config list with new entry: 05051514
+2026-05-05 15:16:08,191 - INFO - Loaded audio file 'py_tools\data\songbie.mp3' with sample rate 44100 and 2513284 samples.
+2026-05-05 15:16:08,302 - INFO - Computed STFT with n_fft=512 and hop_length=256. Result shape: (512, 9816)
+2026-05-05 15:16:34,466 - INFO - STFT analysis and plotting completed successfully.
+2026-05-05 15:16:34,470 - INFO - Loaded existing config list with 1 entries.
+2026-05-05 15:16:34,472 - INFO - Updated config list with new entry: 05051516
+2026-05-05 23:20:26,270 - INFO - Loaded audio file 'py_tools\data\self_songbie.mp3' with sample rate 44100 and 2560858 samples.
+2026-05-05 23:20:26,474 - INFO - Computed STFT with n_fft=512 and hop_length=256. Result shape: (512, 10002)
+2026-05-05 23:20:26,474 - INFO - Max frequency: 22050.0
+2026-05-05 23:20:36,418 - INFO - Loaded audio file 'py_tools\data\self_songbie.mp3' with sample rate 44100 and 2560858 samples.
+2026-05-05 23:20:36,597 - INFO - Computed STFT with n_fft=512 and hop_length=256. Result shape: (512, 10002)
+2026-05-05 23:21:17,353 - INFO - STFT analysis and plotting completed successfully.
+2026-05-05 23:21:17,355 - INFO - Loaded existing config list with 2 entries.
+2026-05-05 23:21:17,358 - INFO - Updated config list with new entry: 05052320
+2026-05-05 23:32:33,724 - INFO - STFT animation creation completed successfully.
+2026-05-05 23:32:33,725 - INFO - Loaded existing config list with 2 entries.
+2026-05-05 23:32:33,728 - INFO - Updated config list with new entry: 05052320
+2026-05-06 10:57:19,026 - INFO - Loaded audio file 'py_tools\data\self_songbie.mp3' with sample rate 44100 and 2560858 samples.
+2026-05-06 10:57:19,149 - INFO - Computed STFT with n_fft=512 and hop_length=256. Result shape: (512, 10002)
+2026-05-06 10:57:31,289 - INFO - Saved STFT spectrogram to py_tools/output/music_stft\05061057_music_stft_stft_W512.png
+2026-05-06 10:57:31,292 - INFO - STFT analysis and plotting completed successfully.
+2026-05-06 10:57:31,293 - INFO - Loaded existing config list with 3 entries.
+2026-05-06 10:57:31,294 - INFO - Updated config list with new entry: 05061057
+2026-05-06 10:59:25,237 - INFO - Loaded audio file 'py_tools\data\self_songbie.mp3' with sample rate 44100 and 2560858 samples.
+2026-05-06 10:59:25,356 - INFO - Computed STFT with n_fft=512 and hop_length=256. Result shape: (512, 10002)
+2026-05-06 10:59:53,068 - INFO - Saved STFT spectrogram to py_tools/output/music_stft\05061059_music_stft_stft_W512.png
+2026-05-06 10:59:53,070 - INFO - STFT analysis and plotting completed successfully.
+2026-05-06 10:59:53,070 - INFO - Loaded existing config list with 4 entries.
+2026-05-06 10:59:53,072 - INFO - Updated config list with new entry: 05061059
+2026-05-06 11:00:07,847 - INFO - Loaded audio file 'py_tools\data\self_songbie.mp3' with sample rate 44100 and 2560858 samples.
+2026-05-06 11:00:08,026 - INFO - Computed STFT with n_fft=1024 and hop_length=256. Result shape: (1024, 10000)
+2026-05-06 11:01:51,070 - INFO - Saved STFT spectrogram to py_tools/output/music_stft\05061100_music_stft_stft_W1024.png
+2026-05-06 11:01:51,073 - INFO - STFT analysis and plotting completed successfully.
+2026-05-06 11:01:51,074 - INFO - Loaded existing config list with 5 entries.
+2026-05-06 11:01:51,075 - INFO - Updated config list with new entry: 05061100
+2026-05-06 11:02:06,721 - INFO - Loaded audio file 'py_tools\data\self_songbie.mp3' with sample rate 44100 and 2560858 samples.
+2026-05-06 11:02:06,916 - INFO - Computed STFT with n_fft=2048 and hop_length=512. Result shape: (2048, 4998)
+2026-05-06 11:02:36,629 - INFO - Saved STFT spectrogram to py_tools/output/music_stft\05061102_music_stft_stft_W2048.png
+2026-05-06 11:02:36,631 - INFO - STFT analysis and plotting completed successfully.
+2026-05-06 11:02:36,632 - INFO - Loaded existing config list with 6 entries.
+2026-05-06 11:02:36,633 - INFO - Updated config list with new entry: 05061102
+2026-05-06 11:05:01,371 - INFO - Loaded audio file 'py_tools\data\self_songbie.mp3' with sample rate 44100 and 2560858 samples.
+2026-05-06 11:05:01,546 - INFO - Computed STFT with n_fft=2048 and hop_length=512. Result shape: (2048, 4998)
+2026-05-06 11:05:44,730 - INFO - Loaded audio file 'py_tools\data\self_songbie.mp3' with sample rate 44100 and 2560858 samples.
+2026-05-06 11:05:44,906 - INFO - Computed STFT with n_fft=2048 and hop_length=512. Result shape: (2048, 4998)
+2026-05-06 11:06:01,792 - INFO - Saved STFT spectrogram to py_tools/output/music_stft\05061105_music_stft_stft_W2048.png
+2026-05-06 11:06:01,794 - INFO - STFT analysis and plotting completed successfully.
+2026-05-06 11:06:01,795 - INFO - Loaded existing config list with 7 entries.
+2026-05-06 11:06:01,796 - INFO - Updated config list with new entry: 05061105
+2026-05-06 11:08:40,150 - INFO - Loaded audio file 'py_tools\data\self_songbie.mp3' with sample rate 44100 and 2560858 samples.
+2026-05-06 11:08:40,240 - INFO - Computed STFT with n_fft=2048 and hop_length=1024. Result shape: (2048, 2499)
+2026-05-06 11:08:53,954 - INFO - Saved STFT spectrogram to py_tools/output/music_stft\05061108_music_stft_stft_W2048.png
+2026-05-06 11:08:53,956 - INFO - STFT analysis and plotting completed successfully.
+2026-05-06 11:08:53,956 - INFO - Loaded existing config list with 8 entries.
+2026-05-06 11:08:53,957 - INFO - Updated config list with new entry: 05061108
+2026-05-06 11:09:17,112 - INFO - Loaded audio file 'py_tools\data\self_songbie.mp3' with sample rate 44100 and 2560858 samples.
+2026-05-06 11:09:17,505 - INFO - Computed STFT with n_fft=64 and hop_length=32. Result shape: (64, 80025)
+2026-05-06 11:09:35,887 - INFO - Saved STFT spectrogram to py_tools/output/music_stft\05061109_music_stft_stft_W64.png
+2026-05-06 11:09:35,889 - INFO - STFT analysis and plotting completed successfully.
+2026-05-06 11:09:35,890 - INFO - Loaded existing config list with 9 entries.
+2026-05-06 11:09:35,891 - INFO - Updated config list with new entry: 05061109
+2026-05-06 11:10:24,504 - INFO - Loaded audio file 'py_tools\data\self_songbie.mp3' with sample rate 44100 and 2560858 samples.
+2026-05-06 11:10:26,504 - INFO - Computed STFT with n_fft=32768 and hop_length=1024. Result shape: (32768, 2469)
+2026-05-06 11:10:49,145 - INFO - Saved STFT spectrogram to py_tools/output/music_stft\05061110_music_stft_stft_W32768.png
+2026-05-06 11:10:49,172 - INFO - STFT analysis and plotting completed successfully.
+2026-05-06 11:10:49,173 - INFO - Loaded existing config list with 10 entries.
+2026-05-06 11:10:49,174 - INFO - Updated config list with new entry: 05061110
+2026-05-06 11:14:23,638 - INFO - Loaded audio file 'py_tools\data\self_songbie.mp3' with sample rate 44100 and 2560858 samples.
+2026-05-06 11:14:25,628 - INFO - Computed STFT with n_fft=32768 and hop_length=1024. Result shape: (32768, 2469)
+2026-05-06 11:15:35,280 - INFO - Loaded audio file 'py_tools\data\self_songbie.mp3' with sample rate 44100 and 2560858 samples.
+2026-05-06 11:15:36,865 - INFO - Computed STFT with n_fft=32768 and hop_length=1024. Result shape: (32768, 2469)
+2026-05-06 11:15:59,574 - INFO - Loaded audio file 'py_tools\data\self_songbie.mp3' with sample rate 44100 and 2560858 samples.
+2026-05-06 11:16:01,616 - INFO - Computed STFT with n_fft=32768 and hop_length=1024. Result shape: (32768, 2469)
+2026-05-06 11:16:20,147 - INFO - Saved STFT spectrogram to py_tools/output/music_stft\05061116_music_stft_stft_W32768.png
+2026-05-06 11:16:20,147 - INFO - STFT analysis and plotting completed successfully.
+2026-05-06 11:16:20,147 - INFO - Loaded existing config list with 11 entries.
+2026-05-06 11:16:20,148 - INFO - Updated config list with new entry: 05061116
+2026-05-06 11:19:20,732 - INFO - Loaded audio file 'py_tools\data\self_songbie.mp3' with sample rate 44100 and 2560858 samples.
+2026-05-06 11:19:20,887 - INFO - Computed STFT with n_fft=512 and hop_length=256. Result shape: (512, 10002)
+2026-05-06 11:19:20,888 - INFO - Max frequency: 22050.0
+2026-05-06 11:35:22,222 - INFO - STFT animation creation completed successfully.
+2026-05-06 11:35:22,224 - INFO - Loaded existing config list with 3 entries.
+2026-05-06 11:35:22,226 - INFO - Updated config list with new entry: 05061119
+2026-05-06 11:37:37,650 - INFO - Loaded audio file 'py_tools\data\self_songbie.mp3' with sample rate 44100 and 2560858 samples.
+2026-05-06 11:37:37,799 - INFO - Computed STFT with n_fft=512 and hop_length=256. Result shape: (512, 10002)
+2026-05-06 11:37:37,799 - INFO - Max frequency: 22050.0
+2026-05-06 11:57:26,428 - INFO - STFT animation creation completed successfully.
+2026-05-06 11:57:26,429 - INFO - Loaded existing config list with 4 entries.
+2026-05-06 11:57:26,431 - INFO - Updated config list with new entry: 05061137
+2026-05-06 12:01:25,079 - INFO - Loaded audio file 'py_tools\data\self_songbie.mp3' with sample rate 44100 and 2560858 samples.
+2026-05-06 12:01:25,232 - INFO - Computed STFT with n_fft=512 and hop_length=256. Result shape: (512, 10002)
+2026-05-06 12:01:25,233 - INFO - Max frequency: 22050.0
+2026-05-06 12:13:20,762 - INFO - STFT animation creation completed successfully.
+2026-05-06 12:13:20,772 - INFO - Loaded existing config list with 5 entries.
+2026-05-06 12:13:20,774 - INFO - Updated config list with new entry: 05061201
+2026-05-10 08:23:31,008 - INFO - Loaded audio file 'py_tools\data\self_songbie.mp3' with sample rate 44100 and 2560858 samples.
+2026-05-10 08:23:32,629 - INFO - Computed STFT with n_fft=32768 and hop_length=1024. Result shape: (32768, 2469)
+2026-05-10 08:23:54,154 - INFO - Saved STFT spectrogram to py_tools/output/music_stft\05100823_music_stft_stft_W32768.png
+2026-05-10 08:23:54,159 - INFO - STFT analysis and plotting completed successfully.
+2026-05-10 08:23:54,162 - INFO - Loaded existing config list with 12 entries.
+2026-05-10 08:23:54,164 - INFO - Updated config list with new entry: 05100823
+2026-05-10 08:35:37,724 - INFO - Loaded audio file 'py_tools\data\self_songbie.mp3' with sample rate 44100 and 2560858 samples.
+2026-05-10 08:35:40,111 - INFO - Computed STFT with n_fft=32768 and hop_length=1024. Result shape: (32768, 2469)
+2026-05-10 08:35:40,112 - INFO - Max frequency: 22050.0
+2026-05-10 08:38:35,705 - INFO - STFT animation creation completed successfully.
+2026-05-10 08:38:35,788 - INFO - Loaded existing config list with 6 entries.
+2026-05-10 08:38:35,789 - INFO - Updated config list with new entry: 05100835
+2026-05-10 14:06:14,922 - INFO - Loaded audio file 'py_tools\output\video\_fft_animator_smoke.wav' with sample rate 8000 and 4000 samples.
+2026-05-10 14:06:14,930 - INFO - Computed frame-wise FFT with n_fft=256, hop_length=128. Result shape: (129, 30)
+2026-05-10 14:06:14,930 - INFO - Frequency range: 31.25 Hz to -4000.0 Hz
+2026-05-10 14:06:15,584 - INFO - FFT spectrum animation creation completed successfully.
+2026-05-10 14:06:46,634 - INFO - Loaded audio file 'py_tools\output\video\_fft_animator_smoke.wav' with sample rate 8000 and 4000 samples.
+2026-05-10 14:06:46,641 - INFO - Computed frame-wise FFT with n_fft=256, hop_length=128. Result shape: (129, 30)
+2026-05-10 14:06:46,642 - INFO - Frequency range: 31.25 Hz to 4000.0 Hz
+2026-05-10 14:06:47,059 - INFO - FFT spectrum animation creation completed successfully.
+2026-05-10 14:15:58,638 - INFO - Loaded audio file 'py_tools\data\self_songbie.mp3' with sample rate 44100 and 2560858 samples.
+2026-05-10 14:16:00,738 - INFO - Computed frame-wise FFT with n_fft=32768, hop_length=1024. Result shape: (16385, 2469)
+2026-05-10 14:16:00,738 - INFO - Frequency range: 1.3458251953125 Hz to 22050.0 Hz
+2026-05-10 14:16:30,871 - INFO - FFT spectrum animation creation completed successfully.
+2026-05-10 14:16:30,924 - INFO - Loaded existing config list with 7 entries.
+2026-05-10 14:16:30,927 - INFO - Updated config list with new entry: 05101415
+2026-05-10 14:41:32,522 - INFO - Loaded audio file 'py_tools\output\video\fft\_fft_rain_smoke.wav' with sample rate 8000 and 3200 samples.
+2026-05-10 14:41:32,530 - INFO - Computed frame-wise FFT with n_fft=256, hop_length=128. Result shape: (129, 24)
+2026-05-10 14:41:32,530 - INFO - Frequency range: 31.25 Hz to 4000.0 Hz
+2026-05-10 14:41:32,918 - INFO - Silent FFT spectrum animation saved to: py_tools\output\video\fft\_fft_rain_smoke.mp4
+2026-05-10 14:44:43,995 - INFO - Loaded audio file 'py_tools\data\self_songbie.mp3' with sample rate 44100 and 2560858 samples.
+2026-05-10 14:44:47,296 - INFO - Computed frame-wise FFT with n_fft=32768, hop_length=1024. Result shape: (16385, 2469)
+2026-05-10 14:44:47,297 - INFO - Frequency range: 1.3458251953125 Hz to 22050.0 Hz
+2026-05-10 14:45:24,473 - INFO - Silent FFT spectrum animation saved to: py_tools\output\video\fft\05101444_music_fft.mp4
+2026-05-10 14:45:24,530 - INFO - Loaded existing config list with 8 entries.
+2026-05-10 14:45:24,532 - INFO - Updated config list with new entry: 05101444
+2026-05-10 14:51:42,284 - INFO - Loaded audio file 'py_tools\output\video\fft\_fft_rain_smoke.wav' with sample rate 8000 and 3200 samples.
+2026-05-10 14:51:42,292 - INFO - Computed frame-wise FFT with n_fft=256, hop_length=128. Result shape: (129, 24)
+2026-05-10 14:51:42,292 - INFO - Frequency range: 31.25 Hz to 4000.0 Hz
+2026-05-10 14:51:42,734 - INFO - Silent FFT spectrum animation saved to: py_tools\output\video\fft\_fft_rain_smoke.mp4
+2026-05-10 14:52:15,420 - INFO - Loaded existing config list with 0 entries.
+2026-05-10 14:52:15,421 - INFO - Updated config list with new entry: test
+2026-05-10 14:52:18,132 - INFO - Loaded audio file 'py_tools\output\video\fft\_fft_rain_smoke.wav' with sample rate 8000 and 2000 samples.
+2026-05-10 14:52:18,138 - INFO - Computed frame-wise FFT with n_fft=256, hop_length=128. Result shape: (129, 14)
+2026-05-10 14:52:18,138 - INFO - Frequency range: 31.25 Hz to 4000.0 Hz
+2026-05-10 14:52:18,497 - INFO - Silent FFT spectrum animation saved to: py_tools\output\video\fft\_fft_rain_smoke.mp4
+2026-05-10 14:57:02,117 - INFO - Loaded audio file 'py_tools\data\self_songbie.mp3' with sample rate 44100 and 2560858 samples.
+2026-05-10 14:57:04,207 - INFO - Computed frame-wise FFT with n_fft=32768, hop_length=1024. Result shape: (16385, 2469)
+2026-05-10 14:57:04,207 - INFO - Frequency range: 1.3458251953125 Hz to 22050.0 Hz
+2026-05-10 14:57:31,863 - INFO - Silent FFT spectrum animation saved to: py_tools\output\video\fft\05101456_music_fft.mp4
+2026-05-10 14:57:31,902 - INFO - Loaded existing config list with 9 entries.
+2026-05-10 14:57:31,904 - INFO - Updated config list with new entry: 05101456
+2026-05-17 22:52:30,620 - INFO - Loaded audio file 'py_tools\data\self_songbie.mp3' with sample rate 44100 and 2560858 samples.
+2026-05-17 22:52:33,378 - INFO - Computed STFT with n_fft=32768 and hop_length=1024. Result shape: (32768, 2469)
+2026-05-17 22:52:33,378 - INFO - Max frequency: 22050.0
+2026-05-17 22:57:13,401 - INFO - Silent STFT animation saved to: py_tools\output\video\stft\05172252_music_stft.mp4
+2026-05-17 22:57:13,540 - INFO - Loaded existing config list with 10 entries.
+2026-05-17 22:57:13,542 - INFO - Updated config list with new entry: 05172252
+2026-05-27 11:04:46,708 - INFO - Using identifier: '05271104'
+2026-05-27 11:04:46,709 - INFO - Loading signal from 'py_tools/data/signal1.mat'...
+2026-05-27 11:04:47,254 - INFO - Successfully loaded signal with shape (14000,) from key 'z'.
+2026-05-27 11:04:47,551 - INFO - Saved waveform plot to 'py_tools/output/waveforms\signal105271104waveform.png'
+2026-05-27 11:04:47,551 - INFO - Loading signal from 'py_tools/data/signal2.mat'...
+2026-05-27 11:04:48,228 - INFO - Successfully loaded signal with shape (14000,) from key 'zz'.
+2026-05-27 11:04:48,354 - INFO - Saved waveform plot to 'py_tools/output/waveforms\signal205271104waveform.png'
+2026-05-27 11:04:48,355 - INFO - Waveform generation process completed.
+2026-05-27 11:05:17,138 - INFO - Using identifier: '05271105'
+2026-05-27 11:05:17,138 - INFO - Loading signal from 'py_tools/data/signal1.mat'...
+2026-05-27 11:05:17,140 - INFO - Successfully loaded signal with shape (14000,) from key 'z'.
+2026-05-27 11:05:17,314 - INFO - Saved waveform plot to 'py_tools/output/waveforms\signal105271105waveform.png'
+2026-05-27 11:05:17,314 - INFO - Loading signal from 'py_tools/data/signal2.mat'...
+2026-05-27 11:05:17,315 - INFO - Successfully loaded signal with shape (14000,) from key 'zz'.
+2026-05-27 11:05:17,439 - INFO - Saved waveform plot to 'py_tools/output/waveforms\signal205271105waveform.png'
+2026-05-27 11:05:17,440 - INFO - Waveform generation process completed.
+2026-05-27 21:30:37,416 - INFO - Loaded audio file 'py_tools\data\self_songbie.mp3' with sample rate 44100 and 2560858 samples.
+2026-05-27 21:30:48,450 - INFO - Saved waveform plot to py_tools/output/music_waveform\05272130_music_waveform_waveform.png
+2026-05-27 21:30:48,451 - INFO - Waveform plotting completed successfully.
+2026-05-27 21:30:48,451 - INFO - Loaded existing config list with 0 entries.
+2026-05-27 21:30:48,452 - INFO - Updated config list with new entry: 05272130
+2026-05-27 21:31:05,748 - INFO - Loaded audio file 'py_tools\data\self_songbie.mp3' with sample rate 44100 and 2560858 samples.
+2026-05-27 21:31:14,555 - INFO - Saved waveform plot to py_tools/output/music_waveform\05272131_music_waveform_waveform.png
+2026-05-27 21:31:14,556 - INFO - Waveform plotting completed successfully.
+2026-05-27 21:31:14,557 - INFO - Loaded existing config list with 1 entries.
+2026-05-27 21:31:14,558 - INFO - Updated config list with new entry: 05272131
+2026-05-27 21:32:16,371 - INFO - Loaded audio file 'py_tools\data\self_songbie.mp3' with sample rate 44100 and 2560858 samples.
+2026-05-27 21:32:39,486 - INFO - Saved FFT spectrum plot to py_tools/output/music_fft\05272132_music_fft_fft.png
+2026-05-27 21:32:39,487 - INFO - FFT spectrum analysis and plotting completed successfully.
+2026-05-27 21:32:39,488 - INFO - Loaded existing config list with 0 entries.
+2026-05-27 21:32:39,489 - INFO - Updated config list with new entry: 05272132
+2026-05-27 21:33:15,294 - INFO - Loaded audio file 'py_tools\data\self_songbie.mp3' with sample rate 44100 and 2560858 samples.
+2026-05-27 21:33:25,564 - INFO - Saved FFT spectrum plot to py_tools/output/music_fft\05272133_music_fft_fft.png
+2026-05-27 21:33:25,566 - INFO - FFT spectrum analysis and plotting completed successfully.
+2026-05-27 21:33:25,566 - INFO - Loaded existing config list with 1 entries.
+2026-05-27 21:33:25,567 - INFO - Updated config list with new entry: 05272133
+2026-05-27 21:34:46,955 - INFO - Loaded audio file 'py_tools\data\self_songbie.mp3' with sample rate 44100 and 2560858 samples.
+2026-05-27 21:34:57,394 - INFO - Saved FFT spectrum plot to py_tools/output/music_fft\05272134_music_fft_fft.png
+2026-05-27 21:34:57,396 - INFO - FFT spectrum analysis and plotting completed successfully.
+2026-05-27 21:34:57,396 - INFO - Loaded existing config list with 2 entries.
+2026-05-27 21:34:57,397 - INFO - Updated config list with new entry: 05272134
+2026-05-27 21:37:13,919 - INFO - Loaded audio file 'py_tools\data\self_songbie.mp3' with sample rate 44100 and 2560858 samples.
+2026-05-27 21:37:20,505 - INFO - Saved waveform plot to py_tools/output/music_waveform\05272137_music_waveform.png
+2026-05-27 21:37:20,506 - INFO - Waveform plotting completed successfully.
+2026-05-27 21:37:20,506 - INFO - Loaded existing config list with 2 entries.
+2026-05-27 21:37:20,508 - INFO - Updated config list with new entry: 05272137
+2026-05-27 21:52:31,557 - INFO - Loaded audio file 'py_tools\data\self_songbie.mp3' with sample rate 44100 and 2560858 samples.
+2026-05-27 21:52:33,684 - INFO - Computed STFT with n_fft=32768 and hop_length=1024. Result shape: (32768, 2469)
+2026-05-27 21:52:50,393 - INFO - Saved STFT spectrogram to py_tools/output/music_stft\05272152_music_stft_stft_W32768.png
+2026-05-27 21:52:50,393 - INFO - STFT analysis and plotting completed successfully.
+2026-05-27 21:52:50,395 - INFO - Loaded existing config list with 13 entries.
+2026-05-27 21:52:50,396 - INFO - Updated config list with new entry: 05272152
+2026-05-27 21:53:04,617 - INFO - Loaded audio file 'py_tools\data\self_songbie.mp3' with sample rate 44100 and 2560858 samples.
+2026-05-27 21:53:06,613 - INFO - Computed STFT with n_fft=32768 and hop_length=1024. Result shape: (32768, 2469)
+2026-05-27 21:53:22,545 - INFO - Saved STFT spectrogram to py_tools/output/music_stft\05272153_music_stft_stft_W32768.png
+2026-05-27 21:53:22,545 - INFO - STFT analysis and plotting completed successfully.
+2026-05-27 21:53:22,546 - INFO - Loaded existing config list with 14 entries.
+2026-05-27 21:53:22,547 - INFO - Updated config list with new entry: 05272153
+2026-05-27 22:06:42,185 - INFO - Loaded audio file 'py_tools\data\self_songbie.mp3' with sample rate 44100 and 2560858 samples.
+2026-05-27 22:06:45,146 - INFO - Computed STFT with n_fft=32768 and hop_length=1024. Result shape: (32768, 2469)
+2026-05-27 22:06:45,146 - INFO - Max frequency: 22050.0
+2026-05-27 22:11:16,429 - INFO - Silent STFT animation saved to: py_tools\output\video\stft\05272206_music_stft.mp4
+2026-05-27 22:11:16,633 - INFO - Loaded existing config list with 11 entries.
+2026-05-27 22:11:16,658 - INFO - Updated config list with new entry: 05272206
+2026-05-29 15:59:38,148 - INFO - Loaded audio file 'py_tools\data\self_songbie.mp3' with sample rate 44100 and 2560858 samples.
+2026-05-29 15:59:41,733 - INFO - Computed STFT with n_fft=32768 and hop_length=1024. Result shape: (32768, 2469)
+2026-05-29 15:59:41,734 - INFO - Max frequency: 22050.0
+2026-05-29 16:03:27,275 - INFO - Silent STFT animation saved to: py_tools\output\video\stft\05291559_music_stft.mp4
+2026-05-29 16:03:27,395 - INFO - Loaded existing config list with 12 entries.
+2026-05-29 16:03:27,420 - INFO - Updated config list with new entry: 05291559
+2026-05-29 16:05:01,351 - INFO - Loaded audio file 'py_tools\data\self_songbie.mp3' with sample rate 44100 and 2560858 samples.
+2026-05-29 16:05:04,582 - INFO - Computed STFT with n_fft=32768 and hop_length=1024. Result shape: (32768, 2469)
+2026-05-29 16:05:04,583 - INFO - Max frequency: 22050.0
+2026-05-29 16:23:31,727 - INFO - Silent STFT animation saved to: py_tools\output\video\stft\05291604_music_stft.mp4
+2026-05-29 16:23:31,825 - INFO - Loaded existing config list with 13 entries.
+2026-05-29 16:23:31,827 - INFO - Updated config list with new entry: 05291604
+2026-07-24 18:33:50,635 - INFO - Loaded audio file 'py_tools\data\self_songbie.mp3' with sample rate 44100 and 2560858 samples.
+2026-07-24 18:33:52,574 - INFO - Computed frame-wise FFT with n_fft=32768, hop_length=1024. Result shape: (16385, 2469)
+2026-07-24 18:33:52,574 - INFO - Frequency range: 1.3458251953125 Hz to 22050.0 Hz
+2026-07-24 18:34:19,625 - INFO - Silent FFT spectrum animation saved to: py_tools\output\video\fft\18330724_music_fft.mp4
+2026-07-24 18:34:19,660 - INFO - Loaded existing config list with 14 entries.
+2026-07-24 18:34:19,662 - INFO - Updated config list with new entry: 18330724

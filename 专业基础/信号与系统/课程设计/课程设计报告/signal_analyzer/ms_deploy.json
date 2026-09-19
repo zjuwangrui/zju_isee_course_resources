@@ -1,0 +1,20 @@
+{
+  "$schema": "https://modelscope.cn/api/v1/studios/deploy_schema.json",
+  "sdk_type": "docker",
+  "resource_configuration": "platform/2v-cpu-16g-mem",
+  "port": 7860,
+  "environment_variables": [
+    {
+      "name": "FLASK_ENV",
+      "value": "production"
+    },
+    {
+      "name": "MPLBACKEND",
+      "value": "Agg"
+    },
+    {
+      "name": "FRONTEND_DIST_DIR",
+      "value": "/app/frontend_dist"
+    }
+  ]
+}

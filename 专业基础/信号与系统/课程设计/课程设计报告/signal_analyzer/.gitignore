@@ -1,0 +1,32 @@
+frontend/node_modules/
+
+prompts/
+
+# Python caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Backend runtime outputs
+backend/logs/
+backend/uploads/
+backend/animations/
+backend/videos/
+
+# Flask/runtime local state
+backend/instance/
+backend/.env
+
+
+prompts/
+backend/app/api/__pycache__/
+backend/app/api/__pycache__/
+backend/app/services/__pycache__/
+backend/app/services/__pycache__
+backend/app/utils/__pycache__/
+backend/app/utils/__pycache__
+backend/__pycache__/
+backend/__pycache__aq
