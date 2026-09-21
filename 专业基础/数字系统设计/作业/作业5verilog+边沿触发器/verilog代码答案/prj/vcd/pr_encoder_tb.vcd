@@ -1,0 +1,77 @@
+$date
+	Mon Mar 30 20:58:26 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module pr_encoder_tb $end
+$var wire 1 ! v_tb $end
+$var wire 2 " out_tb [1:0] $end
+$var reg 4 # in_tb [3:0] $end
+$scope module pr_encoder_instance $end
+$var wire 4 $ D [3:0] $end
+$var reg 2 % out [1:0] $end
+$var reg 1 ! v $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b0 %
+b0 $
+b0 #
+b0 "
+0!
+$end
+#10000
+1!
+b11 "
+b11 %
+b1000 #
+b1000 $
+#20000
+b1100 #
+b1100 $
+#30000
+b10 "
+b10 %
+b100 #
+b100 $
+#40000
+b110 #
+b110 $
+#50000
+b1 "
+b1 %
+b10 #
+b10 $
+#60000
+b11 #
+b11 $
+#70000
+b0 "
+b0 %
+b1 #
+b1 $
+#80000
+b11 "
+b11 %
+b1010 #
+b1010 $
+#90000
+b10 "
+b10 %
+b101 #
+b101 $
+#100000
+b11 "
+b11 %
+b1111 #
+b1111 $
+#120000
