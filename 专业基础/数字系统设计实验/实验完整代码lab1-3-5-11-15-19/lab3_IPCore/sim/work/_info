@@ -1,0 +1,493 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/program/intelFPGA/20.1/modelsim_ase/win32aloem
+vDCM_PLL
+Z0 !s110 1774970114
+!i10b 1
+!s100 j3oP9?c7<?6X:hcl_I4bR3
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IF=D1nXWLHGG1cd?d0GG<H0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 dD:/constructing_projects/FPGA_projects/FPGA_design_course/lab3_IPCore/sim
+Z4 w1774797049
+Z5 8D:/constructing_projects/FPGA_projects/FPGA_design_course/lab3_IPCore/vivado/IPCore.gen/sources_1/ip/DCM_PLL/DCM_PLL_sim_netlist.v
+Z6 FD:/constructing_projects/FPGA_projects/FPGA_design_course/lab3_IPCore/vivado/IPCore.gen/sources_1/ip/DCM_PLL/DCM_PLL_sim_netlist.v
+!i122 0
+L0 17 25
+Z7 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z8 !s108 1774970114.000000
+Z9 !s107 D:/constructing_projects/FPGA_projects/FPGA_design_course/lab3_IPCore/vivado/IPCore.gen/sources_1/ip/DCM_PLL/DCM_PLL_sim_netlist.v|
+Z10 !s90 -reportprogress|300|-work|work|-stats=none|D:/constructing_projects/FPGA_projects/FPGA_design_course/lab3_IPCore/vivado/IPCore.gen/sources_1/ip/DCM_PLL/DCM_PLL_sim_netlist.v|
+!i113 1
+Z11 o-work work
+Z12 tCvgOpt 0
+n@d@c@m_@p@l@l
+vDCM_PLL_clk_wiz
+R0
+!i10b 1
+!s100 edg4Q2?9Om[7@NXHV;ZEn3
+R1
+ISCiiz1AU8LFdN?MYdd`5I1
+R2
+R3
+R4
+R5
+R6
+!i122 0
+L0 43 106
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+n@d@c@m_@p@l@l_clk_wiz
+vencode
+Z13 !s110 1774970115
+!i10b 1
+!s100 ?=7CzhUYeSoP;=LE:;8eI0
+R1
+IkL]4<D;^@>5;PHLzg4nXk2
+R2
+R3
+Z14 w1771996369
+Z15 8D:/constructing_projects/FPGA_projects/FPGA_design_course/lab3_IPCore/src/code/TMDSencode_func_synth.v
+Z16 FD:/constructing_projects/FPGA_projects/FPGA_design_course/lab3_IPCore/src/code/TMDSencode_func_synth.v
+!i122 4
+L0 4479 519
+R7
+r1
+!s85 0
+31
+Z17 !s108 1774970115.000000
+Z18 !s107 D:/constructing_projects/FPGA_projects/FPGA_design_course/lab3_IPCore/src/code/TMDSencode_func_synth.v|
+Z19 !s90 -reportprogress|300|-work|work|-stats=none|D:/constructing_projects/FPGA_projects/FPGA_design_course/lab3_IPCore/src/code/TMDSencode_func_synth.v|
+!i113 1
+R11
+R12
+vencode_0
+R13
+!i10b 1
+!s100 Y;:G=3e;VV[Az95aN]]kK1
+R1
+IDa84ONOmXERfm2>R9PoL02
+R2
+R3
+R14
+R15
+R16
+!i122 4
+L0 5000 512
+R7
+r1
+!s85 0
+31
+R17
+R18
+R19
+!i113 1
+R11
+R12
+vencode_1
+R13
+!i10b 1
+!s100 no3H@0GT@GFjaBM]21l7L0
+R1
+IGzkiRhX:OGfBlN@6oAOMA2
+R2
+R3
+R14
+R15
+R16
+!i122 4
+L0 5514 503
+R7
+r1
+!s85 0
+31
+R17
+R18
+R19
+!i113 1
+R11
+R12
+vglbl
+R13
+!i10b 1
+!s100 9>Zdzaj5RK:okiW7X@f]X0
+R1
+In=i78NaHPAfRV9Cb3YcQD1
+R2
+R3
+R14
+R15
+R16
+!i122 4
+L0 6021 65
+R7
+r1
+!s85 0
+31
+R17
+R18
+R19
+!i113 1
+R11
+R12
+vIPCore
+R13
+!i10b 1
+!s100 kMVl2U<TMk55PDJ^D@oCf2
+R1
+IC:DNDOC^0FFOkPeEzH6?D1
+R2
+R3
+w1771996370
+8D:/constructing_projects/FPGA_projects/FPGA_design_course/lab3_IPCore/src/code/IPCore.v
+FD:/constructing_projects/FPGA_projects/FPGA_design_course/lab3_IPCore/src/code/IPCore.v
+!i122 2
+L0 2 92
+R7
+r1
+!s85 0
+31
+R8
+!s107 D:/constructing_projects/FPGA_projects/FPGA_design_course/lab3_IPCore/src/code/IPCore.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/constructing_projects/FPGA_projects/FPGA_design_course/lab3_IPCore/src/code/IPCore.v|
+!i113 1
+R11
+R12
+n@i@p@core
+vIPCore_tb
+R13
+!i10b 1
+!s100 g=VAo?6Wk6kdKKk9DE@ja2
+R1
+IFA1ei=edI>YdO?9?@_>D]3
+R2
+R3
+R14
+8D:/constructing_projects/FPGA_projects/FPGA_design_course/lab3_IPCore/src/testbench/IPCore_tb.v
+FD:/constructing_projects/FPGA_projects/FPGA_design_course/lab3_IPCore/src/testbench/IPCore_tb.v
+!i122 5
+L0 2 79
+R7
+r1
+!s85 0
+31
+R17
+!s107 D:/constructing_projects/FPGA_projects/FPGA_design_course/lab3_IPCore/src/testbench/IPCore_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/constructing_projects/FPGA_projects/FPGA_design_course/lab3_IPCore/src/testbench/IPCore_tb.v|
+!i113 1
+R11
+R12
+n@i@p@core_tb
+vNumberCnt
+R13
+!i10b 1
+!s100 YHYXI]iIkGOoiUbbSD^D^3
+R1
+IVF9:WPB@m>7f^VbKFdBK^3
+R2
+R3
+R14
+R15
+R16
+!i122 4
+L0 15 953
+R7
+r1
+!s85 0
+31
+R17
+R18
+R19
+!i113 1
+R11
+R12
+n@number@cnt
+vNumberCnt_2
+R13
+!i10b 1
+!s100 bfCB:F7<k;<PcU:J>@:^f0
+R1
+IF8??dgzII8R88G<D0]fUF3
+R2
+R3
+R14
+R15
+R16
+!i122 4
+L0 970 261
+R7
+r1
+!s85 0
+31
+R17
+R18
+R19
+!i113 1
+R11
+R12
+n@number@cnt_2
+vNumberCnt_3
+R13
+!i10b 1
+!s100 9F;BCLkE0WA6IQH]ejn690
+R1
+IJdEAWeNH]0WPb5oUMLTEC1
+R2
+R3
+R14
+R15
+R16
+!i122 4
+L0 1233 954
+R7
+r1
+!s85 0
+31
+R17
+R18
+R19
+!i113 1
+R11
+R12
+n@number@cnt_3
+vNumberCnt_4
+R13
+!i10b 1
+!s100 ecc6BIL7Kf6WTiOE1H]Xk3
+R1
+I@3>`3:N=kF:j^bjli?2b92
+R2
+R3
+R14
+R15
+R16
+!i122 4
+L0 2189 261
+R7
+r1
+!s85 0
+31
+R17
+R18
+R19
+!i113 1
+R11
+R12
+n@number@cnt_4
+vNumberCnt_5
+R13
+!i10b 1
+!s100 T<CWcO0`hV4R29]TeC:LL1
+R1
+IN3;[ocGBVU3hm]YZX]AJg3
+R2
+R3
+R14
+R15
+R16
+!i122 4
+L0 2452 1000
+R7
+r1
+!s85 0
+31
+R17
+R18
+R19
+!i113 1
+R11
+R12
+n@number@cnt_5
+vNumberCnt_6
+R13
+!i10b 1
+!s100 @O>hFaeQOm7;j:6CoHI`]3
+R1
+IeFT9cUA7HzmVSBHfa575K2
+R2
+R3
+R14
+R15
+R16
+!i122 4
+L0 3454 328
+R7
+r1
+!s85 0
+31
+R17
+R18
+R19
+!i113 1
+R11
+R12
+n@number@cnt_6
+vPictureROM
+R0
+!i10b 1
+!s100 SEbN@BeMJTzO;KHg^a4;z0
+R1
+II0_BhalJdA=@]3IJ0<?zR1
+R2
+R3
+w1774796638
+Z20 8D:/constructing_projects/FPGA_projects/FPGA_design_course/lab3_IPCore/vivado/IPCore.gen/sources_1/ip/PictureROM/PictureROM_sim_netlist.v
+Z21 FD:/constructing_projects/FPGA_projects/FPGA_design_course/lab3_IPCore/vivado/IPCore.gen/sources_1/ip/PictureROM/PictureROM_sim_netlist.v
+!i122 1
+L0 18 70
+R7
+r1
+!s85 0
+31
+R8
+Z22 !s107 D:/constructing_projects/FPGA_projects/FPGA_design_course/lab3_IPCore/vivado/IPCore.gen/sources_1/ip/PictureROM/PictureROM_sim_netlist.v|
+Z23 !s90 -reportprogress|300|-work|work|-stats=none|D:/constructing_projects/FPGA_projects/FPGA_design_course/lab3_IPCore/vivado/IPCore.gen/sources_1/ip/PictureROM/PictureROM_sim_netlist.v|
+!i113 1
+R11
+R12
+n@picture@r@o@m
+vHgEal/oUad8lEW8fF4ElkyKMkZCOSF8eSFWSVqmcXK8=
+R0
+!i10b 0
+!s100 c=CS_m1KM]1DQJ1A7IXHX0
+R1
+I4NfA92P7IKM2fdl5dQ:Gi1
+R2
+!i119 1
+!i8a 1393103712
+R3
+Z24 w1774970114
+R20
+R21
+!i122 1
+Z25 L0 174 1
+R7
+r1
+!s85 0
+31
+R8
+R22
+R23
+!i113 1
+R11
+R12
+n69aa863
+vFCdniY8HYaBOc2R2uRsBLyXmoAbBWO/kOMhdztO+u9UXGrus2i/bZN4UvtL7vP9C
+R0
+!i10b 0
+!s100 aoUKX17`KiO8SfVi27WPQ3
+R1
+IEKU:3NXeA0C^OPT@[fieK2
+R2
+!i119 1
+!i8a 1501158800
+R3
+R24
+R20
+R21
+!i122 1
+R25
+R7
+r1
+!s85 0
+31
+R8
+R22
+R23
+!i113 1
+R11
+R12
+nff06dc8
+v82V7uGxdOkzdBeQSKSBgUQ==
+R0
+!i10b 0
+!s100 ioXA>1LLSGe[m2eX3Xnjz3
+R1
+IS_mTU]no9IiG00YaaKP>z2
+R2
+!i119 1
+!i8a 1497899344
+R3
+R24
+R20
+R21
+!i122 1
+R25
+R7
+r1
+!s85 0
+31
+R8
+R22
+R23
+!i113 1
+R11
+R12
+naaaa69d
+vsyncGenarator
+R13
+!i10b 1
+!s100 _d?idKC1^?`VENSjiVQZ`2
+R1
+IIS@IGHfY<bXfAbiIJmgTk1
+R2
+R3
+R14
+8D:/constructing_projects/FPGA_projects/FPGA_design_course/lab3_IPCore/src/code/syncGenarator.v
+FD:/constructing_projects/FPGA_projects/FPGA_design_course/lab3_IPCore/src/code/syncGenarator.v
+!i122 3
+L0 5 58
+R7
+r1
+!s85 0
+31
+R17
+!s107 D:/constructing_projects/FPGA_projects/FPGA_design_course/lab3_IPCore/src/code/syncGenarator.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/constructing_projects/FPGA_projects/FPGA_design_course/lab3_IPCore/src/code/syncGenarator.v|
+!i113 1
+R11
+R12
+nsync@genarator
+vTMDSencode
+R13
+!i10b 1
+!s100 b=;1<]EHKRPgcb1giBDl42
+R1
+Ib7NkXJ7UWA3CL_X<?52K:3
+R2
+R3
+R14
+R15
+R16
+!i122 4
+L0 3784 694
+R7
+r1
+!s85 0
+31
+R17
+R18
+R19
+!i113 1
+R11
+R12
+n@t@m@d@sencode

@@ -1,0 +1,3 @@
+read_verilog -sv -formal -overwrite {workspace}/src/code/decode.v
+design -reset-vlog; proc;
+write_json {workspace}/prj/netlist/decode.json

@@ -1,0 +1,639 @@
+#! /c/Source/iverilog-install/bin/vvp
+:ivl_version "12.0 (devel)" "(s20150603-1539-g2693dd32b)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision - 12;
+:vpi_module "D:\program\iverilog\iverilog\lib\ivl\system.vpi";
+:vpi_module "D:\program\iverilog\iverilog\lib\ivl\vhdl_sys.vpi";
+:vpi_module "D:\program\iverilog\iverilog\lib\ivl\vhdl_textio.vpi";
+:vpi_module "D:\program\iverilog\iverilog\lib\ivl\v2005_math.vpi";
+:vpi_module "D:\program\iverilog\iverilog\lib\ivl\va_math.vpi";
+:vpi_module "D:\program\iverilog\iverilog\lib\ivl\v2009.vpi";
+S_000002014540d310 .scope package, "$unit" "$unit" 2 1;
+ .timescale 0 0;
+S_0000020145417370 .scope module, "debouncer_tb" "debouncer_tb" 3 3;
+ .timescale -9 -12;
+P_0000020145417500 .param/l "CLK_FREQ" 1 3 6, +C4<00000101111101011110000100000000>;
+P_0000020145417538 .param/l "CLK_PERIOD" 1 3 7, +C4<00000000000000000000000000001010>;
+P_0000020145417570 .param/l "DEBOUNCE_CYCLES" 1 3 9, +C4<0000000000000000000000000000000000000000000011110100001001000000>;
+P_00000201454175a8 .param/l "DEBOUNCE_TIME_MS" 1 3 8, +C4<00000000000000000000000000001010>;
+v000002014546dec0_0 .var "clk", 0 0;
+v000002014546e5a0_0 .var "in", 0 0;
+v000002014546d880_0 .net "out", 0 0, L_000002014546e0a0;  1 drivers
+v000002014546d420_0 .var "reset", 0 0;
+E_0000020145408c00/0 .event negedge, v000002014546a260_0;
+E_0000020145408c00/1 .event posedge, v000002014546a260_0;
+E_0000020145408c00 .event/or E_0000020145408c00/0, E_0000020145408c00/1;
+E_0000020145408c80/0 .event negedge, v0000020145469900_0;
+E_0000020145408c80/1 .event posedge, v0000020145469900_0;
+E_0000020145408c80 .event/or E_0000020145408c80/0, E_0000020145408c80/1;
+S_00000201454178d0 .scope task, "press_key_with_jitter" "press_key_with_jitter" 3 34, 3 34 0, S_0000020145417370;
+ .timescale -9 -12;
+v0000020145406540_0 .var/i "i", 31 0;
+v0000020145406900_0 .var "jitter_count", 7 0;
+v0000020145406c20_0 .var/real "jitter_duration_ms", 0 0;
+v00000201454069a0_0 .var/real "jitter_interval", 0 0;
+v0000020145406a40_0 .var/real "press_duration_ms", 0 0;
+v0000020145406ae0_0 .var/real "stable_time_ms", 0 0;
+TD_debouncer_tb.press_key_with_jitter ;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v000002014546e5a0_0, 0, 1;
+    %load/real v0000020145406ae0_0;
+    %pushi/vec4 1000000, 0, 32;
+    %cvt/rv/s;
+    %mul/wr;
+    %pushi/real 2097152000, 4075; load=1000.00
+    %mul/wr;
+    %cvt/vr 64;
+    %muli 1, 0, 64;
+    %ix/vec4 4;
+    %delayx 4;
+    %vpi_call/w 3 48 "$display", "%t: Key press started", $time {0 0 0};
+    %vpi_func 3 51 "$urandom_range" 32, 32'sb00000000000000000000000000000101, 32'sb00000000000000000000000000001111 {0 0 0};
+    %pad/u 8;
+    %store/vec4 v0000020145406900_0, 0, 8;
+    %load/real v0000020145406c20_0;
+    %load/vec4 v0000020145406900_0;
+    %cvt/rv;
+    %div/wr;
+    %store/real v00000201454069a0_0;
+    %pushi/vec4 0, 0, 32;
+    %store/vec4 v0000020145406540_0, 0, 32;
+T_0.0 ;
+    %load/vec4 v0000020145406540_0;
+    %load/vec4 v0000020145406900_0;
+    %pad/u 32;
+    %cmp/u;
+    %jmp/0xz T_0.1, 5;
+    %load/vec4 v000002014546e5a0_0;
+    %inv;
+    %store/vec4 v000002014546e5a0_0, 0, 1;
+    %load/real v00000201454069a0_0;
+    %pushi/vec4 1000000, 0, 32;
+    %cvt/rv/s;
+    %mul/wr;
+    %pushi/real 2097152000, 4075; load=1000.00
+    %mul/wr;
+    %cvt/vr 64;
+    %muli 1, 0, 64;
+    %ix/vec4 4;
+    %delayx 4;
+    ; show_stmt_assign_vector: Get l-value for compressed += operand
+    %load/vec4 v0000020145406540_0;
+    %pushi/vec4 1, 0, 32;
+    %add;
+    %store/vec4 v0000020145406540_0, 0, 32;
+    %jmp T_0.0;
+T_0.1 ;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v000002014546e5a0_0, 0, 1;
+    %vpi_call/w 3 61 "$display", "%t: Key stable pressed", $time {0 0 0};
+    %load/real v0000020145406a40_0;
+    %pushi/vec4 1000000, 0, 32;
+    %cvt/rv/s;
+    %mul/wr;
+    %pushi/real 2097152000, 4075; load=1000.00
+    %mul/wr;
+    %cvt/vr 64;
+    %muli 1, 0, 64;
+    %ix/vec4 4;
+    %delayx 4;
+    %vpi_call/w 3 65 "$display", "%t: Key release started", $time {0 0 0};
+    %vpi_func 3 66 "$urandom_range" 32, 32'sb00000000000000000000000000000101, 32'sb00000000000000000000000000001111 {0 0 0};
+    %pad/u 8;
+    %store/vec4 v0000020145406900_0, 0, 8;
+    %load/real v0000020145406c20_0;
+    %load/vec4 v0000020145406900_0;
+    %cvt/rv;
+    %div/wr;
+    %store/real v00000201454069a0_0;
+    %pushi/vec4 0, 0, 32;
+    %store/vec4 v0000020145406540_0, 0, 32;
+T_0.2 ;
+    %load/vec4 v0000020145406540_0;
+    %load/vec4 v0000020145406900_0;
+    %pad/u 32;
+    %cmp/u;
+    %jmp/0xz T_0.3, 5;
+    %load/vec4 v000002014546e5a0_0;
+    %inv;
+    %store/vec4 v000002014546e5a0_0, 0, 1;
+    %load/real v00000201454069a0_0;
+    %pushi/vec4 1000000, 0, 32;
+    %cvt/rv/s;
+    %mul/wr;
+    %pushi/real 2097152000, 4075; load=1000.00
+    %mul/wr;
+    %cvt/vr 64;
+    %muli 1, 0, 64;
+    %ix/vec4 4;
+    %delayx 4;
+    ; show_stmt_assign_vector: Get l-value for compressed += operand
+    %load/vec4 v0000020145406540_0;
+    %pushi/vec4 1, 0, 32;
+    %add;
+    %store/vec4 v0000020145406540_0, 0, 32;
+    %jmp T_0.2;
+T_0.3 ;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v000002014546e5a0_0, 0, 1;
+    %vpi_call/w 3 76 "$display", "%t: Key stable released", $time {0 0 0};
+    %load/real v0000020145406ae0_0;
+    %pushi/vec4 1000000, 0, 32;
+    %cvt/rv/s;
+    %mul/wr;
+    %pushi/real 2097152000, 4075; load=1000.00
+    %mul/wr;
+    %cvt/vr 64;
+    %muli 1, 0, 64;
+    %ix/vec4 4;
+    %delayx 4;
+    %end;
+S_0000020145417a60 .scope task, "short_press" "short_press" 3 92, 3 92 0, S_0000020145417370;
+ .timescale -9 -12;
+v0000020145406cc0_0 .var/real "duration_ms", 0 0;
+TD_debouncer_tb.short_press ;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v000002014546e5a0_0, 0, 1;
+    %load/real v0000020145406cc0_0;
+    %pushi/vec4 1000000, 0, 32;
+    %cvt/rv/s;
+    %mul/wr;
+    %pushi/real 2097152000, 4075; load=1000.00
+    %mul/wr;
+    %cvt/vr 64;
+    %muli 1, 0, 64;
+    %ix/vec4 4;
+    %delayx 4;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v000002014546e5a0_0, 0, 1;
+    %end;
+S_00000201453f8ab0 .scope task, "simple_key_press" "simple_key_press" 3 82, 3 82 0, S_0000020145417370;
+ .timescale -9 -12;
+v0000020145406e00_0 .var/real "duration_ms", 0 0;
+TD_debouncer_tb.simple_key_press ;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v000002014546e5a0_0, 0, 1;
+    %load/real v0000020145406e00_0;
+    %pushi/vec4 1000000, 0, 32;
+    %cvt/rv/s;
+    %mul/wr;
+    %pushi/real 2097152000, 4075; load=1000.00
+    %mul/wr;
+    %cvt/vr 64;
+    %muli 1, 0, 64;
+    %ix/vec4 4;
+    %delayx 4;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v000002014546e5a0_0, 0, 1;
+    %end;
+S_00000201453f8c40 .scope module, "u_debouncer" "debouncer" 3 20, 4 1 0, S_0000020145417370;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 1 "clk";
+    .port_info 1 /INPUT 1 "reset";
+    .port_info 2 /INPUT 1 "in";
+    .port_info 3 /OUTPUT 1 "out";
+P_000002014540a140 .param/l "sim" 0 4 3, +C4<00000000000000000000000000000001>;
+v000002014546a3a0_0 .net "clk", 0 0, v000002014546dec0_0;  1 drivers
+v00000201454692c0_0 .net "in", 0 0, v000002014546e5a0_0;  1 drivers
+v0000020145469400_0 .net "out", 0 0, L_000002014546e0a0;  alias, 1 drivers
+v0000020145469360_0 .net "pluse1kHz", 0 0, L_00000201453dde20;  1 drivers
+v0000020145469540_0 .net "reset", 0 0, v000002014546d420_0;  1 drivers
+v0000020145469720_0 .net "timer_clr", 0 0, L_000002014546da60;  1 drivers
+v00000201454695e0_0 .net "timer_done", 0 0, L_00000201453de280;  1 drivers
+S_00000201453fbe30 .scope module, "c0" "controller" 4 24, 5 1 0, S_00000201453f8c40;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 1 "clk";
+    .port_info 1 /INOUT 1 "reset";
+    .port_info 2 /INPUT 1 "in";
+    .port_info 3 /INPUT 1 "timer_done";
+    .port_info 4 /OUTPUT 1 "timer_clr";
+    .port_info 5 /OUTPUT 1 "out";
+P_000002014540f320 .param/l "HIGH" 0 5 10, C4<00>;
+P_000002014540f358 .param/l "LOW" 0 5 10, C4<01>;
+P_000002014540f390 .param/l "WAIT_HIGH" 0 5 10, C4<10>;
+P_000002014540f3c8 .param/l "WAIT_LOW" 0 5 10, C4<11>;
+L_00000201453dde90 .functor OR 1, L_000002014546e460, L_000002014546d380, C4<0>, C4<0>;
+v0000020145405f00_0 .net *"_ivl_0", 1 0, L_000002014546e500;  1 drivers
+L_00000201457e0238 .functor BUFT 1, C4<0>, C4<0>, C4<0>, C4<0>;
+v0000020145405fa0_0 .net *"_ivl_11", 0 0, L_00000201457e0238;  1 drivers
+L_00000201457e0280 .functor BUFT 1, C4<01>, C4<0>, C4<0>, C4<0>;
+v0000020145469d60_0 .net/2u *"_ivl_12", 1 0, L_00000201457e0280;  1 drivers
+v000002014546a8a0_0 .net *"_ivl_14", 0 0, L_000002014546d380;  1 drivers
+v0000020145469ea0_0 .net *"_ivl_17", 0 0, L_00000201453dde90;  1 drivers
+L_00000201457e02c8 .functor BUFT 1, C4<01>, C4<0>, C4<0>, C4<0>;
+v000002014546a940_0 .net/2s *"_ivl_18", 1 0, L_00000201457e02c8;  1 drivers
+L_00000201457e0310 .functor BUFT 1, C4<00>, C4<0>, C4<0>, C4<0>;
+v000002014546a6c0_0 .net/2s *"_ivl_20", 1 0, L_00000201457e0310;  1 drivers
+v000002014546aee0_0 .net *"_ivl_22", 1 0, L_000002014546df60;  1 drivers
+v00000201454697c0_0 .net *"_ivl_26", 1 0, L_000002014546d920;  1 drivers
+L_00000201457e0358 .functor BUFT 1, C4<0>, C4<0>, C4<0>, C4<0>;
+v000002014546a580_0 .net *"_ivl_29", 0 0, L_00000201457e0358;  1 drivers
+L_00000201457e01a8 .functor BUFT 1, C4<0>, C4<0>, C4<0>, C4<0>;
+v00000201454690e0_0 .net *"_ivl_3", 0 0, L_00000201457e01a8;  1 drivers
+L_00000201457e03a0 .functor BUFT 1, C4<01>, C4<0>, C4<0>, C4<0>;
+v0000020145469f40_0 .net/2u *"_ivl_30", 1 0, L_00000201457e03a0;  1 drivers
+v0000020145469860_0 .net *"_ivl_32", 0 0, L_000002014546eb40;  1 drivers
+L_00000201457e03e8 .functor BUFT 1, C4<00>, C4<0>, C4<0>, C4<0>;
+v0000020145469b80_0 .net/2s *"_ivl_34", 1 0, L_00000201457e03e8;  1 drivers
+L_00000201457e0430 .functor BUFT 1, C4<01>, C4<0>, C4<0>, C4<0>;
+v0000020145469680_0 .net/2s *"_ivl_36", 1 0, L_00000201457e0430;  1 drivers
+v000002014546a440_0 .net *"_ivl_38", 1 0, L_000002014546e320;  1 drivers
+L_00000201457e01f0 .functor BUFT 1, C4<00>, C4<0>, C4<0>, C4<0>;
+v000002014546a800_0 .net/2u *"_ivl_4", 1 0, L_00000201457e01f0;  1 drivers
+v0000020145469e00_0 .net *"_ivl_6", 0 0, L_000002014546e460;  1 drivers
+v0000020145469ae0_0 .net *"_ivl_8", 1 0, L_000002014546e6e0;  1 drivers
+v000002014546ab20_0 .net "clk", 0 0, v000002014546dec0_0;  alias, 1 drivers
+v000002014546a260_0 .net "in", 0 0, v000002014546e5a0_0;  alias, 1 drivers
+v000002014546a4e0_0 .var "next_state", 0 0;
+v0000020145469900_0 .net "out", 0 0, L_000002014546e0a0;  alias, 1 drivers
+v000002014546ada0_0 .net "reset", 0 0, v000002014546d420_0;  alias, 1 drivers
+v0000020145469180_0 .var "state", 0 0;
+v0000020145469fe0_0 .net "timer_clr", 0 0, L_000002014546da60;  alias, 1 drivers
+v000002014546a620_0 .net "timer_done", 0 0, L_00000201453de280;  alias, 1 drivers
+E_0000020145409700 .event posedge, v000002014546ada0_0, v000002014546ab20_0;
+E_0000020145409b80 .event anyedge, v0000020145469180_0, v000002014546a260_0, v000002014546a620_0;
+L_000002014546e500 .concat [ 1 1 0 0], v0000020145469180_0, L_00000201457e01a8;
+L_000002014546e460 .cmp/eq 2, L_000002014546e500, L_00000201457e01f0;
+L_000002014546e6e0 .concat [ 1 1 0 0], v0000020145469180_0, L_00000201457e0238;
+L_000002014546d380 .cmp/eq 2, L_000002014546e6e0, L_00000201457e0280;
+L_000002014546df60 .functor MUXZ 2, L_00000201457e0310, L_00000201457e02c8, L_00000201453dde90, C4<>;
+L_000002014546da60 .part L_000002014546df60, 0, 1;
+L_000002014546d920 .concat [ 1 1 0 0], v0000020145469180_0, L_00000201457e0358;
+L_000002014546eb40 .cmp/eq 2, L_000002014546d920, L_00000201457e03a0;
+L_000002014546e320 .functor MUXZ 2, L_00000201457e0430, L_00000201457e03e8, L_000002014546eb40, C4<>;
+L_000002014546e0a0 .part L_000002014546e320, 0, 1;
+S_00000201453fbfc0 .scope module, "frency_division" "counter" 4 16, 6 1 0, S_00000201453f8c40;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 1 "clk";
+    .port_info 1 /INPUT 1 "reset";
+    .port_info 2 /INPUT 1 "en";
+    .port_info 3 /OUTPUT 5 "q";
+    .port_info 4 /OUTPUT 1 "co";
+P_0000020145399430 .param/l "counter_bits" 0 6 3, +C4<00000000000000000000000000000101>;
+P_0000020145399468 .param/l "n" 0 6 2, +C4<00000000000000000000000000100000>;
+L_00000201457e0160 .functor BUFT 1, C4<1>, C4<0>, C4<0>, C4<0>;
+L_00000201453dde20 .functor AND 1, L_000002014546e640, L_00000201457e0160, C4<1>, C4<1>;
+v000002014546a9e0_0 .net *"_ivl_0", 31 0, L_000002014546e000;  1 drivers
+L_00000201457e0088 .functor BUFT 1, C4<000000000000000000000000000>, C4<0>, C4<0>, C4<0>;
+v000002014546ae40_0 .net *"_ivl_3", 26 0, L_00000201457e0088;  1 drivers
+L_00000201457e00d0 .functor BUFT 1, C4<00000000000000000000000000011111>, C4<0>, C4<0>, C4<0>;
+v000002014546abc0_0 .net/2u *"_ivl_4", 31 0, L_00000201457e00d0;  1 drivers
+v000002014546a760_0 .net *"_ivl_6", 0 0, L_000002014546e640;  1 drivers
+v0000020145469220_0 .net "clk", 0 0, v000002014546dec0_0;  alias, 1 drivers
+v00000201454699a0_0 .net "co", 0 0, L_00000201453dde20;  alias, 1 drivers
+v0000020145469c20_0 .net "en", 0 0, L_00000201457e0160;  1 drivers
+v0000020145469a40_0 .var "q", 4 0;
+L_00000201457e0118 .functor BUFT 1, C4<0>, C4<0>, C4<0>, C4<0>;
+v0000020145469cc0_0 .net "reset", 0 0, L_00000201457e0118;  1 drivers
+E_0000020145409580 .event posedge, v000002014546ab20_0;
+L_000002014546e000 .concat [ 5 27 0 0], v0000020145469a40_0, L_00000201457e0088;
+L_000002014546e640 .cmp/eq 32, L_000002014546e000, L_00000201457e00d0;
+S_00000201453b2c60 .scope module, "timer" "counter" 4 36, 6 1 0, S_00000201453f8c40;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 1 "clk";
+    .port_info 1 /INPUT 1 "reset";
+    .port_info 2 /INPUT 1 "en";
+    .port_info 3 /OUTPUT 4 "q";
+    .port_info 4 /OUTPUT 1 "co";
+P_0000020145399630 .param/l "counter_bits" 0 6 3, +C4<00000000000000000000000000000100>;
+P_0000020145399668 .param/l "n" 0 6 2, +C4<00000000000000000000000000001010>;
+L_00000201453de280 .functor AND 1, L_000002014546e140, L_00000201453dde20, C4<1>, C4<1>;
+v000002014546ac60_0 .net *"_ivl_0", 31 0, L_000002014546d9c0;  1 drivers
+L_00000201457e0478 .functor BUFT 1, C4<0000000000000000000000000000>, C4<0>, C4<0>, C4<0>;
+v000002014546aa80_0 .net *"_ivl_3", 27 0, L_00000201457e0478;  1 drivers
+L_00000201457e04c0 .functor BUFT 1, C4<00000000000000000000000000001001>, C4<0>, C4<0>, C4<0>;
+v00000201454694a0_0 .net/2u *"_ivl_4", 31 0, L_00000201457e04c0;  1 drivers
+v000002014546a080_0 .net *"_ivl_6", 0 0, L_000002014546e140;  1 drivers
+v000002014546ad00_0 .net "clk", 0 0, v000002014546dec0_0;  alias, 1 drivers
+v000002014546a300_0 .net "co", 0 0, L_00000201453de280;  alias, 1 drivers
+v000002014546af80_0 .net "en", 0 0, L_00000201453dde20;  alias, 1 drivers
+v000002014546a120_0 .var "q", 3 0;
+v000002014546a1c0_0 .net "reset", 0 0, L_000002014546da60;  alias, 1 drivers
+L_000002014546d9c0 .concat [ 4 28 0 0], v000002014546a120_0, L_00000201457e0478;
+L_000002014546e140 .cmp/eq 32, L_000002014546d9c0, L_00000201457e04c0;
+    .scope S_00000201453fbfc0;
+T_3 ;
+    %wait E_0000020145409580;
+    %load/vec4 v0000020145469cc0_0;
+    %flag_set/vec4 8;
+    %jmp/0xz  T_3.0, 8;
+    %pushi/vec4 0, 0, 5;
+    %assign/vec4 v0000020145469a40_0, 0;
+    %jmp T_3.1;
+T_3.0 ;
+    %load/vec4 v0000020145469c20_0;
+    %flag_set/vec4 8;
+    %jmp/0xz  T_3.2, 8;
+    %load/vec4 v0000020145469a40_0;
+    %pad/u 32;
+    %cmpi/e 31, 0, 32;
+    %jmp/0xz  T_3.4, 4;
+    %pushi/vec4 0, 0, 5;
+    %assign/vec4 v0000020145469a40_0, 0;
+    %jmp T_3.5;
+T_3.4 ;
+    %load/vec4 v0000020145469a40_0;
+    %addi 1, 0, 5;
+    %assign/vec4 v0000020145469a40_0, 0;
+T_3.5 ;
+T_3.2 ;
+T_3.1 ;
+    %jmp T_3;
+    .thread T_3;
+    .scope S_00000201453fbe30;
+T_4 ;
+    %wait E_0000020145409b80;
+    %load/vec4 v0000020145469180_0;
+    %pad/u 2;
+    %dup/vec4;
+    %pushi/vec4 0, 0, 2;
+    %cmp/u;
+    %jmp/1 T_4.0, 6;
+    %dup/vec4;
+    %pushi/vec4 1, 0, 2;
+    %cmp/u;
+    %jmp/1 T_4.1, 6;
+    %dup/vec4;
+    %pushi/vec4 2, 0, 2;
+    %cmp/u;
+    %jmp/1 T_4.2, 6;
+    %dup/vec4;
+    %pushi/vec4 3, 0, 2;
+    %cmp/u;
+    %jmp/1 T_4.3, 6;
+    %jmp T_4.4;
+T_4.0 ;
+    %load/vec4 v000002014546a260_0;
+    %flag_set/vec4 8;
+    %jmp/0 T_4.5, 8;
+    %pushi/vec4 0, 0, 2;
+    %jmp/1 T_4.6, 8;
+T_4.5 ; End of true expr.
+    %pushi/vec4 3, 0, 2;
+    %jmp/0 T_4.6, 8;
+ ; End of false expr.
+    %blend;
+T_4.6;
+    %pad/u 1;
+    %store/vec4 v000002014546a4e0_0, 0, 1;
+    %jmp T_4.4;
+T_4.1 ;
+    %load/vec4 v000002014546a260_0;
+    %flag_set/vec4 8;
+    %jmp/0 T_4.7, 8;
+    %pushi/vec4 2, 0, 2;
+    %jmp/1 T_4.8, 8;
+T_4.7 ; End of true expr.
+    %pushi/vec4 1, 0, 2;
+    %jmp/0 T_4.8, 8;
+ ; End of false expr.
+    %blend;
+T_4.8;
+    %pad/u 1;
+    %store/vec4 v000002014546a4e0_0, 0, 1;
+    %jmp T_4.4;
+T_4.2 ;
+    %load/vec4 v000002014546a620_0;
+    %flag_set/vec4 8;
+    %jmp/0 T_4.9, 8;
+    %pushi/vec4 0, 0, 2;
+    %jmp/1 T_4.10, 8;
+T_4.9 ; End of true expr.
+    %pushi/vec4 2, 0, 2;
+    %jmp/0 T_4.10, 8;
+ ; End of false expr.
+    %blend;
+T_4.10;
+    %pad/u 1;
+    %store/vec4 v000002014546a4e0_0, 0, 1;
+    %jmp T_4.4;
+T_4.3 ;
+    %load/vec4 v000002014546a620_0;
+    %flag_set/vec4 8;
+    %jmp/0 T_4.11, 8;
+    %pushi/vec4 1, 0, 2;
+    %jmp/1 T_4.12, 8;
+T_4.11 ; End of true expr.
+    %pushi/vec4 3, 0, 2;
+    %jmp/0 T_4.12, 8;
+ ; End of false expr.
+    %blend;
+T_4.12;
+    %pad/u 1;
+    %store/vec4 v000002014546a4e0_0, 0, 1;
+    %jmp T_4.4;
+T_4.4 ;
+    %pop/vec4 1;
+    %jmp T_4;
+    .thread T_4, $push;
+    .scope S_00000201453fbe30;
+T_5 ;
+    %wait E_0000020145409700;
+    %load/vec4 v000002014546ada0_0;
+    %flag_set/vec4 8;
+    %jmp/0xz  T_5.0, 8;
+    %pushi/vec4 1, 0, 1;
+    %assign/vec4 v0000020145469180_0, 0;
+    %jmp T_5.1;
+T_5.0 ;
+    %load/vec4 v000002014546a4e0_0;
+    %assign/vec4 v0000020145469180_0, 0;
+T_5.1 ;
+    %jmp T_5;
+    .thread T_5;
+    .scope S_00000201453b2c60;
+T_6 ;
+    %wait E_0000020145409580;
+    %load/vec4 v000002014546a1c0_0;
+    %flag_set/vec4 8;
+    %jmp/0xz  T_6.0, 8;
+    %pushi/vec4 0, 0, 4;
+    %assign/vec4 v000002014546a120_0, 0;
+    %jmp T_6.1;
+T_6.0 ;
+    %load/vec4 v000002014546af80_0;
+    %flag_set/vec4 8;
+    %jmp/0xz  T_6.2, 8;
+    %load/vec4 v000002014546a120_0;
+    %pad/u 32;
+    %cmpi/e 9, 0, 32;
+    %jmp/0xz  T_6.4, 4;
+    %pushi/vec4 0, 0, 4;
+    %assign/vec4 v000002014546a120_0, 0;
+    %jmp T_6.5;
+T_6.4 ;
+    %load/vec4 v000002014546a120_0;
+    %addi 1, 0, 4;
+    %assign/vec4 v000002014546a120_0, 0;
+T_6.5 ;
+T_6.2 ;
+T_6.1 ;
+    %jmp T_6;
+    .thread T_6;
+    .scope S_0000020145417370;
+T_7 ;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v000002014546dec0_0, 0, 1;
+T_7.0 ;
+    %delay 5000, 0;
+    %load/vec4 v000002014546dec0_0;
+    %inv;
+    %store/vec4 v000002014546dec0_0, 0, 1;
+    %jmp T_7.0;
+    %end;
+    .thread T_7;
+    .scope S_0000020145417370;
+T_8 ;
+    %vpi_call/w 3 103 "$display", "========================================" {0 0 0};
+    %vpi_call/w 3 104 "$display", "    Debouncer Testbench Started" {0 0 0};
+    %vpi_call/w 3 105 "$display", "    Clock: 100MHz" {0 0 0};
+    %vpi_call/w 3 106 "$display", "    Debounce time: 10ms (in hardware)" {0 0 0};
+    %vpi_call/w 3 107 "$display", "    Sim mode: ON (faster simulation)" {0 0 0};
+    %vpi_call/w 3 108 "$display", "========================================\012" {0 0 0};
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v000002014546d420_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v000002014546e5a0_0, 0, 1;
+    %delay 50000, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v000002014546d420_0, 0, 1;
+    %delay 100000, 0;
+    %vpi_call/w 3 122 "$display", "\012[Test 1] Normal key press with 10ms jitter" {0 0 0};
+    %vpi_call/w 3 123 "$display", "----------------------------------------" {0 0 0};
+    %pushi/real 1677721600, 4072; load=100.000
+    %store/real v0000020145406a40_0;
+    %pushi/real 1342177280, 4069; load=10.0000
+    %store/real v0000020145406c20_0;
+    %pushi/real 1342177280, 4070; load=20.0000
+    %store/real v0000020145406ae0_0;
+    %fork TD_debouncer_tb.press_key_with_jitter, S_00000201454178d0;
+    %join;
+    %delay 2820130816, 4;
+    %vpi_call/w 3 133 "$display", "\012[Test 2] Short press (5ms < debounce time)" {0 0 0};
+    %vpi_call/w 3 134 "$display", "----------------------------------------" {0 0 0};
+    %vpi_call/w 3 135 "$display", "Expected: No output pulse" {0 0 0};
+    %pushi/real 1342177280, 4068; load=5.00000
+    %store/real v0000020145406cc0_0;
+    %fork TD_debouncer_tb.short_press, S_0000020145417a60;
+    %join;
+    %delay 2755359744, 11;
+    %vpi_call/w 3 142 "$display", "\012[Test 3] Rapid consecutive presses" {0 0 0};
+    %vpi_call/w 3 143 "$display", "----------------------------------------" {0 0 0};
+    %pushi/vec4 3, 0, 32;
+T_8.0 %dup/vec4;
+    %pushi/vec4 0, 0, 32;
+    %cmp/s;
+    %jmp/1xz T_8.1, 5;
+    %jmp/1 T_8.1, 4;
+    %pushi/vec4 1, 0, 32;
+    %sub;
+    %pushi/real 1677721600, 4071; load=50.0000
+    %store/real v0000020145406a40_0;
+    %pushi/real 1342177280, 4069; load=10.0000
+    %store/real v0000020145406c20_0;
+    %pushi/real 1342177280, 4069; load=10.0000
+    %store/real v0000020145406ae0_0;
+    %fork TD_debouncer_tb.press_key_with_jitter, S_00000201454178d0;
+    %join;
+    %delay 1410065408, 2;
+    %jmp T_8.0;
+T_8.1 ;
+    %pop/vec4 1;
+    %delay 2755359744, 11;
+    %vpi_call/w 3 153 "$display", "\012[Test 4] Key press with 20ms jitter" {0 0 0};
+    %vpi_call/w 3 154 "$display", "----------------------------------------" {0 0 0};
+    %pushi/real 1677721600, 4072; load=100.000
+    %store/real v0000020145406a40_0;
+    %pushi/real 1342177280, 4070; load=20.0000
+    %store/real v0000020145406c20_0;
+    %pushi/real 1342177280, 4070; load=20.0000
+    %store/real v0000020145406ae0_0;
+    %fork TD_debouncer_tb.press_key_with_jitter, S_00000201454178d0;
+    %join;
+    %delay 2755359744, 11;
+    %vpi_call/w 3 161 "$display", "\012[Test 5] Reset test during key press" {0 0 0};
+    %vpi_call/w 3 162 "$display", "----------------------------------------" {0 0 0};
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v000002014546e5a0_0, 0, 1;
+    %delay 705032704, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v000002014546d420_0, 0, 1;
+    %delay 50000, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v000002014546d420_0, 0, 1;
+    %delay 1410065408, 2;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v000002014546e5a0_0, 0, 1;
+    %delay 2820130816, 4;
+    %vpi_call/w 3 175 "$display", "\012[Test 6] Short glitch test" {0 0 0};
+    %vpi_call/w 3 176 "$display", "----------------------------------------" {0 0 0};
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v000002014546e5a0_0, 0, 1;
+    %delay 1000000000, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v000002014546e5a0_0, 0, 1;
+    %delay 1000000, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v000002014546e5a0_0, 0, 1;
+    %delay 1410065408, 2;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v000002014546e5a0_0, 0, 1;
+    %delay 100000000, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v000002014546e5a0_0, 0, 1;
+    %delay 1410065408, 2;
+    %vpi_call/w 3 189 "$display", "\012========================================" {0 0 0};
+    %vpi_call/w 3 190 "$display", "    All tests completed!" {0 0 0};
+    %vpi_call/w 3 191 "$display", "========================================" {0 0 0};
+    %delay 1410065408, 2;
+    %vpi_call/w 3 194 "$finish" {0 0 0};
+    %end;
+    .thread T_8;
+    .scope S_0000020145417370;
+T_9 ;
+    %wait E_0000020145408c80;
+    %load/vec4 v000002014546d880_0;
+    %flag_set/vec4 8;
+    %jmp/0xz  T_9.0, 8;
+    %vpi_call/w 3 200 "$display", "%t: [OUTPUT] Key pressed (out=1)", $time {0 0 0};
+    %jmp T_9.1;
+T_9.0 ;
+    %vpi_call/w 3 202 "$display", "%t: [OUTPUT] Key released (out=0)", $time {0 0 0};
+T_9.1 ;
+    %jmp T_9;
+    .thread T_9;
+    .scope S_0000020145417370;
+T_10 ;
+    %wait E_0000020145408c00;
+    %load/vec4 v000002014546e5a0_0;
+    %flag_set/vec4 8;
+    %jmp/0xz  T_10.0, 8;
+    %vpi_call/w 3 208 "$display", "%t: [INPUT] Key released", $time {0 0 0};
+    %jmp T_10.1;
+T_10.0 ;
+    %vpi_call/w 3 210 "$display", "%t: [INPUT] Key pressed", $time {0 0 0};
+T_10.1 ;
+    %jmp T_10;
+    .thread T_10;
+    .scope S_0000020145417370;
+T_11 ;
+    %vpi_call/w 3 218 "$dumpfile", "prj/vcd/debouncer.vcd" {0 0 0};
+    %vpi_call/w 3 219 "$dumpvars", 32'sb00000000000000000000000000000000, S_0000020145417370 {0 0 0};
+    %end;
+    .thread T_11;
+    .scope S_0000020145417370;
+T_12 ;
+    %delay 3567587328, 232;
+    %vpi_call/w 3 225 "$display", "ERROR: Simulation timeout!" {0 0 0};
+    %vpi_call/w 3 226 "$finish" {0 0 0};
+    %end;
+    .thread T_12;
+# The file index is used to find the file name in the following table.
+:file_names 7;
+    "N/A";
+    "<interactive>";
+    "-";
+    "d:/constructing_projects/FPGA_projects/FPGA_design_course/lab11_button_process_unit/src/testbench/debouncer/debouncer_tb.v";
+    "d:/constructing_projects/FPGA_projects/FPGA_design_course/lab11_button_process_unit/src/code/debouncer/debouncer.v";
+    "d:/constructing_projects/FPGA_projects/FPGA_design_course/lab11_button_process_unit/src/code/debouncer/controller.v";
+    "d:/constructing_projects/FPGA_projects/FPGA_design_course/lab11_button_process_unit/src/code/debouncer/counter.v";

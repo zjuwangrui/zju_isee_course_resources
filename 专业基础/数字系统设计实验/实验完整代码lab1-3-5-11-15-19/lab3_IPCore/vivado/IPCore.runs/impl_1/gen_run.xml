@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a200tfbg484-1" LaunchTime="1774970287">
+  <File Type="ROUTE-PWR" Name="IPCore_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="IPCore.tcl"/>
+  <File Type="ROUTE-PWR-SUM" Name="IPCore_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="IPCore_reports.tcl"/>
+  <File Type="BITSTR-MSK" Name="IPCore.msk"/>
+  <File Type="ROUTE-CLK" Name="IPCore_clock_utilization_routed.rpt"/>
+  <File Type="RDI-RDI" Name="IPCore.vdi"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="IPCore_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="IPCore.bit"/>
+  <File Type="BG-DRC" Name="IPCore.drc"/>
+  <File Type="BG-BGN" Name="IPCore.bgn"/>
+  <File Type="BG-BIN" Name="IPCore.bin"/>
+  <File Type="BITSTR-RBT" Name="IPCore.rbt"/>
+  <File Type="BITSTR-NKY" Name="IPCore.nky"/>
+  <File Type="BITSTR-BMM" Name="IPCore_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="IPCore.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="IPCore_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-SYSDEF" Name="IPCore.sysdef"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="IPCore.ltx"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="OPT-DRC" Name="IPCore_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="IPCore.hwdef"/>
+  <File Type="PLACE-IO" Name="IPCore_io_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="IPCore_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="IPCore_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="IPCore_control_sets_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="IPCore_incremental_reuse_pre_placed.rpt"/>
+  <File Type="ROUTE-DRC" Name="IPCore_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="IPCore_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="IPCore_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="IPCore_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="IPCore_route_status.pb"/>
+  <File Type="ROUTE-DCP" Name="IPCore_routed.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="IPCore_routed_error.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="IPCore_routed_bb.dcp"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="IPCore_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="IPCore_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="IPCore_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="IPCore_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="IPCore_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="IPCore_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="IPCore_bus_skew_routed.rpx"/>
+  <File Type="OPT-DCP" Name="IPCore_opt.dcp"/>
+  <File Type="PLACE-DCP" Name="IPCore_placed.dcp"/>
+  <File Type="PWROPT-DCP" Name="IPCore_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="IPCore_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="IPCore_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="IPCore_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="IPCore_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="IPCore_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="IPCore_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="IPCore_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="IPCore_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="IPCore_bus_skew_postroute_physopted.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="IPCore_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="IPCore_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="IPCore_methodology_drc_routed.rpx"/>
+  <File Type="PDI-FILE" Name="IPCore.pdi"/>
+  <File Type="BOOT-PDI-FILE" Name="IPCore_soc.pdi"/>
+  <File Type="PL-PDI-FILE" Name="IPCore_pld.pdi"/>
+  <File Type="RCFI_FILE" Name="IPCore.rcfi"/>
+  <File Type="CFI_FILE" Name="IPCore.cfi"/>
+  <File Type="RNPI_FILE" Name="IPCore.rnpi"/>
+  <File Type="NPI_FILE" Name="IPCore.npi"/>
+  <File Type="RBD_FILE" Name="IPCore.rbd"/>
+  <File Type="ROUTE-RQS" Name="IPCore_routed.rqs"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS" Name="IPCore_postroute_physopted.rqs"/>
+  <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/../src/code/TMDSencode.edf">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../src/code/TMDSencode.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../src/code/syncGenarator.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../src/code/IPCore.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../fig/fig.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="IPCore"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PPRDIR/../src/IPCore.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+    <Step Id="write_device_image"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="PictureROM"/>
+  <BlockFileSet Type="BlockSrcs" Name="DCM_PLL"/>
+</GenRun>

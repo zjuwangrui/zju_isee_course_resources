@@ -1,0 +1,8 @@
+verilog xil_defaultlib --include "../../../ipstatic" \
+"../../../../IPCore.gen/sources_1/ip/DCM_PLL/DCM_PLL_clk_wiz.v" \
+"../../../../IPCore.gen/sources_1/ip/DCM_PLL/DCM_PLL.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,59 @@
+D:/constructing_projects/FPGA_projects/FPGA_design_course/lab3_IPCore/vivado/IPCore.gen/sources_1/ip/DCM_PLL/DCM_PLL_sim_netlist.v {1 {vlog -work work -stats=none D:/constructing_projects/FPGA_projects/FPGA_design_course/lab3_IPCore/vivado/IPCore.gen/sources_1/ip/DCM_PLL/DCM_PLL_sim_netlist.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module DCM_PLL
+-- Compiling module DCM_PLL_clk_wiz
+-- Compiling module glbl
+
+Top level modules:
+	DCM_PLL
+	glbl
+
+} {} {}} D:/constructing_projects/FPGA_projects/FPGA_design_course/lab3_IPCore/src/code/IPCore.v {1 {vlog -work work -stats=none D:/constructing_projects/FPGA_projects/FPGA_design_course/lab3_IPCore/src/code/IPCore.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module IPCore
+
+Top level modules:
+	IPCore
+
+} {} {}} D:/constructing_projects/FPGA_projects/FPGA_design_course/lab3_IPCore/src/code/TMDSencode_func_synth.v {1 {vlog -work work -stats=none D:/constructing_projects/FPGA_projects/FPGA_design_course/lab3_IPCore/src/code/TMDSencode_func_synth.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module NumberCnt
+-- Compiling module NumberCnt_2
+-- Compiling module NumberCnt_3
+-- Compiling module NumberCnt_4
+-- Compiling module NumberCnt_5
+-- Compiling module NumberCnt_6
+-- Compiling module TMDSencode
+-- Compiling module encode
+-- Compiling module encode_0
+-- Compiling module encode_1
+-- Compiling module glbl
+
+Top level modules:
+	TMDSencode
+	glbl
+
+} {} {}} D:/constructing_projects/FPGA_projects/FPGA_design_course/lab3_IPCore/vivado/IPCore.gen/sources_1/ip/PictureROM/PictureROM_sim_netlist.v {1 {vlog -work work -stats=none D:/constructing_projects/FPGA_projects/FPGA_design_course/lab3_IPCore/vivado/IPCore.gen/sources_1/ip/PictureROM/PictureROM_sim_netlist.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module PictureROM
+-- Compiling module glbl
+
+Top level modules:
+	PictureROM
+	glbl
+
+} {} {}} D:/constructing_projects/FPGA_projects/FPGA_design_course/lab3_IPCore/src/code/syncGenarator.v {1 {vlog -work work -stats=none D:/constructing_projects/FPGA_projects/FPGA_design_course/lab3_IPCore/src/code/syncGenarator.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module syncGenarator
+
+Top level modules:
+	syncGenarator
+
+} {} {}} D:/constructing_projects/FPGA_projects/FPGA_design_course/lab3_IPCore/src/testbench/IPCore_tb.v {1 {vlog -work work -stats=none D:/constructing_projects/FPGA_projects/FPGA_design_course/lab3_IPCore/src/testbench/IPCore_tb.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module IPCore_tb
+
+Top level modules:
+	IPCore_tb
+
+} {} {}}

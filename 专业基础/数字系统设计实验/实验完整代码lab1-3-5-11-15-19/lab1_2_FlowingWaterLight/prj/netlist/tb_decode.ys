@@ -1,0 +1,4 @@
+read_verilog -sv -formal -overwrite {workspace}/src/code/decode.v
+read_verilog -sv -formal -overwrite {workspace}/src/testbench/decode_tb.v
+design -reset-vlog; proc;
+write_json {workspace}/prj/netlist/tb_decode.json

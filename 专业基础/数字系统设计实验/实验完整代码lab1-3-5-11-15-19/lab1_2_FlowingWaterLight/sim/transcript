@@ -1,0 +1,177 @@
+# Loading project lab1
+# Compile of counter_n.v was successful.
+# Compile of counter_up_down.v was successful.
+# Compile of decode.v failed with 1 errors.
+# Compile of FlowingWaterLight.v was successful.
+# Compile of FlowingWaterLight_tb.v was successful.
+# 5 compiles, 1 failed with 1 error.
+# Compile of decode.v failed with 1 errors.
+# Compile of decode.v was successful.
+# Compile of decode.v was successful.
+vsim work.FlowingWateLight_tb
+# vsim work.FlowingWateLight_tb 
+# Start time: 10:56:18 on Mar 06,2026
+# Loading work.FlowingWateLight_tb
+# Loading work.FlowingWaterLight
+# ** Error: (vsim-3033) Instantiation of 'Counter_n' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /FlowingWateLight_tb/FlowingWateLight_inst File: D:/constructing_projects/FPGA_projects/FPGA_design_course/lab1_2_FlowingWaterLight/src/code/FlowingWaterLight.v Line: 11
+#         Searched libraries:
+#             D:/constructing_projects/FPGA_projects/FPGA_design_course/lab1_2_FlowingWaterLight/sim/work
+# Loading work.counter_up_dn
+# Loading work.decode
+# Error loading design
+# End time: 10:56:18 on Mar 06,2026, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 9
+# Error opening D:/constructing_projects/FPGA_projects/FPGA_design_course/lab1_2_FlowingWaterLight/src/FlowingWaterLight_tb.v
+# Path name 'D:/constructing_projects/FPGA_projects/FPGA_design_course/lab1_2_FlowingWaterLight/src/FlowingWaterLight_tb.v' doesn't exist.
+# Compile of FlowingWaterLight_tb.v was successful.
+vsim work.FlowingWateLight_tb
+# vsim work.FlowingWateLight_tb 
+# Start time: 10:59:07 on Mar 06,2026
+# Loading work.FlowingWateLight_tb
+# Loading work.FlowingWaterLight
+# ** Error: (vsim-3033) Instantiation of 'Counter_n' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /FlowingWateLight_tb/FlowingWateLight_inst File: D:/constructing_projects/FPGA_projects/FPGA_design_course/lab1_2_FlowingWaterLight/src/code/FlowingWaterLight.v Line: 11
+#         Searched libraries:
+#             D:/constructing_projects/FPGA_projects/FPGA_design_course/lab1_2_FlowingWaterLight/sim/work
+# Loading work.counter_up_dn
+# Loading work.decode
+# Error loading design
+# End time: 10:59:07 on Mar 06,2026, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 4
+vsim work.FlowingWateLight_tb
+# vsim work.FlowingWateLight_tb 
+# Start time: 11:01:02 on Mar 06,2026
+# Loading work.FlowingWateLight_tb
+# Loading work.FlowingWaterLight
+# ** Error: (vsim-3033) Instantiation of 'Counter_n' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /FlowingWateLight_tb/FlowingWateLight_inst File: D:/constructing_projects/FPGA_projects/FPGA_design_course/lab1_2_FlowingWaterLight/src/code/FlowingWaterLight.v Line: 11
+#         Searched libraries:
+#             D:/constructing_projects/FPGA_projects/FPGA_design_course/lab1_2_FlowingWaterLight/sim/work
+# Loading work.counter_up_dn
+# Loading work.decode
+# Error loading design
+# End time: 11:01:02 on Mar 06,2026, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 1
+vsim work.FlowingWateLight_tb
+# vsim work.FlowingWateLight_tb 
+# Start time: 11:02:01 on Mar 06,2026
+# Loading work.FlowingWateLight_tb
+# Loading work.FlowingWaterLight
+# ** Error: (vsim-3033) Instantiation of 'Counter_n' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /FlowingWateLight_tb/FlowingWateLight_inst File: D:/constructing_projects/FPGA_projects/FPGA_design_course/lab1_2_FlowingWaterLight/src/code/FlowingWaterLight.v Line: 11
+#         Searched libraries:
+#             D:/constructing_projects/FPGA_projects/FPGA_design_course/lab1_2_FlowingWaterLight/sim/work
+# Loading work.counter_up_dn
+# Loading work.decode
+# Error loading design
+# End time: 11:02:02 on Mar 06,2026, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 1
+# Compile of FlowingWaterLight.v was successful.
+vsim work.FlowingWateLight_tb
+# vsim work.FlowingWateLight_tb 
+# Start time: 11:02:52 on Mar 06,2026
+# Loading work.FlowingWateLight_tb
+# Loading work.FlowingWaterLight
+# Loading work.counter_n
+# Loading work.counter_up_dn
+# Loading work.decode
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'en'. The port definition is at: D:/constructing_projects/FPGA_projects/FPGA_design_course/lab1_2_FlowingWaterLight/src/code/counter_n.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /FlowingWateLight_tb/FlowingWateLight_inst/div_inst File: D:/constructing_projects/FPGA_projects/FPGA_design_course/lab1_2_FlowingWaterLight/src/code/FlowingWaterLight.v Line: 11
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'r'. The port definition is at: D:/constructing_projects/FPGA_projects/FPGA_design_course/lab1_2_FlowingWaterLight/src/code/counter_n.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /FlowingWateLight_tb/FlowingWateLight_inst/div_inst File: D:/constructing_projects/FPGA_projects/FPGA_design_course/lab1_2_FlowingWaterLight/src/code/FlowingWaterLight.v Line: 11
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'counter_up_dn_inst'.  Expected 6, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /FlowingWateLight_tb/FlowingWateLight_inst/counter_up_dn_inst File: D:/constructing_projects/FPGA_projects/FPGA_design_course/lab1_2_FlowingWaterLight/src/code/FlowingWaterLight.v Line: 14
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (3) for port 'din'. The port definition is at: D:/constructing_projects/FPGA_projects/FPGA_design_course/lab1_2_FlowingWaterLight/src/code/decode.v(4).
+#    Time: 0 ps  Iteration: 0  Instance: /FlowingWateLight_tb/FlowingWateLight_inst/decode_inst File: D:/constructing_projects/FPGA_projects/FPGA_design_course/lab1_2_FlowingWaterLight/src/code/FlowingWaterLight.v Line: 17
+add wave sim:/FlowingWateLight_tb/FlowingWateLight_inst/div_inst/*
+run -all
+# ** Note: $stop    : D:/constructing_projects/FPGA_projects/FPGA_design_course/lab1_2_FlowingWaterLight/src/testbench/FlowingWaterLight_tb.v(22)
+#    Time: 1716 ns  Iteration: 0  Instance: /FlowingWateLight_tb
+# Break in Module FlowingWateLight_tb at D:/constructing_projects/FPGA_projects/FPGA_design_course/lab1_2_FlowingWaterLight/src/testbench/FlowingWaterLight_tb.v line 22
+# Compile of counter_n.v was successful.
+# Compile of counter_up_down.v was successful.
+# Compile of decode.v was successful.
+# Compile of FlowingWaterLight.v was successful.
+# Compile of FlowingWaterLight_tb.v was successful.
+# 5 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.FlowingWateLight_tb
+# Loading work.FlowingWaterLight
+# Loading work.counter_n
+# Loading work.counter_up_dn
+# Loading work.decode
+# ** Error: (vsim-3043) Unresolved reference to 'tb_FlowingWaterLight'.
+#    Time: 0 ps  Iteration: 0  Instance: /FlowingWateLight_tb File: D:/constructing_projects/FPGA_projects/FPGA_design_course/lab1_2_FlowingWaterLight/src/testbench/FlowingWaterLight_tb.v Line: 20
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'counter_up_dn_inst'.  Expected 6, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /FlowingWateLight_tb/FlowingWateLight_inst/counter_up_dn_inst File: D:/constructing_projects/FPGA_projects/FPGA_design_course/lab1_2_FlowingWaterLight/src/code/FlowingWaterLight.v Line: 14
+vsim work.FlowingWateLight_tb
+# vsim work.FlowingWateLight_tb 
+# Start time: 11:02:52 on Mar 06,2026
+# Loading work.FlowingWateLight_tb
+# Loading work.FlowingWaterLight
+# Loading work.counter_n
+# Loading work.counter_up_dn
+# Loading work.decode
+# ** Error: (vsim-3043) Unresolved reference to 'tb_FlowingWaterLight'.
+#    Time: 0 ps  Iteration: 0  Instance: /FlowingWateLight_tb File: D:/constructing_projects/FPGA_projects/FPGA_design_course/lab1_2_FlowingWaterLight/src/testbench/FlowingWaterLight_tb.v Line: 20
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'counter_up_dn_inst'.  Expected 6, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /FlowingWateLight_tb/FlowingWateLight_inst/counter_up_dn_inst File: D:/constructing_projects/FPGA_projects/FPGA_design_course/lab1_2_FlowingWaterLight/src/code/FlowingWaterLight.v Line: 14
+# Error loading design
+# End time: 12:15:45 on Mar 06,2026, Elapsed time: 1:12:53
+# Errors: 2, Warnings: 3
+vsim work.FlowingWateLight_tb
+# vsim work.FlowingWateLight_tb 
+# Start time: 12:15:59 on Mar 06,2026
+# Loading work.FlowingWateLight_tb
+# Loading work.FlowingWaterLight
+# Loading work.counter_n
+# Loading work.counter_up_dn
+# Loading work.decode
+# ** Error: (vsim-3043) Unresolved reference to 'tb_FlowingWaterLight'.
+#    Time: 0 ps  Iteration: 0  Instance: /FlowingWateLight_tb File: D:/constructing_projects/FPGA_projects/FPGA_design_course/lab1_2_FlowingWaterLight/src/testbench/FlowingWaterLight_tb.v Line: 20
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'counter_up_dn_inst'.  Expected 6, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /FlowingWateLight_tb/FlowingWateLight_inst/counter_up_dn_inst File: D:/constructing_projects/FPGA_projects/FPGA_design_course/lab1_2_FlowingWaterLight/src/code/FlowingWaterLight.v Line: 14
+# Error loading design
+# End time: 12:16:00 on Mar 06,2026, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 2
+vsim work.FlowingWateLight_tb
+# vsim work.FlowingWateLight_tb 
+# Start time: 12:16:14 on Mar 06,2026
+# Loading work.FlowingWateLight_tb
+# Loading work.FlowingWaterLight
+# Loading work.counter_n
+# Loading work.counter_up_dn
+# Loading work.decode
+# ** Error: (vsim-3043) Unresolved reference to 'tb_FlowingWaterLight'.
+#    Time: 0 ps  Iteration: 0  Instance: /FlowingWateLight_tb File: D:/constructing_projects/FPGA_projects/FPGA_design_course/lab1_2_FlowingWaterLight/src/testbench/FlowingWaterLight_tb.v Line: 20
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'counter_up_dn_inst'.  Expected 6, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /FlowingWateLight_tb/FlowingWateLight_inst/counter_up_dn_inst File: D:/constructing_projects/FPGA_projects/FPGA_design_course/lab1_2_FlowingWaterLight/src/code/FlowingWaterLight.v Line: 14
+# Error loading design
+# End time: 12:16:14 on Mar 06,2026, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 2
+# Compile of counter_n.v was successful.
+# Compile of counter_up_down.v was successful.
+# Compile of decode.v was successful.
+# Compile of FlowingWaterLight.v was successful.
+# Compile of FlowingWaterLight_tb.v was successful.
+# 5 compiles, 0 failed with no errors.
+vsim work.FlowingWateLight_tb
+# vsim work.FlowingWateLight_tb 
+# Start time: 12:17:58 on Mar 06,2026
+# Loading work.FlowingWateLight_tb
+# Loading work.FlowingWaterLight
+# Loading work.counter_n
+# Loading work.counter_up_dn
+# Loading work.decode
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'counter_up_dn_inst'.  Expected 6, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /FlowingWateLight_tb/FlowingWateLight_inst/counter_up_dn_inst File: D:/constructing_projects/FPGA_projects/FPGA_design_course/lab1_2_FlowingWaterLight/src/code/FlowingWaterLight.v Line: 14
+add wave sim:/FlowingWateLight_tb/*
+run -all
+# ** Note: $stop    : D:/constructing_projects/FPGA_projects/FPGA_design_course/lab1_2_FlowingWaterLight/src/testbench/FlowingWaterLight_tb.v(22)
+#    Time: 1716 ns  Iteration: 0  Instance: /FlowingWateLight_tb
+# Break in Module FlowingWateLight_tb at D:/constructing_projects/FPGA_projects/FPGA_design_course/lab1_2_FlowingWaterLight/src/testbench/FlowingWaterLight_tb.v line 22
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf D:/constructing_projects/FPGA_projects/FPGA_design_course/lab1_2_FlowingWaterLight/sim/wave.do
+# End time: 12:19:02 on Mar 06,2026, Elapsed time: 0:01:04
+# Errors: 0, Warnings: 3

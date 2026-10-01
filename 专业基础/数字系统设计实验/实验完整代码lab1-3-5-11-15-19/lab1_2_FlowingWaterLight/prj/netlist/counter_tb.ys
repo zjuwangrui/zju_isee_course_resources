@@ -1,0 +1,4 @@
+read_verilog -sv -formal -overwrite {workspace}/src/code/counter_n.v
+read_verilog -sv -formal -overwrite {workspace}/src/testbench/counter_n_tb.v
+design -reset-vlog; proc;
+write_json {workspace}/prj/netlist/counter_tb.json

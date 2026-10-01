@@ -1,0 +1,6 @@
+read_verilog -sv -formal -overwrite {workspace}/src/code/counter_n.v
+read_verilog -sv -formal -overwrite {workspace}/src/code/counter_up_down.v
+read_verilog -sv -formal -overwrite {workspace}/src/code/decode.v
+read_verilog -sv -formal -overwrite {workspace}/src/code/FlowingWaterLight.v
+design -reset-vlog; proc;
+write_json {workspace}/prj/netlist/FlowingWaterLight.json

@@ -1,0 +1,135 @@
+#! /c/Source/iverilog-install/bin/vvp
+:ivl_version "12.0 (devel)" "(s20150603-1539-g2693dd32b)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision - 9;
+:vpi_module "D:\program\iverilog\iverilog\lib\ivl\system.vpi";
+:vpi_module "D:\program\iverilog\iverilog\lib\ivl\vhdl_sys.vpi";
+:vpi_module "D:\program\iverilog\iverilog\lib\ivl\vhdl_textio.vpi";
+:vpi_module "D:\program\iverilog\iverilog\lib\ivl\v2005_math.vpi";
+:vpi_module "D:\program\iverilog\iverilog\lib\ivl\va_math.vpi";
+:vpi_module "D:\program\iverilog\iverilog\lib\ivl\v2009.vpi";
+S_00000130bdc54cf0 .scope package, "$unit" "$unit" 2 1;
+ .timescale 0 0;
+S_00000130bdc69d80 .scope module, "counter_tb" "counter_tb" 3 3;
+ .timescale -9 -9;
+P_00000130bdc64e70 .param/l "counter_bits" 0 3 6, +C4<00000000000000000000000000000001>;
+P_00000130bdc64ea8 .param/l "n" 0 3 5, +C4<00000000000000000000000000000010>;
+v00000130bdc63a00_0 .var "clk", 0 0;
+v00000130bdc64310_0 .net "co", 0 0, L_00000130bdc6acf0;  1 drivers
+v00000130bdc64450_0 .var "en", 0 0;
+v00000130bdc63f50_0 .net "q", 0 0, v00000130bdc638c0_0;  1 drivers
+v00000130bdc64630_0 .var "rst", 0 0;
+S_00000130bdc69f10 .scope module, "uut" "counter_n" 3 15, 4 1 0, S_00000130bdc69d80;
+ .timescale -9 -9;
+    .port_info 0 /INPUT 1 "clk";
+    .port_info 1 /INPUT 1 "en";
+    .port_info 2 /INPUT 1 "r";
+    .port_info 3 /OUTPUT 1 "q";
+    .port_info 4 /OUTPUT 1 "co";
+P_00000130bdc33280 .param/l "counter_bits" 0 4 3, +C4<00000000000000000000000000000001>;
+P_00000130bdc332b8 .param/l "n" 0 4 2, +C4<00000000000000000000000000000010>;
+L_00000130bdc6acf0 .functor AND 1, L_00000130bdc646d0, v00000130bdc64450_0, C4<1>, C4<1>;
+v00000130bdc330a0_0 .net *"_ivl_0", 31 0, L_00000130bdc641d0;  1 drivers
+L_00000130bdcb7048 .functor BUFT 1, C4<0000000000000000000000000000000>, C4<0>, C4<0>, C4<0>;
+v00000130bdc333f0_0 .net *"_ivl_3", 30 0, L_00000130bdcb7048;  1 drivers
+L_00000130bdcb7090 .functor BUFT 1, C4<00000000000000000000000000000001>, C4<0>, C4<0>, C4<0>;
+v00000130bdc55500_0 .net/2u *"_ivl_4", 31 0, L_00000130bdcb7090;  1 drivers
+v00000130bdc54e80_0 .net *"_ivl_6", 0 0, L_00000130bdc646d0;  1 drivers
+v00000130bdc6a0a0_0 .net "clk", 0 0, v00000130bdc63a00_0;  1 drivers
+v00000130bdc6a140_0 .net "co", 0 0, L_00000130bdc6acf0;  alias, 1 drivers
+v00000130bdc63820_0 .net "en", 0 0, v00000130bdc64450_0;  1 drivers
+v00000130bdc638c0_0 .var "q", 0 0;
+v00000130bdc63960_0 .net "r", 0 0, v00000130bdc64630_0;  1 drivers
+E_00000130bdba8160 .event posedge, v00000130bdc6a0a0_0;
+L_00000130bdc641d0 .concat [ 1 31 0 0], v00000130bdc638c0_0, L_00000130bdcb7048;
+L_00000130bdc646d0 .cmp/eq 32, L_00000130bdc641d0, L_00000130bdcb7090;
+    .scope S_00000130bdc69f10;
+T_0 ;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v00000130bdc638c0_0, 0, 1;
+    %end;
+    .thread T_0, $init;
+    .scope S_00000130bdc69f10;
+T_1 ;
+    %wait E_00000130bdba8160;
+    %load/vec4 v00000130bdc63960_0;
+    %flag_set/vec4 8;
+    %jmp/0xz  T_1.0, 8;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v00000130bdc638c0_0, 0, 1;
+    %jmp T_1.1;
+T_1.0 ;
+    %load/vec4 v00000130bdc63820_0;
+    %flag_set/vec4 8;
+    %jmp/0xz  T_1.2, 8;
+    %load/vec4 v00000130bdc638c0_0;
+    %pad/u 32;
+    %cmpi/e 1, 0, 32;
+    %jmp/0xz  T_1.4, 4;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v00000130bdc638c0_0, 0, 1;
+    %jmp T_1.5;
+T_1.4 ;
+    %load/vec4 v00000130bdc638c0_0;
+    %pad/u 2;
+    %addi 1, 0, 2;
+    %pad/u 1;
+    %store/vec4 v00000130bdc638c0_0, 0, 1;
+T_1.5 ;
+T_1.2 ;
+T_1.1 ;
+    %jmp T_1;
+    .thread T_1;
+    .scope S_00000130bdc69d80;
+T_2 ;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v00000130bdc63a00_0, 0, 1;
+T_2.0 ;
+    %delay 10, 0;
+    %load/vec4 v00000130bdc63a00_0;
+    %inv;
+    %store/vec4 v00000130bdc63a00_0, 0, 1;
+    %jmp T_2.0;
+    %end;
+    .thread T_2;
+    .scope S_00000130bdc69d80;
+T_3 ;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v00000130bdc64630_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v00000130bdc64450_0, 0, 1;
+    %vpi_call/w 3 34 "$dumpfile", "prj/vcd/counter_n.vcd" {0 0 0};
+    %vpi_call/w 3 35 "$dumpvars", 32'sb00000000000000000000000000000000, S_00000130bdc69d80 {0 0 0};
+    %vpi_call/w 3 38 "$display", "=== \350\256\241\346\225\260\345\231\250\344\273\277\347\234\237\345\274\200\345\247\213 ===" {0 0 0};
+    %vpi_call/w 3 39 "$display", "\346\227\266\351\227\264  rst  en   q  co" {0 0 0};
+    %delay 20, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v00000130bdc64630_0, 0, 1;
+    %vpi_call/w 3 45 "$display", "%4d   %b    %b   %b  %b", $time, v00000130bdc64630_0, v00000130bdc64450_0, v00000130bdc63f50_0, v00000130bdc64310_0 {0 0 0};
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v00000130bdc64450_0, 0, 1;
+    %delay 100, 0;
+    %vpi_call/w 3 50 "$display", "%4d   %b    %b   %b  %b", $time, v00000130bdc64630_0, v00000130bdc64450_0, v00000130bdc63f50_0, v00000130bdc64310_0 {0 0 0};
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v00000130bdc64450_0, 0, 1;
+    %delay 40, 0;
+    %vpi_call/w 3 55 "$display", "%4d   %b    %b   %b  %b", $time, v00000130bdc64630_0, v00000130bdc64450_0, v00000130bdc63f50_0, v00000130bdc64310_0 {0 0 0};
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v00000130bdc64450_0, 0, 1;
+    %delay 80, 0;
+    %vpi_call/w 3 60 "$display", "%4d   %b    %b   %b  %b", $time, v00000130bdc64630_0, v00000130bdc64450_0, v00000130bdc63f50_0, v00000130bdc64310_0 {0 0 0};
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v00000130bdc64630_0, 0, 1;
+    %delay 20, 0;
+    %vpi_call/w 3 65 "$display", "%4d   %b    %b   %b  %b", $time, v00000130bdc64630_0, v00000130bdc64450_0, v00000130bdc63f50_0, v00000130bdc64310_0 {0 0 0};
+    %vpi_call/w 3 68 "$display", "\012=== \344\273\277\347\234\237\347\273\223\346\235\237 ===" {0 0 0};
+    %vpi_call/w 3 69 "$finish" {0 0 0};
+    %end;
+    .thread T_3;
+# The file index is used to find the file name in the following table.
+:file_names 5;
+    "N/A";
+    "<interactive>";
+    "-";
+    "c:/Users/lenovo/WPSDrive/1639471701/WPS企业云盘/浙江大学/我的企业文档/使用中的学习资料/数电实验/数字系统设计实验/Lab1/src/testbench/counter_n_tb.v";
+    "c:/Users/lenovo/WPSDrive/1639471701/WPS企业云盘/浙江大学/我的企业文档/使用中的学习资料/数电实验/数字系统设计实验/Lab1/src/code/counter_n.v";

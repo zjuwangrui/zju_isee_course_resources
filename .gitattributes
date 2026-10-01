@@ -10,3 +10,12 @@
 "通识选修/经济学基础/微观经济学/曼昆教材课后习题详解答案.pdf" filter=lfs diff=lfs merge=lfs -text
 "专业基础/数字系统设计/讲义/Digital Design.pdf" filter=lfs diff=lfs merge=lfs -text
 "专业基础/数字系统设计/讲义/数字系统设计与verilog hdl.pdf" filter=lfs diff=lfs merge=lfs -text
+"专业基础/数字系统设计实验/讲义/HDL/第4讲Verilog HDL基础知识.mp4" filter=lfs diff=lfs merge=lfs -text
+"专业基础/数字系统设计实验/讲义/HDL/第6讲状态机的Verilog HDL描述.mp4" filter=lfs diff=lfs merge=lfs -text
+"专业基础/数字系统设计实验/讲义/设计与调试方法/第13讲数字系统的仿真调试（一）.mp4" filter=lfs diff=lfs merge=lfs -text
+"专业基础/数字系统设计实验/讲义/设计与调试方法/第14讲数字系统的仿真调试（二）-.mp4" filter=lfs diff=lfs merge=lfs -text
+"专业基础/数字系统设计实验/讲义/设计与调试方法/第17讲   数字系统的仿真调试（三）.mp4" filter=lfs diff=lfs merge=lfs -text
+"专业基础/数字系统设计实验/讲义/设计与调试方法/第2讲  数字系统设计方法.mp4" filter=lfs diff=lfs merge=lfs -text
+"专业基础/数字系统设计实验/讲义/设计与调试方法/第3讲  数字系统设计方法(二).mp4" filter=lfs diff=lfs merge=lfs -text
+"专业基础/数字系统设计实验/讲义/软件使用/第8讲ModelSim软件的使用.mp4" filter=lfs diff=lfs merge=lfs -text
+"专业基础/数字系统设计实验/讲义/软件使用/第9讲Vivado软件的使用.mp4" filter=lfs diff=lfs merge=lfs -text

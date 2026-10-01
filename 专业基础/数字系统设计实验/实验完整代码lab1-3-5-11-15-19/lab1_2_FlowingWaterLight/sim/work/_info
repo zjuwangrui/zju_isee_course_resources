@@ -1,0 +1,128 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/program/intelFPGA/20.1/modelsim_ase/win32aloem
+vcounter_n
+Z0 !s110 1772770669
+!i10b 1
+!s100 I68mL46Z_CM<Xg0HVNH]>0
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IJ1I@AFI=hQ6:mkBUF@^TN0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 dD:/constructing_projects/FPGA_projects/FPGA_design_course/lab1_2_FlowingWaterLight/sim
+Z4 w1771996369
+8D:/constructing_projects/FPGA_projects/FPGA_design_course/lab1_2_FlowingWaterLight/src/code/counter_n.v
+FD:/constructing_projects/FPGA_projects/FPGA_design_course/lab1_2_FlowingWaterLight/src/code/counter_n.v
+!i122 13
+L0 5 18
+Z5 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z6 !s108 1772770669.000000
+!s107 D:/constructing_projects/FPGA_projects/FPGA_design_course/lab1_2_FlowingWaterLight/src/code/counter_n.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/constructing_projects/FPGA_projects/FPGA_design_course/lab1_2_FlowingWaterLight/src/code/counter_n.v|
+!i113 1
+Z7 o-work work
+Z8 tCvgOpt 0
+vcounter_up_dn
+R0
+!i10b 1
+!s100 kaM^gJcVWf`5ZVj=z`ZNH0
+R1
+IoUf_e6k_TbzzJISn2Qf9T1
+R2
+R3
+R4
+8D:/constructing_projects/FPGA_projects/FPGA_design_course/lab1_2_FlowingWaterLight/src/code/counter_up_down.v
+FD:/constructing_projects/FPGA_projects/FPGA_design_course/lab1_2_FlowingWaterLight/src/code/counter_up_down.v
+!i122 14
+L0 6 15
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/constructing_projects/FPGA_projects/FPGA_design_course/lab1_2_FlowingWaterLight/src/code/counter_up_down.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/constructing_projects/FPGA_projects/FPGA_design_course/lab1_2_FlowingWaterLight/src/code/counter_up_down.v|
+!i113 1
+R7
+R8
+vdecode
+R0
+!i10b 1
+!s100 f^JUCH>6J<6J<B=MlUbiz0
+R1
+IF_S8ncn43?Y>MWH[SYYCa1
+R2
+R3
+w1772770224
+8D:/constructing_projects/FPGA_projects/FPGA_design_course/lab1_2_FlowingWaterLight/src/code/decode.v
+FD:/constructing_projects/FPGA_projects/FPGA_design_course/lab1_2_FlowingWaterLight/src/code/decode.v
+!i122 15
+L0 4 17
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/constructing_projects/FPGA_projects/FPGA_design_course/lab1_2_FlowingWaterLight/src/code/decode.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/constructing_projects/FPGA_projects/FPGA_design_course/lab1_2_FlowingWaterLight/src/code/decode.v|
+!i113 1
+R7
+R8
+vFlowingWateLight_tb
+R0
+!i10b 1
+!s100 5c@jdZDSMNT`G^C9Mm@N63
+R1
+IRV:I92RLLDV^:G>SV?[jz1
+R2
+R3
+w1772770663
+8D:/constructing_projects/FPGA_projects/FPGA_design_course/lab1_2_FlowingWaterLight/src/testbench/FlowingWaterLight_tb.v
+FD:/constructing_projects/FPGA_projects/FPGA_design_course/lab1_2_FlowingWaterLight/src/testbench/FlowingWaterLight_tb.v
+!i122 17
+L0 6 19
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/constructing_projects/FPGA_projects/FPGA_design_course/lab1_2_FlowingWaterLight/src/testbench/FlowingWaterLight_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/constructing_projects/FPGA_projects/FPGA_design_course/lab1_2_FlowingWaterLight/src/testbench/FlowingWaterLight_tb.v|
+!i113 1
+R7
+R8
+n@flowing@wate@light_tb
+vFlowingWaterLight
+R0
+!i10b 1
+!s100 S<2RHbFflcIFEAJJ<kL3n1
+R1
+ILYDcT6z>QN7L<[>j`VRl43
+R2
+R3
+w1772769662
+8D:/constructing_projects/FPGA_projects/FPGA_design_course/lab1_2_FlowingWaterLight/src/code/FlowingWaterLight.v
+FD:/constructing_projects/FPGA_projects/FPGA_design_course/lab1_2_FlowingWaterLight/src/code/FlowingWaterLight.v
+!i122 16
+L0 1 18
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/constructing_projects/FPGA_projects/FPGA_design_course/lab1_2_FlowingWaterLight/src/code/FlowingWaterLight.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/constructing_projects/FPGA_projects/FPGA_design_course/lab1_2_FlowingWaterLight/src/code/FlowingWaterLight.v|
+!i113 1
+R7
+R8
+n@flowing@water@light
